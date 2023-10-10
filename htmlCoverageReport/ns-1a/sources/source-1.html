@@ -1,0 +1,414 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > AnnotationAppender</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.implementation.attribute</a>
+</div>
+
+<h1>Coverage Summary for Class: AnnotationAppender (net.bytebuddy.implementation.attribute)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">AnnotationAppender</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">AnnotationAppender$Default</td>
+<td class="coverageStat">
+  <span class="percent">
+    14.3%
+  </span>
+  <span class="absValue">
+    (1/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    4.7%
+  </span>
+  <span class="absValue">
+    (2/43)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">AnnotationAppender$ForTypeAnnotations</td>
+<td class="coverageStat">
+  <span class="percent">
+    76.5%
+  </span>
+  <span class="absValue">
+    (13/17)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    49.2%
+  </span>
+  <span class="absValue">
+    (32/65)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">AnnotationAppender$Target</td>
+  </tr>
+  <tr>
+    <td class="name">AnnotationAppender$Target$OnField</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (2/4)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">AnnotationAppender$Target$OnMethod</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (2/4)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">AnnotationAppender$Target$OnMethodParameter</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    60%
+  </span>
+  <span class="absValue">
+    (3/5)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">AnnotationAppender$Target$OnType</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (2/4)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    48.6%
+  </span>
+  <span class="absValue">
+    (18/37)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    34.1%
+  </span>
+  <span class="absValue">
+    (43/126)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.implementation.attribute;
+&nbsp;
+&nbsp;public interface AnnotationAppender {
+&nbsp;    @net.bytebuddy.utility.nullability.AlwaysNull
+&nbsp;    java.lang.String NO_NAME;
+&nbsp;
+&nbsp;    net.bytebuddy.implementation.attribute.AnnotationAppender append(net.bytebuddy.description.annotation.AnnotationDescription annotationDescription, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter);
+&nbsp;
+&nbsp;    net.bytebuddy.implementation.attribute.AnnotationAppender append(net.bytebuddy.description.annotation.AnnotationDescription annotationDescription, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter, int i, java.lang.String s);
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForTypeAnnotations implements net.bytebuddy.description.type.TypeDescription.Generic.Visitor&lt;net.bytebuddy.implementation.attribute.AnnotationAppender&gt; {
+&nbsp;        public static final boolean VARIABLE_ON_TYPE = true;
+&nbsp;        public static final boolean VARIABLE_ON_INVOKEABLE = false;
+&nbsp;        private static final java.lang.String EMPTY_TYPE_PATH = &quot;&quot;;
+&nbsp;        private static final char COMPONENT_TYPE_PATH = &#39;[&#39;;
+&nbsp;        private static final char WILDCARD_TYPE_PATH = &#39;*&#39;;
+&nbsp;        private static final char INNER_CLASS_PATH = &#39;.&#39;;
+&nbsp;        private static final char INDEXED_TYPE_DELIMITER = &#39;;&#39;;
+&nbsp;        private static final int SUPER_CLASS_INDEX = -1;
+&nbsp;        private final net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender;
+&nbsp;        private final net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter;
+&nbsp;        private final int typeReference;
+&nbsp;        private final java.lang.String typePath;
+&nbsp;
+&nbsp;        protected ForTypeAnnotations(net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter, net.bytebuddy.jar.asm.TypeReference typeReference) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected ForTypeAnnotations(net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter, int typeReference, java.lang.String typePath) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.type.TypeDescription.Generic.Visitor&lt;net.bytebuddy.implementation.attribute.AnnotationAppender&gt; ofSuperClass(net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.type.TypeDescription.Generic.Visitor&lt;net.bytebuddy.implementation.attribute.AnnotationAppender&gt; ofInterfaceType(net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter, int index) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.type.TypeDescription.Generic.Visitor&lt;net.bytebuddy.implementation.attribute.AnnotationAppender&gt; ofFieldType(net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.type.TypeDescription.Generic.Visitor&lt;net.bytebuddy.implementation.attribute.AnnotationAppender&gt; ofMethodReturnType(net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;        public static net.bytebuddy.description.type.TypeDescription.Generic.Visitor&lt;net.bytebuddy.implementation.attribute.AnnotationAppender&gt; ofMethodParameterType(net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter, int index) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.type.TypeDescription.Generic.Visitor&lt;net.bytebuddy.implementation.attribute.AnnotationAppender&gt; ofExceptionType(net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter, int index) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.type.TypeDescription.Generic.Visitor&lt;net.bytebuddy.implementation.attribute.AnnotationAppender&gt; ofReceiverType(net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.implementation.attribute.AnnotationAppender ofTypeVariable(net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter, boolean variableOnType, java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription.Generic&gt; typeVariables) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.implementation.attribute.AnnotationAppender ofTypeVariable(net.bytebuddy.implementation.attribute.AnnotationAppender annotationAppender, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter, boolean variableOnType, int subListIndex, java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription.Generic&gt; typeVariables) { /* compiled code */ }
+&nbsp;
+&nbsp;        @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE&quot;}, justification = &quot;Assuming component type for array type.&quot;)
+&nbsp;        public net.bytebuddy.implementation.attribute.AnnotationAppender onGenericArray(net.bytebuddy.description.type.TypeDescription.Generic genericArray) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.attribute.AnnotationAppender onWildcard(net.bytebuddy.description.type.TypeDescription.Generic wildcard) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.attribute.AnnotationAppender onParameterizedType(net.bytebuddy.description.type.TypeDescription.Generic parameterizedType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.attribute.AnnotationAppender onTypeVariable(net.bytebuddy.description.type.TypeDescription.Generic typeVariable) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.attribute.AnnotationAppender onNonGenericType(net.bytebuddy.description.type.TypeDescription.Generic typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        private net.bytebuddy.implementation.attribute.AnnotationAppender apply(net.bytebuddy.description.type.TypeDescription.Generic typeDescription, java.lang.String typePath) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Default implements net.bytebuddy.implementation.attribute.AnnotationAppender {
+&nbsp;        private final net.bytebuddy.implementation.attribute.AnnotationAppender.Target target;
+&nbsp;
+&nbsp;        public Default(net.bytebuddy.implementation.attribute.AnnotationAppender.Target target) { /* compiled code */ }
+&nbsp;
+&nbsp;        private static void handle(net.bytebuddy.jar.asm.AnnotationVisitor annotationVisitor, net.bytebuddy.description.annotation.AnnotationDescription annotation, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static void apply(net.bytebuddy.jar.asm.AnnotationVisitor annotationVisitor, net.bytebuddy.description.type.TypeDescription valueType, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String name, java.lang.Object value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.attribute.AnnotationAppender append(net.bytebuddy.description.annotation.AnnotationDescription annotationDescription, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter) { /* compiled code */ }
+&nbsp;
+&nbsp;        private void doAppend(net.bytebuddy.description.annotation.AnnotationDescription annotation, boolean visible, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.attribute.AnnotationAppender append(net.bytebuddy.description.annotation.AnnotationDescription annotationDescription, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter, int typeReference, java.lang.String typePath) { /* compiled code */ }
+&nbsp;
+&nbsp;        private void doAppend(net.bytebuddy.description.annotation.AnnotationDescription annotation, boolean visible, net.bytebuddy.implementation.attribute.AnnotationValueFilter annotationValueFilter, int typeReference, java.lang.String typePath) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface Target {
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String s, boolean b);
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String s, boolean b, int i, java.lang.String s1);
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class OnRecordComponent implements net.bytebuddy.implementation.attribute.AnnotationAppender.Target {
+&nbsp;            private final net.bytebuddy.jar.asm.RecordComponentVisitor recordComponentVisitor;
+&nbsp;
+&nbsp;            public OnRecordComponent(net.bytebuddy.jar.asm.RecordComponentVisitor recordComponentVisitor) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull</b>
+<b class="fc">&nbsp;            public net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String annotationTypeDescriptor, boolean visible) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String annotationTypeDescriptor, boolean visible, int typeReference, java.lang.String typePath) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+<b class="nc">&nbsp;        }</b>
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class OnMethodParameter implements net.bytebuddy.implementation.attribute.AnnotationAppender.Target {
+&nbsp;            private final net.bytebuddy.jar.asm.MethodVisitor methodVisitor;
+&nbsp;            private final int parameterIndex;
+&nbsp;
+&nbsp;            public OnMethodParameter(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, int parameterIndex) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String annotationTypeDescriptor, boolean visible) { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String annotationTypeDescriptor, boolean visible, int typeReference, java.lang.String typePath) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class OnMethod implements net.bytebuddy.implementation.attribute.AnnotationAppender.Target {
+&nbsp;            private final net.bytebuddy.jar.asm.MethodVisitor methodVisitor;
+&nbsp;
+&nbsp;            public OnMethod(net.bytebuddy.jar.asm.MethodVisitor methodVisitor) { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String annotationTypeDescriptor, boolean visible) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull</b>
+&nbsp;            public net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String annotationTypeDescriptor, boolean visible, int typeReference, java.lang.String typePath) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+<b class="nc">&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance</b>
+&nbsp;        static class OnField implements net.bytebuddy.implementation.attribute.AnnotationAppender.Target {
+&nbsp;            private final net.bytebuddy.jar.asm.FieldVisitor fieldVisitor;
+&nbsp;
+&nbsp;            public OnField(net.bytebuddy.jar.asm.FieldVisitor fieldVisitor) { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String annotationTypeDescriptor, boolean visible) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String annotationTypeDescriptor, boolean visible, int typeReference, java.lang.String typePath) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class OnType implements net.bytebuddy.implementation.attribute.AnnotationAppender.Target {
+&nbsp;            private final net.bytebuddy.jar.asm.ClassVisitor classVisitor;
+&nbsp;
+&nbsp;            public OnType(net.bytebuddy.jar.asm.ClassVisitor classVisitor) { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String annotationTypeDescriptor, boolean visible) { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public net.bytebuddy.jar.asm.AnnotationVisitor visit(java.lang.String annotationTypeDescriptor, boolean visible, int typeReference, java.lang.String typePath) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

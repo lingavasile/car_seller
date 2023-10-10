@@ -1,0 +1,182 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > LoadedTypeInitializer</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.implementation</a>
+</div>
+
+<h1>Coverage Summary for Class: LoadedTypeInitializer (net.bytebuddy.implementation)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">LoadedTypeInitializer$NoOp</td>
+<td class="coverageStat">
+  <span class="percent">
+    66.7%
+  </span>
+  <span class="absValue">
+    (2/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/4)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    66.7%
+  </span>
+  <span class="absValue">
+    (2/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/4)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.implementation;
+&nbsp;
+&nbsp;public interface LoadedTypeInitializer {
+&nbsp;    void onLoad(java.lang.Class&lt;?&gt; aClass);
+&nbsp;
+&nbsp;    boolean isAlive();
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;SE_BAD_FIELD&quot;}, justification = &quot;Serialization is considered opt-in for a rare use case&quot;)
+&nbsp;    static class Compound implements net.bytebuddy.implementation.LoadedTypeInitializer, java.io.Serializable {
+&nbsp;        private static final long serialVersionUID = 1L;
+&nbsp;        private final java.util.List&lt;net.bytebuddy.implementation.LoadedTypeInitializer&gt; loadedTypeInitializers;
+&nbsp;
+&nbsp;        public Compound(net.bytebuddy.implementation.LoadedTypeInitializer... loadedTypeInitializer) { /* compiled code */ }
+&nbsp;
+&nbsp;        public Compound(java.util.List&lt;? extends net.bytebuddy.implementation.LoadedTypeInitializer&gt; loadedTypeInitializers) { /* compiled code */ }
+&nbsp;
+&nbsp;        public void onLoad(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isAlive() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForStaticField implements net.bytebuddy.implementation.LoadedTypeInitializer, java.io.Serializable {
+&nbsp;        private static final long serialVersionUID = 1L;
+&nbsp;        private final java.lang.String fieldName;
+&nbsp;        private final java.lang.Object value;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.ValueHandling(net.bytebuddy.build.HashCodeAndEqualsPlugin.ValueHandling.Sort.IGNORE)
+&nbsp;        private final transient java.lang.Object accessControlContext;
+&nbsp;        private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;        public ForStaticField(java.lang.String fieldName, java.lang.Object value) { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;        private static java.lang.Object getContext() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;        private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action, @net.bytebuddy.utility.nullability.MaybeNull java.lang.Object context) { /* compiled code */ }
+&nbsp;
+&nbsp;        private java.lang.Object readResolve() { /* compiled code */ }
+&nbsp;
+&nbsp;        @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE&quot;}, justification = &quot;Modules are assumed available when module system is supported&quot;)
+&nbsp;        public void onLoad(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isAlive() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+<b class="fc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    static enum NoOp implements net.bytebuddy.implementation.LoadedTypeInitializer {
+&nbsp;        INSTANCE;
+&nbsp;
+<b class="fc">&nbsp;        private NoOp() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public void onLoad(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isAlive() { /* compiled code */ }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

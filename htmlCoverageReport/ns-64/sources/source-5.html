@@ -1,0 +1,111 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > MockingProgress</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito.internal.progress</a>
+</div>
+
+<h1>Coverage Summary for Class: MockingProgress (org.mockito.internal.progress)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+</tr>
+<tr>
+  <td class="name">MockingProgress</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito.internal.progress;
+&nbsp;
+&nbsp;public interface MockingProgress {
+&nbsp;    void reportOngoingStubbing(org.mockito.stubbing.OngoingStubbing&lt;?&gt; ongoingStubbing);
+&nbsp;
+&nbsp;    org.mockito.stubbing.OngoingStubbing&lt;?&gt; pullOngoingStubbing();
+&nbsp;
+&nbsp;    java.util.Set&lt;org.mockito.listeners.VerificationListener&gt; verificationListeners();
+&nbsp;
+&nbsp;    void verificationStarted(org.mockito.verification.VerificationMode verificationMode);
+&nbsp;
+&nbsp;    org.mockito.verification.VerificationMode pullVerificationMode();
+&nbsp;
+&nbsp;    void stubbingStarted();
+&nbsp;
+&nbsp;    void stubbingCompleted();
+&nbsp;
+&nbsp;    void validateState();
+&nbsp;
+&nbsp;    void reset();
+&nbsp;
+&nbsp;    void resetOngoingStubbing();
+&nbsp;
+&nbsp;    org.mockito.internal.progress.ArgumentMatcherStorage getArgumentMatcherStorage();
+&nbsp;
+&nbsp;    void mockingStarted(java.lang.Object o, org.mockito.mock.MockCreationSettings mockCreationSettings);
+&nbsp;
+&nbsp;    void mockingStarted(java.lang.Class&lt;?&gt; aClass, org.mockito.mock.MockCreationSettings mockCreationSettings);
+&nbsp;
+&nbsp;    void addListener(org.mockito.listeners.MockitoListener mockitoListener);
+&nbsp;
+&nbsp;    void removeListener(org.mockito.listeners.MockitoListener mockitoListener);
+&nbsp;
+&nbsp;    void setVerificationStrategy(org.mockito.verification.VerificationStrategy verificationStrategy);
+&nbsp;
+&nbsp;    org.mockito.verification.VerificationMode maybeVerifyLazily(org.mockito.verification.VerificationMode verificationMode);
+&nbsp;
+&nbsp;    void clearListeners();
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

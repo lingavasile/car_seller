@@ -1,0 +1,127 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > SpyAnnotationEngine</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito.internal.configuration</a>
+</div>
+
+<h1>Coverage Summary for Class: SpyAnnotationEngine (org.mockito.internal.configuration)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">SpyAnnotationEngine</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (2/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    9.1%
+  </span>
+  <span class="absValue">
+    (6/66)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito.internal.configuration;
+&nbsp;
+&nbsp;public class SpyAnnotationEngine implements org.mockito.plugins.AnnotationEngine {
+&nbsp;    public SpyAnnotationEngine() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.AutoCloseable process(java.lang.Class&lt;?&gt; context, java.lang.Object testInstance) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static java.lang.Object spyInstance(java.lang.reflect.Field field, java.lang.Object instance) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static java.lang.Object spyNewInstance(java.lang.Object testInstance, java.lang.reflect.Field field) throws java.lang.InstantiationException, java.lang.IllegalAccessException, java.lang.reflect.InvocationTargetException { /* compiled code */ }
+&nbsp;
+&nbsp;    private static java.lang.reflect.Constructor&lt;?&gt; noArgConstructorOf(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static boolean typeIsNonStaticInnerClass(java.lang.Class&lt;?&gt; type, int modifiers) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static boolean typeIsPrivateAbstractInnerClass(java.lang.Class&lt;?&gt; type, int modifiers) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static void assertNoIncompatibleAnnotations(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt; annotation, java.lang.reflect.Field field, java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;... undesiredAnnotations) { /* compiled code */ }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > MethodRebaseResolver</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.dynamic.scaffold.inline</a>
+</div>
+
+<h1>Coverage Summary for Class: MethodRebaseResolver (net.bytebuddy.dynamic.scaffold.inline)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">MethodRebaseResolver$Disabled</td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (1/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    40%
+  </span>
+  <span class="absValue">
+    (2/5)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRebaseResolver$Resolution</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (1/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    40%
+  </span>
+  <span class="absValue">
+    (2/5)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.dynamic.scaffold.inline;
+&nbsp;
+&nbsp;public interface MethodRebaseResolver {
+&nbsp;    net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution resolve(net.bytebuddy.description.method.MethodDescription.InDefinedShape inDefinedShape);
+&nbsp;
+&nbsp;    java.util.List&lt;net.bytebuddy.dynamic.DynamicType&gt; getAuxiliaryTypes();
+&nbsp;
+&nbsp;    java.util.Map&lt;net.bytebuddy.description.method.MethodDescription.SignatureToken,net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution&gt; asTokenMap();
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Default implements net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver {
+&nbsp;        private final java.util.Map&lt;net.bytebuddy.description.method.MethodDescription.InDefinedShape,net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution&gt; resolutions;
+&nbsp;        private final java.util.List&lt;net.bytebuddy.dynamic.DynamicType&gt; dynamicTypes;
+&nbsp;
+&nbsp;        protected Default(java.util.Map&lt;net.bytebuddy.description.method.MethodDescription.InDefinedShape,net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution&gt; resolutions, java.util.List&lt;net.bytebuddy.dynamic.DynamicType&gt; dynamicTypes) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver make(net.bytebuddy.description.type.TypeDescription instrumentedType, java.util.Set&lt;? extends net.bytebuddy.description.method.MethodDescription.SignatureToken&gt; rebaseables, net.bytebuddy.ClassFileVersion classFileVersion, net.bytebuddy.implementation.auxiliary.AuxiliaryType.NamingStrategy auxiliaryTypeNamingStrategy, net.bytebuddy.dynamic.scaffold.inline.MethodNameTransformer methodNameTransformer) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution resolve(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.util.List&lt;net.bytebuddy.dynamic.DynamicType&gt; getAuxiliaryTypes() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.util.Map&lt;net.bytebuddy.description.method.MethodDescription.SignatureToken,net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution&gt; asTokenMap() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface Resolution {
+&nbsp;        boolean isRebased();
+&nbsp;
+&nbsp;        net.bytebuddy.description.method.MethodDescription.InDefinedShape getResolvedMethod();
+&nbsp;
+&nbsp;        net.bytebuddy.description.type.TypeList getAppendedParameters();
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class ForRebasedConstructor implements net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution {
+&nbsp;            private final net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription;
+&nbsp;            private final net.bytebuddy.description.type.TypeDescription placeholderType;
+&nbsp;
+&nbsp;            protected ForRebasedConstructor(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription, net.bytebuddy.description.type.TypeDescription placeholderType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public static net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution of(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription, net.bytebuddy.description.type.TypeDescription placeholderType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean isRebased() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.method.MethodDescription.InDefinedShape getResolvedMethod() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.type.TypeList getAppendedParameters() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;            protected static class RebasedConstructor extends net.bytebuddy.description.method.MethodDescription.InDefinedShape.AbstractBase {
+&nbsp;                private final net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription;
+&nbsp;                private final net.bytebuddy.description.type.TypeDescription placeholderType;
+&nbsp;
+&nbsp;                protected RebasedConstructor(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription, net.bytebuddy.description.type.TypeDescription placeholderType) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.description.type.TypeDescription.Generic getReturnType() { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.description.method.ParameterList&lt;net.bytebuddy.description.method.ParameterDescription.InDefinedShape&gt; getParameters() { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.description.type.TypeList.Generic getExceptionTypes() { /* compiled code */ }
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.nullability.AlwaysNull
+<b class="fc">&nbsp;                public net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; getDefaultValue() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;                public net.bytebuddy.description.type.TypeList.Generic getTypeVariables() { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.description.annotation.AnnotationList getDeclaredAnnotations() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;                @javax.annotation.Nonnull
+&nbsp;                public net.bytebuddy.description.type.TypeDescription getDeclaringType() { /* compiled code */ }
+&nbsp;
+&nbsp;                public int getModifiers() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;                public java.lang.String getInternalName() { /* compiled code */ }</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class ForRebasedMethod implements net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution {
+&nbsp;            private final net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription;
+<b class="nc">&nbsp;</b>
+&nbsp;            protected ForRebasedMethod(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;            public static net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution of(net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription, net.bytebuddy.dynamic.scaffold.inline.MethodNameTransformer methodNameTransformer) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean isRebased() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;            public net.bytebuddy.description.method.MethodDescription.InDefinedShape getResolvedMethod() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;            public net.bytebuddy.description.type.TypeList getAppendedParameters() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;            protected static class RebasedMethod extends net.bytebuddy.description.method.MethodDescription.InDefinedShape.AbstractBase {
+&nbsp;                private final net.bytebuddy.description.type.TypeDescription instrumentedType;
+&nbsp;                private final net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription;
+&nbsp;                private final net.bytebuddy.dynamic.scaffold.inline.MethodNameTransformer methodNameTransformer;
+&nbsp;
+&nbsp;                protected RebasedMethod(net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription, net.bytebuddy.dynamic.scaffold.inline.MethodNameTransformer methodNameTransformer) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.description.type.TypeDescription.Generic getReturnType() { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.description.method.ParameterList&lt;net.bytebuddy.description.method.ParameterDescription.InDefinedShape&gt; getParameters() { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.description.type.TypeList.Generic getExceptionTypes() { /* compiled code */ }
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.nullability.AlwaysNull
+&nbsp;                public net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; getDefaultValue() { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.description.type.TypeList.Generic getTypeVariables() { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.description.annotation.AnnotationList getDeclaredAnnotations() { /* compiled code */ }
+&nbsp;
+&nbsp;                @javax.annotation.Nonnull
+&nbsp;                public net.bytebuddy.description.type.TypeDescription getDeclaringType() { /* compiled code */ }
+&nbsp;
+&nbsp;                public int getModifiers() { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.lang.String getInternalName() { /* compiled code */ }
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class Preserved implements net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution {
+&nbsp;            private final net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription;
+&nbsp;
+&nbsp;            public Preserved(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean isRebased() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.method.MethodDescription.InDefinedShape getResolvedMethod() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.type.TypeList getAppendedParameters() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static enum Disabled implements net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver {
+&nbsp;        INSTANCE;
+&nbsp;
+&nbsp;        private Disabled() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution resolve(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.util.List&lt;net.bytebuddy.dynamic.DynamicType&gt; getAuxiliaryTypes() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.util.Map&lt;net.bytebuddy.description.method.MethodDescription.SignatureToken,net.bytebuddy.dynamic.scaffold.inline.MethodRebaseResolver.Resolution&gt; asTokenMap() { /* compiled code */ }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > MockSettingsImpl</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito.internal.creation</a>
+</div>
+
+<h1>Coverage Summary for Class: MockSettingsImpl (org.mockito.internal.creation)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">MockSettingsImpl</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (12/36)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    26.9%
+  </span>
+  <span class="absValue">
+    (28/104)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito.internal.creation;
+&nbsp;
+&nbsp;public class MockSettingsImpl &lt;T&gt; extends org.mockito.internal.creation.settings.CreationSettings&lt;T&gt; implements org.mockito.MockSettings, org.mockito.mock.MockCreationSettings&lt;T&gt; {
+&nbsp;    private static final long serialVersionUID = 4475297236197939569L;
+&nbsp;    private boolean useConstructor;
+&nbsp;    private java.lang.Object outerClassInstance;
+&nbsp;    private java.lang.Object[] constructorArgs;
+&nbsp;
+&nbsp;    public MockSettingsImpl() { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.MockSettings serializable() { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.MockSettings serializable(org.mockito.mock.SerializableMode mode) { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.MockSettings extraInterfaces(java.lang.Class&lt;?&gt;... extraInterfaces) { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.mock.MockName getMockName() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.util.Set&lt;java.lang.Class&lt;?&gt;&gt; getExtraInterfaces() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.Object getSpiedInstance() { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.MockSettings name(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.MockSettings spiedInstance(java.lang.Object spiedInstance) { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.MockSettings defaultAnswer(org.mockito.stubbing.Answer defaultAnswer) { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.stubbing.Answer&lt;java.lang.Object&gt; getDefaultAnswer() { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.internal.creation.MockSettingsImpl&lt;T&gt; stubOnly() { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.MockSettings useConstructor(java.lang.Object... constructorArgs) { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.MockSettings outerInstance(java.lang.Object outerClassInstance) { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.MockSettings withoutAnnotations() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public boolean isUsingConstructor() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.Object getOuterClassInstance() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.Object[] getConstructorArgs() { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean isStubOnly() { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.MockSettings verboseLogging() { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public org.mockito.MockSettings invocationListeners(org.mockito.listeners.InvocationListener... listeners) { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.MockSettings stubbingLookupListeners(org.mockito.listeners.StubbingLookupListener... listeners) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    static &lt;T&gt; void addListeners(T[] listeners, java.util.List&lt;T&gt; container, java.lang.String method) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;    public org.mockito.MockSettings verificationStartedListeners(org.mockito.listeners.VerificationStartedListener... listeners) { /* compiled code */ }
+&nbsp;
+&nbsp;    private boolean invocationListenersContainsType(java.lang.Class&lt;?&gt; clazz) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public boolean hasInvocationListeners() { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;    public java.lang.Class&lt;T&gt; getTypeToMock() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public &lt;T2&gt; org.mockito.mock.MockCreationSettings&lt;T2&gt; build(java.lang.Class&lt;T2&gt; typeToMock) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;    public &lt;T2&gt; org.mockito.mock.MockCreationSettings&lt;T2&gt; buildStatic(java.lang.Class&lt;T2&gt; classToMock) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;    public org.mockito.MockSettings lenient() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public org.mockito.MockSettings strictness(org.mockito.quality.Strictness strictness) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;    public org.mockito.MockSettings mockMaker(java.lang.String mockMaker) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public org.mockito.MockSettings genericTypeToMock(java.lang.reflect.Type genericType) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static &lt;T&gt; org.mockito.internal.creation.settings.CreationSettings&lt;T&gt; validatedSettings(java.lang.Class&lt;T&gt; typeToMock, org.mockito.internal.creation.settings.CreationSettings&lt;T&gt; source) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    private static &lt;T&gt; org.mockito.internal.creation.settings.CreationSettings&lt;T&gt; validatedStaticSettings(java.lang.Class&lt;T&gt; classToMock, org.mockito.internal.creation.settings.CreationSettings&lt;T&gt; source) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static java.util.Set&lt;java.lang.Class&lt;?&gt;&gt; prepareExtraInterfaces(org.mockito.internal.creation.settings.CreationSettings settings) { /* compiled code */ }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

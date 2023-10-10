@@ -1,0 +1,209 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > GenericTypeAwareAssigner</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.implementation.bytecode.assign.reference</a>
+</div>
+
+<h1>Coverage Summary for Class: GenericTypeAwareAssigner (net.bytebuddy.implementation.bytecode.assign.reference)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">GenericTypeAwareAssigner</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    20%
+  </span>
+  <span class="absValue">
+    (2/10)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.implementation.bytecode.assign.reference;
+&nbsp;
+&nbsp;public enum GenericTypeAwareAssigner implements net.bytebuddy.implementation.bytecode.assign.Assigner {
+&nbsp;    INSTANCE;
+&nbsp;
+&nbsp;    private GenericTypeAwareAssigner() { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.implementation.bytecode.StackManipulation assign(net.bytebuddy.description.type.TypeDescription.Generic source, net.bytebuddy.description.type.TypeDescription.Generic target, net.bytebuddy.implementation.bytecode.assign.Assigner.Typing typing) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    protected static class IsAssignableToVisitor implements net.bytebuddy.description.type.TypeDescription.Generic.Visitor&lt;java.lang.Boolean&gt; {
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription.Generic typeDescription;
+&nbsp;        private final boolean polymorphic;
+&nbsp;
+&nbsp;        public IsAssignableToVisitor(net.bytebuddy.description.type.TypeDescription.Generic typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected IsAssignableToVisitor(net.bytebuddy.description.type.TypeDescription.Generic typeDescription, boolean polymorphic) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.Boolean onGenericArray(net.bytebuddy.description.type.TypeDescription.Generic genericArray) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.Boolean onWildcard(net.bytebuddy.description.type.TypeDescription.Generic wildcard) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.Boolean onParameterizedType(net.bytebuddy.description.type.TypeDescription.Generic parameterizedType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.Boolean onTypeVariable(net.bytebuddy.description.type.TypeDescription.Generic typeVariable) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.Boolean onNonGenericType(net.bytebuddy.description.type.TypeDescription.Generic typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;        protected static class OfNonGenericType extends net.bytebuddy.implementation.bytecode.assign.reference.GenericTypeAwareAssigner.IsAssignableToVisitor.OfSimpleType {</b>
+&nbsp;            protected OfNonGenericType(net.bytebuddy.description.type.TypeDescription.Generic typeDescription, boolean polymorphic) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.Boolean onGenericArray(net.bytebuddy.description.type.TypeDescription.Generic genericArray) { /* compiled code */ }
+&nbsp;        }
+<b class="fc">&nbsp;</b>
+&nbsp;        protected static class OfParameterizedType extends net.bytebuddy.implementation.bytecode.assign.reference.GenericTypeAwareAssigner.IsAssignableToVisitor.OfSimpleType {
+&nbsp;            protected OfParameterizedType(net.bytebuddy.description.type.TypeDescription.Generic typeDescription, boolean polymorphic) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.Boolean onGenericArray(net.bytebuddy.description.type.TypeDescription.Generic genericArray) { /* compiled code */ }
+&nbsp;        }
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance</b>
+&nbsp;        protected static class OfWildcard implements net.bytebuddy.description.type.TypeDescription.Generic.Visitor&lt;java.lang.Boolean&gt; {
+&nbsp;            private final net.bytebuddy.description.type.TypeDescription.Generic wildcard;
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;            protected OfWildcard(net.bytebuddy.description.type.TypeDescription.Generic wildcard) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;            public java.lang.Boolean onGenericArray(net.bytebuddy.description.type.TypeDescription.Generic genericArray) { /* compiled code */ }</b>
+&nbsp;
+<b class="nc">&nbsp;            public java.lang.Boolean onWildcard(net.bytebuddy.description.type.TypeDescription.Generic wildcard) { /* compiled code */ }</b>
+&nbsp;
+<b class="nc">&nbsp;            public java.lang.Boolean onParameterizedType(net.bytebuddy.description.type.TypeDescription.Generic parameterizedType) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;            public java.lang.Boolean onTypeVariable(net.bytebuddy.description.type.TypeDescription.Generic typeVariable) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.Boolean onNonGenericType(net.bytebuddy.description.type.TypeDescription.Generic typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        protected static class OfGenericArray extends net.bytebuddy.implementation.bytecode.assign.reference.GenericTypeAwareAssigner.IsAssignableToVisitor.OfManifestType {
+&nbsp;            protected OfGenericArray(net.bytebuddy.description.type.TypeDescription.Generic typeDescription, boolean polymorphic) { /* compiled code */ }
+&nbsp;
+&nbsp;            @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE&quot;}, justification = &quot;Assuming component type for array type.&quot;)
+&nbsp;            public java.lang.Boolean onGenericArray(net.bytebuddy.description.type.TypeDescription.Generic genericArray) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.Boolean onParameterizedType(net.bytebuddy.description.type.TypeDescription.Generic parameterizedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.Boolean onNonGenericType(net.bytebuddy.description.type.TypeDescription.Generic typeDescription) { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        protected static abstract class OfSimpleType extends net.bytebuddy.implementation.bytecode.assign.reference.GenericTypeAwareAssigner.IsAssignableToVisitor.OfManifestType {
+&nbsp;            protected OfSimpleType(net.bytebuddy.description.type.TypeDescription.Generic typeDescription, boolean polymorphic) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.Boolean onParameterizedType(net.bytebuddy.description.type.TypeDescription.Generic parameterizedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.Boolean onNonGenericType(net.bytebuddy.description.type.TypeDescription.Generic typeDescription) { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static abstract class OfManifestType implements net.bytebuddy.description.type.TypeDescription.Generic.Visitor&lt;java.lang.Boolean&gt; {
+&nbsp;            protected final net.bytebuddy.description.type.TypeDescription.Generic typeDescription;
+&nbsp;            protected final boolean polymorphic;
+&nbsp;
+&nbsp;            protected OfManifestType(net.bytebuddy.description.type.TypeDescription.Generic typeDescription, boolean polymorphic) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.Boolean onWildcard(net.bytebuddy.description.type.TypeDescription.Generic wildcard) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.Boolean onTypeVariable(net.bytebuddy.description.type.TypeDescription.Generic typeVariable) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

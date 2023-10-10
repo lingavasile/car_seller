@@ -1,0 +1,221 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > RecordComponentRegistry</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.dynamic.scaffold</a>
+</div>
+
+<h1>Coverage Summary for Class: RecordComponentRegistry (net.bytebuddy.dynamic.scaffold)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">RecordComponentRegistry$Compiled</td>
+  </tr>
+  <tr>
+    <td class="name">RecordComponentRegistry$Default</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    41.2%
+  </span>
+  <span class="absValue">
+    (7/17)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">RecordComponentRegistry$Default$Compiled</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    37.5%
+  </span>
+  <span class="absValue">
+    (3/8)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    66.7%
+  </span>
+  <span class="absValue">
+    (4/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    40%
+  </span>
+  <span class="absValue">
+    (10/25)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.dynamic.scaffold;
+&nbsp;
+&nbsp;public interface RecordComponentRegistry {
+&nbsp;    net.bytebuddy.dynamic.scaffold.RecordComponentRegistry prepend(net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.type.RecordComponentDescription&gt; latentMatcher, net.bytebuddy.implementation.attribute.RecordComponentAttributeAppender.Factory factory, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.type.RecordComponentDescription&gt; transformer);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.RecordComponentRegistry.Compiled compile(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Default implements net.bytebuddy.dynamic.scaffold.RecordComponentRegistry {
+&nbsp;        private final java.util.List&lt;net.bytebuddy.dynamic.scaffold.RecordComponentRegistry.Default.Entry&gt; entries;
+&nbsp;
+&nbsp;        public Default() { /* compiled code */ }
+&nbsp;
+&nbsp;        private Default(java.util.List&lt;net.bytebuddy.dynamic.scaffold.RecordComponentRegistry.Default.Entry&gt; entries) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.RecordComponentRegistry prepend(net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.type.RecordComponentDescription&gt; matcher, net.bytebuddy.implementation.attribute.RecordComponentAttributeAppender.Factory recordComponentAttributeAppenderFactory, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.type.RecordComponentDescription&gt; transformer) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.RecordComponentRegistry.Compiled compile(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static class Compiled implements net.bytebuddy.dynamic.scaffold.RecordComponentRegistry.Compiled {
+&nbsp;            private final net.bytebuddy.description.type.TypeDescription instrumentedType;
+&nbsp;            private final java.util.List&lt;net.bytebuddy.dynamic.scaffold.RecordComponentRegistry.Default.Compiled.Entry&gt; entries;
+&nbsp;
+&nbsp;            protected Compiled(net.bytebuddy.description.type.TypeDescription instrumentedType, java.util.List&lt;net.bytebuddy.dynamic.scaffold.RecordComponentRegistry.Default.Compiled.Entry&gt; entries) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.TypeWriter.RecordComponentPool.Record target(net.bytebuddy.description.type.RecordComponentDescription recordComponentDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            protected static class Entry implements net.bytebuddy.matcher.ElementMatcher&lt;net.bytebuddy.description.type.RecordComponentDescription&gt; {
+&nbsp;                private final net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.RecordComponentDescription&gt; matcher;
+&nbsp;                private final net.bytebuddy.implementation.attribute.RecordComponentAttributeAppender recordComponentAttributeAppender;
+&nbsp;                private final net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.type.RecordComponentDescription&gt; transformer;
+&nbsp;
+&nbsp;                protected Entry(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.RecordComponentDescription&gt; matcher, net.bytebuddy.implementation.attribute.RecordComponentAttributeAppender recordComponentAttributeAppender, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.type.RecordComponentDescription&gt; transformer) { /* compiled code */ }
+&nbsp;
+&nbsp;                protected net.bytebuddy.dynamic.scaffold.TypeWriter.RecordComponentPool.Record bind(net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.description.type.RecordComponentDescription recordComponentDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean matches(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.RecordComponentDescription target) { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static class Entry implements net.bytebuddy.matcher.LatentMatcher&lt;net.bytebuddy.description.type.RecordComponentDescription&gt; {
+&nbsp;            private final net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.type.RecordComponentDescription&gt; matcher;
+&nbsp;            private final net.bytebuddy.implementation.attribute.RecordComponentAttributeAppender.Factory recordComponentAttributeAppender;
+&nbsp;            private final net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.type.RecordComponentDescription&gt; transformer;
+&nbsp;
+&nbsp;            protected Entry(net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.type.RecordComponentDescription&gt; matcher, net.bytebuddy.implementation.attribute.RecordComponentAttributeAppender.Factory recordComponentAttributeAppender, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.type.RecordComponentDescription&gt; transformer) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected net.bytebuddy.implementation.attribute.RecordComponentAttributeAppender.Factory getRecordComponentAttributeAppender() { /* compiled code */ }
+&nbsp;
+&nbsp;            protected net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.type.RecordComponentDescription&gt; getTransformer() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.RecordComponentDescription&gt; resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface Compiled extends net.bytebuddy.dynamic.scaffold.TypeWriter.RecordComponentPool {
+&nbsp;        static enum NoOp implements net.bytebuddy.dynamic.scaffold.RecordComponentRegistry.Compiled {
+&nbsp;            INSTANCE;
+&nbsp;
+&nbsp;            private NoOp() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.TypeWriter.RecordComponentPool.Record target(net.bytebuddy.description.type.RecordComponentDescription recordComponentDescription) { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

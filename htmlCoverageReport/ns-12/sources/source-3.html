@@ -1,0 +1,179 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ModifierContributor</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.description.modifier</a>
+</div>
+
+<h1>Coverage Summary for Class: ModifierContributor (net.bytebuddy.description.modifier)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">ModifierContributor$ForField</td>
+  </tr>
+  <tr>
+    <td class="name">ModifierContributor$ForMethod</td>
+  </tr>
+  <tr>
+    <td class="name">ModifierContributor$ForParameter</td>
+  </tr>
+  <tr>
+    <td class="name">ModifierContributor$ForType</td>
+  </tr>
+  <tr>
+    <td class="name">ModifierContributor$Resolver</td>
+<td class="coverageStat">
+  <span class="percent">
+    62.5%
+  </span>
+  <span class="absValue">
+    (5/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (9/12)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    62.5%
+  </span>
+  <span class="absValue">
+    (5/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (9/12)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.description.modifier;
+&nbsp;
+&nbsp;public interface ModifierContributor {
+&nbsp;    int EMPTY_MASK = 0;
+&nbsp;
+&nbsp;    int getMask();
+&nbsp;
+&nbsp;    int getRange();
+&nbsp;
+&nbsp;    boolean isDefault();
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Resolver &lt;T extends net.bytebuddy.description.modifier.ModifierContributor&gt; {
+&nbsp;        private final java.util.Collection&lt;? extends T&gt; modifierContributors;
+&nbsp;
+&nbsp;        protected Resolver(java.util.Collection&lt;? extends T&gt; modifierContributors) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.modifier.ModifierContributor.Resolver&lt;net.bytebuddy.description.modifier.ModifierContributor.ForType&gt; of(net.bytebuddy.description.modifier.ModifierContributor.ForType... modifierContributor) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.modifier.ModifierContributor.Resolver&lt;net.bytebuddy.description.modifier.ModifierContributor.ForField&gt; of(net.bytebuddy.description.modifier.ModifierContributor.ForField... modifierContributor) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.modifier.ModifierContributor.Resolver&lt;net.bytebuddy.description.modifier.ModifierContributor.ForMethod&gt; of(net.bytebuddy.description.modifier.ModifierContributor.ForMethod... modifierContributor) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.modifier.ModifierContributor.Resolver&lt;net.bytebuddy.description.modifier.ModifierContributor.ForParameter&gt; of(net.bytebuddy.description.modifier.ModifierContributor.ForParameter... modifierContributor) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static &lt;S extends net.bytebuddy.description.modifier.ModifierContributor&gt; net.bytebuddy.description.modifier.ModifierContributor.Resolver&lt;S&gt; of(java.util.Collection&lt;? extends S&gt; modifierContributors) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int resolve() { /* compiled code */ }
+&nbsp;
+&nbsp;        public int resolve(int modifiers) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface ForParameter extends net.bytebuddy.description.modifier.ModifierContributor {
+&nbsp;        int MASK = 36880;
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface ForMethod extends net.bytebuddy.description.modifier.ModifierContributor {
+&nbsp;        int MASK = 7679;
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface ForField extends net.bytebuddy.description.modifier.ModifierContributor {
+&nbsp;        int MASK = 151775;
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface ForType extends net.bytebuddy.description.modifier.ModifierContributor {
+&nbsp;        int MASK = 161311;
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

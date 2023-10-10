@@ -1,0 +1,176 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > SubclassInjectionLoader</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito.internal.creation.bytebuddy</a>
+</div>
+
+<h1>Coverage Summary for Class: SubclassInjectionLoader (org.mockito.internal.creation.bytebuddy)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">SubclassInjectionLoader</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (4/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    41.7%
+  </span>
+  <span class="absValue">
+    (10/24)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">SubclassInjectionLoader$WithReflection</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    83.3%
+  </span>
+  <span class="absValue">
+    (5/6)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    87.5%
+  </span>
+  <span class="absValue">
+    (7/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (15/30)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito.internal.creation.bytebuddy;
+&nbsp;
+&nbsp;class SubclassInjectionLoader implements org.mockito.internal.creation.bytebuddy.SubclassLoader {
+&nbsp;    private static final java.lang.String ERROR_MESSAGE;
+&nbsp;    private final org.mockito.internal.creation.bytebuddy.SubclassLoader loader;
+&nbsp;
+&nbsp;    SubclassInjectionLoader() { /* compiled code */ }
+&nbsp;
+&nbsp;    private static org.mockito.internal.creation.bytebuddy.SubclassLoader tryLookup() { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean isDisrespectingOpenness() { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.loading.ClassLoadingStrategy&lt;java.lang.ClassLoader&gt; resolveStrategy(java.lang.Class&lt;?&gt; mockedType, java.lang.ClassLoader classLoader, boolean localMock) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static class WithReflection implements org.mockito.internal.creation.bytebuddy.SubclassLoader {
+&nbsp;        private WithReflection() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;        public boolean isDisrespectingOpenness() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.loading.ClassLoadingStrategy&lt;java.lang.ClassLoader&gt; resolveStrategy(java.lang.Class&lt;?&gt; mockedType, java.lang.ClassLoader classLoader, boolean localMock) { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    private static class WithIsolatedLoader implements org.mockito.internal.creation.bytebuddy.SubclassLoader {
+&nbsp;        private WithIsolatedLoader() { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;        public boolean isDisrespectingOpenness() { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;        public net.bytebuddy.dynamic.loading.ClassLoadingStrategy&lt;java.lang.ClassLoader&gt; resolveStrategy(java.lang.Class&lt;?&gt; mockedType, java.lang.ClassLoader classLoader, boolean localMock) { /* compiled code */ }</b>
+&nbsp;    }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;    private static class WithLookup implements org.mockito.internal.creation.bytebuddy.SubclassLoader {</b>
+<b class="fc">&nbsp;        private final java.lang.Object lookup;</b>
+<b class="nc">&nbsp;        private final java.lang.Object codegenLookup;</b>
+<b class="nc">&nbsp;        private final java.lang.reflect.Method privateLookupIn;</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        WithLookup(java.lang.Object lookup, java.lang.Object codegenLookup, java.lang.reflect.Method privateLookupIn) { /* compiled code */ }</b>
+&nbsp;
+<b class="nc">&nbsp;        public boolean isDisrespectingOpenness() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.loading.ClassLoadingStrategy&lt;java.lang.ClassLoader&gt; resolveStrategy(java.lang.Class&lt;?&gt; mockedType, java.lang.ClassLoader classLoader, boolean localMock) { /* compiled code */ }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

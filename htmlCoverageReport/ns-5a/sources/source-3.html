@@ -1,0 +1,141 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > InlineByteBuddyMockMaker</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito.internal.creation.bytebuddy</a>
+</div>
+
+<h1>Coverage Summary for Class: InlineByteBuddyMockMaker (org.mockito.internal.creation.bytebuddy)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">InlineByteBuddyMockMaker</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    28.6%
+  </span>
+  <span class="absValue">
+    (4/14)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    30%
+  </span>
+  <span class="absValue">
+    (6/20)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito.internal.creation.bytebuddy;
+&nbsp;
+&nbsp;public class InlineByteBuddyMockMaker implements org.mockito.internal.creation.bytebuddy.ClassCreatingMockMaker, org.mockito.plugins.InlineMockMaker, org.mockito.creation.instance.Instantiator {
+&nbsp;    private final org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker inlineDelegateByteBuddyMockMaker;
+&nbsp;
+&nbsp;    public InlineByteBuddyMockMaker() { /* compiled code */ }
+&nbsp;
+&nbsp;    InlineByteBuddyMockMaker(org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker inlineDelegateByteBuddyMockMaker) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; T newInstance(java.lang.Class&lt;T&gt; cls) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; java.lang.Class&lt;? extends T&gt; createMockType(org.mockito.mock.MockCreationSettings&lt;T&gt; settings) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void clearMock(java.lang.Object mock) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void clearAllMocks() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public &lt;T&gt; T createMock(org.mockito.mock.MockCreationSettings&lt;T&gt; settings, org.mockito.invocation.MockHandler handler) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="nc">&nbsp;    public &lt;T&gt; java.util.Optional&lt;T&gt; createSpy(org.mockito.mock.MockCreationSettings&lt;T&gt; settings, org.mockito.invocation.MockHandler handler, T instance) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;    public org.mockito.invocation.MockHandler getHandler(java.lang.Object mock) { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+&nbsp;    public void resetMock(java.lang.Object mock, org.mockito.invocation.MockHandler newHandler, org.mockito.mock.MockCreationSettings settings) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public org.mockito.plugins.MockMaker.TypeMockability isTypeMockable(java.lang.Class&lt;?&gt; type) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;    public &lt;T&gt; org.mockito.plugins.MockMaker.StaticMockControl&lt;T&gt; createStaticMock(java.lang.Class&lt;T&gt; type, org.mockito.mock.MockCreationSettings&lt;T&gt; settings, org.mockito.invocation.MockHandler handler) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; org.mockito.plugins.MockMaker.ConstructionMockControl&lt;T&gt; createConstructionMock(java.lang.Class&lt;T&gt; type, java.util.function.Function&lt;org.mockito.MockedConstruction.Context,org.mockito.mock.MockCreationSettings&lt;T&gt;&gt; settingsFactory, java.util.function.Function&lt;org.mockito.MockedConstruction.Context,org.mockito.invocation.MockHandler&lt;T&gt;&gt; handlerFactory, org.mockito.MockedConstruction.MockInitializer&lt;T&gt; mockInitializer) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public void clearAllCaches() { /* compiled code */ }</b>
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

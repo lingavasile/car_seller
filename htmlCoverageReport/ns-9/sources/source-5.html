@@ -1,0 +1,153 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ElectricEngineStatusCheckerTest</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.vasile.linga.utils</a>
+</div>
+
+<h1>Coverage Summary for Class: ElectricEngineStatusCheckerTest (com.vasile.linga.utils)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ElectricEngineStatusCheckerTest</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (8/8)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.vasile.linga.utils;
+&nbsp;
+&nbsp;import com.vasile.linga.ElectricalSystemException;
+&nbsp;import org.junit.jupiter.api.Assertions;
+&nbsp;import org.junit.jupiter.api.BeforeEach;
+&nbsp;import org.junit.jupiter.api.DisplayName;
+&nbsp;import org.junit.jupiter.api.Test;
+&nbsp;import org.junit.jupiter.api.parallel.Execution;
+&nbsp;
+&nbsp;import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
+&nbsp;
+&nbsp;@Execution(CONCURRENT)
+<b class="fc">&nbsp;public class ElectricEngineStatusCheckerTest {</b>
+&nbsp;    ElectricEngineStatusChecker electricEngineStatusChecker;
+&nbsp;    @BeforeEach
+&nbsp;    void setup(){
+<b class="fc">&nbsp;        electricEngineStatusChecker = new ElectricEngineStatusChecker();</b>
+&nbsp;    }
+&nbsp;    @Test
+&nbsp;    @DisplayName(&quot;Should return true when battery capacity is 50%&quot;)
+&nbsp;     void isVoltageEnough_ShouldReturnTrue() {
+<b class="fc">&nbsp;        Assertions.assertTrue(electricEngineStatusChecker.isBatteryEnough(50));</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    @DisplayName(&quot;Should return true when battery capacity is 100%&quot;)
+&nbsp;    void isVoltageEnough_BatteryIs100_ShouldReturnTrue() {
+<b class="fc">&nbsp;        Assertions.assertTrue(electricEngineStatusChecker.isBatteryEnough(100));</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    @DisplayName(&quot;Should return false when battery capacity is 5%&quot;)
+&nbsp;    void isVoltageEnough_ShouldReturnFalse() {
+<b class="fc">&nbsp;        Assertions.assertFalse(electricEngineStatusChecker.isBatteryEnough(5));</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    @DisplayName(&quot;Should return false when battery capacity is 0%&quot;)
+&nbsp;    void isVoltageEnough_BatteryIs0_ShouldReturnFalse() {
+<b class="fc">&nbsp;        Assertions.assertFalse(electricEngineStatusChecker.isBatteryEnough(0));</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    @DisplayName(&quot;Should throw ElectricalSystemException when battery capacity is less than 0 and greater than 100&quot;)
+&nbsp;    void isVoltageEnough_ShouldThrowElectricalSystemException() {
+<b class="fc">&nbsp;        Assertions.assertThrows(ElectricalSystemException.class,() -&gt; electricEngineStatusChecker.isBatteryEnough(120));</b>
+<b class="fc">&nbsp;        Assertions.assertThrows(ElectricalSystemException.class,() -&gt; electricEngineStatusChecker.isBatteryEnough(-20));</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > StackAwareMethodVisitor</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.utility.visitor</a>
+</div>
+
+<h1>Coverage Summary for Class: StackAwareMethodVisitor (net.bytebuddy.utility.visitor)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">StackAwareMethodVisitor</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80.8%
+  </span>
+  <span class="absValue">
+    (21/26)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    63.2%
+  </span>
+  <span class="absValue">
+    (98/155)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.utility.visitor;
+&nbsp;
+&nbsp;public class StackAwareMethodVisitor extends net.bytebuddy.jar.asm.MethodVisitor {
+&nbsp;    public static final java.lang.String UNADJUSTED_PROPERTY = &quot;net.bytebuddy.unadjusted&quot;;
+&nbsp;    public static final boolean UNADJUSTED;
+&nbsp;    private static final int[] SIZE_CHANGE;
+&nbsp;    private java.util.List&lt;net.bytebuddy.implementation.bytecode.StackSize&gt; current;
+&nbsp;    private final java.util.Map&lt;net.bytebuddy.jar.asm.Label,java.util.List&lt;net.bytebuddy.implementation.bytecode.StackSize&gt;&gt; sizes;
+&nbsp;    private int freeIndex;
+&nbsp;    private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;    protected StackAwareMethodVisitor(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.jar.asm.MethodVisitor of(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;    private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void adjustStack(int delta) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void adjustStack(int delta, int offset) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void drainStack() { /* compiled code */ }
+&nbsp;
+&nbsp;    public int drainStack(int store, int load, net.bytebuddy.implementation.bytecode.StackSize size) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void doDrain(java.util.List&lt;net.bytebuddy.implementation.bytecode.StackSize&gt; stackSizes) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void register(net.bytebuddy.jar.asm.Label label, java.util.List&lt;net.bytebuddy.implementation.bytecode.StackSize&gt; stackSizes) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitInsn(int opcode) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitIntInsn(int opcode, int operand) { /* compiled code */ }
+&nbsp;
+&nbsp;    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;SF_SWITCH_NO_DEFAULT&quot;}, justification = &quot;No action required on default option.&quot;)
+&nbsp;    public void visitVarInsn(int opcode, int variable) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitTypeInsn(int opcode, java.lang.String type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitFieldInsn(int opcode, java.lang.String owner, java.lang.String name, java.lang.String descriptor) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitMethodInsn(int opcode, java.lang.String owner, java.lang.String name, java.lang.String descriptor, boolean isInterface) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitInvokeDynamicInsn(java.lang.String name, java.lang.String descriptor, net.bytebuddy.jar.asm.Handle bootstrap, java.lang.Object... bootstrapArguments) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitLdcInsn(java.lang.Object value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitMultiANewArrayInsn(java.lang.String descriptor, int dimension) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitJumpInsn(int opcode, net.bytebuddy.jar.asm.Label label) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitLabel(net.bytebuddy.jar.asm.Label label) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitLineNumber(int line, net.bytebuddy.jar.asm.Label start) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitTableSwitchInsn(int minimum, int maximum, net.bytebuddy.jar.asm.Label defaultOption, net.bytebuddy.jar.asm.Label... option) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitLookupSwitchInsn(net.bytebuddy.jar.asm.Label defaultOption, int[] key, net.bytebuddy.jar.asm.Label[] option) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void visitTryCatchBlock(net.bytebuddy.jar.asm.Label start, net.bytebuddy.jar.asm.Label end, net.bytebuddy.jar.asm.Label handler, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String type) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;RC_REF_COMPARISON_BAD_PRACTICE&quot;}, justification = &quot;ASM models frames by reference identity.&quot;)</b>
+<b class="nc">&nbsp;    public void visitFrame(int type, int localVariableLength, @net.bytebuddy.utility.nullability.MaybeNull java.lang.Object[] localVariable, int stackSize, @net.bytebuddy.utility.nullability.MaybeNull java.lang.Object[] stack) { /* compiled code */ }</b>
+<b class="nc">&nbsp;}</b>
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

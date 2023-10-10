@@ -1,0 +1,233 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ClassReader</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.jar.asm</a>
+</div>
+
+<h1>Coverage Summary for Class: ClassReader (net.bytebuddy.jar.asm)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ClassReader</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    68.6%
+  </span>
+  <span class="absValue">
+    (35/51)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    45.7%
+  </span>
+  <span class="absValue">
+    (689/1509)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.jar.asm;
+&nbsp;
+&nbsp;public class ClassReader {
+&nbsp;    public static final int SKIP_CODE = 1;
+&nbsp;    public static final int SKIP_DEBUG = 2;
+&nbsp;    public static final int SKIP_FRAMES = 4;
+&nbsp;    public static final int EXPAND_FRAMES = 8;
+&nbsp;    static final int EXPAND_ASM_INSNS = 256;
+&nbsp;    private static final int MAX_BUFFER_SIZE = 1048576;
+&nbsp;    private static final int INPUT_STREAM_DATA_CHUNK_SIZE = 4096;
+&nbsp;    /**
+&nbsp;     * @deprecated
+&nbsp;     */
+&nbsp;    @java.lang.Deprecated
+&nbsp;    public final byte[] b;
+&nbsp;    public final int header;
+&nbsp;    final byte[] classFileBuffer;
+&nbsp;    private final int[] cpInfoOffsets;
+&nbsp;    private final java.lang.String[] constantUtf8Values;
+&nbsp;    private final net.bytebuddy.jar.asm.ConstantDynamic[] constantDynamicValues;
+&nbsp;    private final int[] bootstrapMethodOffsets;
+&nbsp;    private final int maxStringLength;
+&nbsp;
+&nbsp;    public ClassReader(byte[] classFile) { /* compiled code */ }
+&nbsp;
+&nbsp;    public ClassReader(byte[] classFileBuffer, int classFileOffset, int classFileLength) { /* compiled code */ }
+&nbsp;
+&nbsp;    ClassReader(byte[] classFileBuffer, int classFileOffset, boolean checkClassVersion) { /* compiled code */ }
+&nbsp;
+&nbsp;    public ClassReader(java.io.InputStream inputStream) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;    public ClassReader(java.lang.String className) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;    private static byte[] readStream(java.io.InputStream inputStream, boolean close) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;    private static int computeBufferSize(java.io.InputStream inputStream) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getAccess() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String getClassName() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String getSuperName() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String[] getInterfaces() { /* compiled code */ }
+&nbsp;
+&nbsp;    public void accept(net.bytebuddy.jar.asm.ClassVisitor classVisitor, int parsingOptions) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void accept(net.bytebuddy.jar.asm.ClassVisitor classVisitor, net.bytebuddy.jar.asm.Attribute[] attributePrototypes, int parsingOptions) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void readModuleAttributes(net.bytebuddy.jar.asm.ClassVisitor classVisitor, net.bytebuddy.jar.asm.Context context, int moduleOffset, int modulePackagesOffset, java.lang.String moduleMainClass) { /* compiled code */ }
+&nbsp;
+&nbsp;    private int readRecordComponent(net.bytebuddy.jar.asm.ClassVisitor classVisitor, net.bytebuddy.jar.asm.Context context, int recordComponentOffset) { /* compiled code */ }
+&nbsp;
+&nbsp;    private int readField(net.bytebuddy.jar.asm.ClassVisitor classVisitor, net.bytebuddy.jar.asm.Context context, int fieldInfoOffset) { /* compiled code */ }
+&nbsp;
+&nbsp;    private int readMethod(net.bytebuddy.jar.asm.ClassVisitor classVisitor, net.bytebuddy.jar.asm.Context context, int methodInfoOffset) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void readCode(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.jar.asm.Context context, int codeOffset) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected void readBytecodeInstructionOffset(int bytecodeOffset) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected net.bytebuddy.jar.asm.Label readLabel(int bytecodeOffset, net.bytebuddy.jar.asm.Label[] labels) { /* compiled code */ }
+&nbsp;
+&nbsp;    private net.bytebuddy.jar.asm.Label createLabel(int bytecodeOffset, net.bytebuddy.jar.asm.Label[] labels) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void createDebugLabel(int bytecodeOffset, net.bytebuddy.jar.asm.Label[] labels) { /* compiled code */ }
+&nbsp;
+&nbsp;    private int[] readTypeAnnotations(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.jar.asm.Context context, int runtimeTypeAnnotationsOffset, boolean visible) { /* compiled code */ }
+&nbsp;
+&nbsp;    private int getTypeAnnotationBytecodeOffset(int[] typeAnnotationOffsets, int typeAnnotationIndex) { /* compiled code */ }
+&nbsp;
+&nbsp;    private int readTypeAnnotationTarget(net.bytebuddy.jar.asm.Context context, int typeAnnotationOffset) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void readParameterAnnotations(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.jar.asm.Context context, int runtimeParameterAnnotationsOffset, boolean visible) { /* compiled code */ }
+&nbsp;
+&nbsp;    private int readElementValues(net.bytebuddy.jar.asm.AnnotationVisitor annotationVisitor, int annotationOffset, boolean named, char[] charBuffer) { /* compiled code */ }
+&nbsp;
+&nbsp;    private int readElementValue(net.bytebuddy.jar.asm.AnnotationVisitor annotationVisitor, int elementValueOffset, java.lang.String elementName, char[] charBuffer) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void computeImplicitFrame(net.bytebuddy.jar.asm.Context context) { /* compiled code */ }
+&nbsp;
+&nbsp;    private int readStackMapFrame(int stackMapFrameOffset, boolean compressed, boolean expand, net.bytebuddy.jar.asm.Context context) { /* compiled code */ }
+&nbsp;
+&nbsp;    private int readVerificationTypeInfo(int verificationTypeInfoOffset, java.lang.Object[] frame, int index, char[] charBuffer, net.bytebuddy.jar.asm.Label[] labels) { /* compiled code */ }
+&nbsp;
+&nbsp;    final int getFirstAttributeOffset() { /* compiled code */ }
+&nbsp;
+&nbsp;    private int[] readBootstrapMethodsAttribute(int maxStringLength) { /* compiled code */ }
+&nbsp;
+&nbsp;    private net.bytebuddy.jar.asm.Attribute readAttribute(net.bytebuddy.jar.asm.Attribute[] attributePrototypes, java.lang.String type, int offset, int length, char[] charBuffer, int codeAttributeOffset, net.bytebuddy.jar.asm.Label[] labels) { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getItemCount() { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getItem(int constantPoolEntryIndex) { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getMaxStringLength() { /* compiled code */ }
+&nbsp;
+&nbsp;    public int readByte(int offset) { /* compiled code */ }
+&nbsp;
+&nbsp;    public int readUnsignedShort(int offset) { /* compiled code */ }
+&nbsp;
+&nbsp;    public short readShort(int offset) { /* compiled code */ }
+&nbsp;
+&nbsp;    public int readInt(int offset) { /* compiled code */ }
+&nbsp;
+&nbsp;    public long readLong(int offset) { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String readUTF8(int offset, char[] charBuffer) { /* compiled code */ }
+&nbsp;
+&nbsp;    final java.lang.String readUtf(int constantPoolEntryIndex, char[] charBuffer) { /* compiled code */ }
+&nbsp;
+&nbsp;    private java.lang.String readUtf(int utfOffset, int utfLength, char[] charBuffer) { /* compiled code */ }
+&nbsp;
+&nbsp;    private java.lang.String readStringish(int offset, char[] charBuffer) { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String readClass(int offset, char[] charBuffer) { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String readModule(int offset, char[] charBuffer) { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String readPackage(int offset, char[] charBuffer) { /* compiled code */ }
+&nbsp;
+&nbsp;    private net.bytebuddy.jar.asm.ConstantDynamic readConstantDynamic(int constantPoolEntryIndex, char[] charBuffer) { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.Object readConst(int constantPoolEntryIndex, char[] charBuffer) { /* compiled code */ }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

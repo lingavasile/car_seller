@@ -1,0 +1,212 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > JavaModule</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.utility</a>
+</div>
+
+<h1>Coverage Summary for Class: JavaModule (net.bytebuddy.utility)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">JavaModule</td>
+<td class="coverageStat">
+  <span class="percent">
+    10.5%
+  </span>
+  <span class="absValue">
+    (2/19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    11.8%
+  </span>
+  <span class="absValue">
+    (4/34)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">JavaModule$Module</td>
+  </tr>
+  <tr>
+    <td class="name">JavaModule$Resolver</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    10.5%
+  </span>
+  <span class="absValue">
+    (2/19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    11.8%
+  </span>
+  <span class="absValue">
+    (4/34)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.utility;
+&nbsp;
+&nbsp;public class JavaModule implements net.bytebuddy.description.NamedElement.WithOptionalName, net.bytebuddy.description.annotation.AnnotationSource {
+&nbsp;    @net.bytebuddy.utility.nullability.AlwaysNull
+&nbsp;    public static final net.bytebuddy.utility.JavaModule UNSUPPORTED;
+&nbsp;    protected static final net.bytebuddy.utility.JavaModule.Resolver RESOLVER;
+&nbsp;    protected static final net.bytebuddy.utility.JavaModule.Module MODULE;
+&nbsp;    private final java.lang.reflect.AnnotatedElement module;
+&nbsp;    private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;    protected JavaModule(java.lang.reflect.AnnotatedElement module) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;    private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    public static net.bytebuddy.utility.JavaModule ofType(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.utility.JavaModule of(java.lang.Object module) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static boolean isSupported() { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean isNamed() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String getActualName() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.util.Set&lt;java.lang.String&gt; getPackages() { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    public java.io.InputStream getResourceAsStream(java.lang.String name) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    public java.lang.ClassLoader getClassLoader() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.Object unwrap() { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean canRead(net.bytebuddy.utility.JavaModule module) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;    public boolean isExported(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.PackageDescription packageDescription, net.bytebuddy.utility.JavaModule module) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public boolean isOpened(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.PackageDescription packageDescription, net.bytebuddy.utility.JavaModule module) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.description.annotation.AnnotationList getDeclaredAnnotations() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object other) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;    public java.lang.String toString() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.Module&quot;)
+&nbsp;    protected static interface Module {
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Instance
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;isInstance&quot;)
+&nbsp;        boolean isInstance(java.lang.Object o);
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;isNamed&quot;)
+&nbsp;        boolean isNamed(java.lang.Object o);
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;getName&quot;)
+<b class="nc">&nbsp;        java.lang.String getName(java.lang.Object o);</b>
+<b class="nc">&nbsp;</b>
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;getPackages&quot;)
+&nbsp;        java.util.Set&lt;java.lang.String&gt; getPackages(java.lang.Object o);
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;getClassLoader&quot;)
+&nbsp;        java.lang.ClassLoader getClassLoader(java.lang.Object o);
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;getResourceAsStream&quot;)
+&nbsp;        java.io.InputStream getResourceAsStream(java.lang.Object o, java.lang.String s) throws java.io.IOException;
+&nbsp;
+<b class="nc">&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;isExported&quot;)</b>
+&nbsp;        boolean isExported(java.lang.Object o, java.lang.String s, @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.Module&quot;) java.lang.Object o1);
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;isOpen&quot;)
+&nbsp;        boolean isOpen(java.lang.Object o, java.lang.String s, @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.Module&quot;) java.lang.Object o1);
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;canRead&quot;)
+&nbsp;        boolean canRead(java.lang.Object o, @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.Module&quot;) java.lang.Object o1);
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.Class&quot;)
+<b class="nc">&nbsp;    protected static interface Resolver {</b>
+<b class="nc">&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull</b>
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Defaults
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;getModule&quot;)
+&nbsp;        java.lang.Object getModule(java.lang.Class&lt;?&gt; aClass);
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

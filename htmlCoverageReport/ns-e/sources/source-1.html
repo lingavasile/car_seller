@@ -1,0 +1,396 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > AnnotationDescription</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.description.annotation</a>
+</div>
+
+<h1>Coverage Summary for Class: AnnotationDescription (net.bytebuddy.description.annotation)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">AnnotationDescription</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">AnnotationDescription$AbstractBase</td>
+<td class="coverageStat">
+  <span class="percent">
+    41.7%
+  </span>
+  <span class="absValue">
+    (5/12)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    31.6%
+  </span>
+  <span class="absValue">
+    (24/76)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">AnnotationDescription$ForLoadedAnnotation</td>
+<td class="coverageStat">
+  <span class="percent">
+    72.7%
+  </span>
+  <span class="absValue">
+    (8/11)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    33%
+  </span>
+  <span class="absValue">
+    (30/91)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">AnnotationDescription$Loadable</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    58.3%
+  </span>
+  <span class="absValue">
+    (14/24)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    32.7%
+  </span>
+  <span class="absValue">
+    (55/168)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.description.annotation;
+&nbsp;
+&nbsp;public interface AnnotationDescription {
+&nbsp;    @net.bytebuddy.utility.nullability.AlwaysNull
+&nbsp;    net.bytebuddy.description.annotation.AnnotationDescription.Loadable&lt;?&gt; UNDEFINED;
+&nbsp;
+&nbsp;    net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; getValue(java.lang.String s);
+&nbsp;
+&nbsp;    net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; getValue(net.bytebuddy.description.method.MethodDescription.InDefinedShape inDefinedShape);
+&nbsp;
+&nbsp;    net.bytebuddy.description.type.TypeDescription getAnnotationType();
+&nbsp;
+&nbsp;    &lt;T extends java.lang.annotation.Annotation&gt; net.bytebuddy.description.annotation.AnnotationDescription.Loadable&lt;T&gt; prepare(java.lang.Class&lt;T&gt; aClass);
+&nbsp;
+&nbsp;    java.lang.annotation.RetentionPolicy getRetention();
+&nbsp;
+&nbsp;    java.util.Set&lt;java.lang.annotation.ElementType&gt; getElementTypes();
+&nbsp;
+&nbsp;    boolean isSupportedOn(java.lang.annotation.ElementType elementType);
+&nbsp;
+&nbsp;    boolean isSupportedOn(java.lang.String s);
+&nbsp;
+&nbsp;    boolean isInherited();
+&nbsp;
+&nbsp;    boolean isDocumented();
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Builder {
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription annotationType;
+&nbsp;        private final java.util.Map&lt;java.lang.String,net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt;&gt; annotationValues;
+&nbsp;
+&nbsp;        protected Builder(net.bytebuddy.description.type.TypeDescription annotationType, java.util.Map&lt;java.lang.String,net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt;&gt; annotationValues) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.annotation.AnnotationDescription.Builder ofType(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt; annotationType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.annotation.AnnotationDescription.Builder ofType(net.bytebuddy.description.type.TypeDescription annotationType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, java.lang.Enum&lt;?&gt; value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, net.bytebuddy.description.type.TypeDescription enumerationType, java.lang.String value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, net.bytebuddy.description.enumeration.EnumerationDescription value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, java.lang.annotation.Annotation annotation) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, net.bytebuddy.description.annotation.AnnotationDescription annotationDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public &lt;T extends java.lang.Enum&lt;?&gt;&gt; net.bytebuddy.description.annotation.AnnotationDescription.Builder defineEnumerationArray(java.lang.String property, java.lang.Class&lt;T&gt; enumerationType, T... value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineEnumerationArray(java.lang.String property, net.bytebuddy.description.type.TypeDescription enumerationType, java.lang.String... value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineEnumerationArray(java.lang.String property, net.bytebuddy.description.type.TypeDescription enumerationType, net.bytebuddy.description.enumeration.EnumerationDescription... value) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;        public &lt;T extends java.lang.annotation.Annotation&gt; net.bytebuddy.description.annotation.AnnotationDescription.Builder defineAnnotationArray(java.lang.String property, java.lang.Class&lt;T&gt; annotationType, T... annotation) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineAnnotationArray(java.lang.String property, net.bytebuddy.description.type.TypeDescription annotationType, net.bytebuddy.description.annotation.AnnotationDescription... annotationDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineTypeArray(java.lang.String property, java.lang.Class&lt;?&gt;... type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineTypeArray(java.lang.String property, net.bytebuddy.description.type.TypeDescription... typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, boolean value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, byte value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, char value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, short value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, int value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, long value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, float value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, double value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder define(java.lang.String property, java.lang.String value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineArray(java.lang.String property, boolean... value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineArray(java.lang.String property, byte... value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineArray(java.lang.String property, char... value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineArray(java.lang.String property, short... value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineArray(java.lang.String property, int... value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineArray(java.lang.String property, long... value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineArray(java.lang.String property, float... value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineArray(java.lang.String property, double... value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription.Builder defineArray(java.lang.String property, java.lang.String... value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription build() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationDescription build(boolean validated) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static class Latent extends net.bytebuddy.description.annotation.AnnotationDescription.AbstractBase {
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription annotationType;
+&nbsp;        private final java.util.Map&lt;java.lang.String,? extends net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt;&gt; annotationValues;
+&nbsp;
+&nbsp;        protected Latent(net.bytebuddy.description.type.TypeDescription annotationType, java.util.Map&lt;java.lang.String,? extends net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt;&gt; annotationValues) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; getValue(net.bytebuddy.description.method.MethodDescription.InDefinedShape property) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getAnnotationType() { /* compiled code */ }
+&nbsp;
+&nbsp;        public &lt;T extends java.lang.annotation.Annotation&gt; net.bytebuddy.description.annotation.AnnotationDescription.Latent.Loadable&lt;T&gt; prepare(java.lang.Class&lt;T&gt; annotationType) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected class Loadable &lt;S extends java.lang.annotation.Annotation&gt; extends net.bytebuddy.description.annotation.AnnotationDescription.AbstractBase implements net.bytebuddy.description.annotation.AnnotationDescription.Loadable&lt;S&gt; {
+&nbsp;            private final java.lang.Class&lt;S&gt; annotationType;
+&nbsp;
+&nbsp;            protected Loadable(java.lang.Class&lt;S&gt; annotationType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public S load() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; getValue(net.bytebuddy.description.method.MethodDescription.InDefinedShape property) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.type.TypeDescription getAnnotationType() { /* compiled code */ }
+&nbsp;
+&nbsp;            public &lt;T extends java.lang.annotation.Annotation&gt; net.bytebuddy.description.annotation.AnnotationDescription.Loadable&lt;T&gt; prepare(java.lang.Class&lt;T&gt; annotationType) { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static class ForLoadedAnnotation &lt;S extends java.lang.annotation.Annotation&gt; extends net.bytebuddy.description.annotation.AnnotationDescription.AbstractBase implements net.bytebuddy.description.annotation.AnnotationDescription.Loadable&lt;S&gt; {
+&nbsp;        private static final java.lang.Object[] NO_ARGUMENT;
+&nbsp;        private final S annotation;
+&nbsp;        private final java.lang.Class&lt;S&gt; annotationType;
+&nbsp;        private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;        protected ForLoadedAnnotation(S annotation) { /* compiled code */ }
+&nbsp;
+&nbsp;        private ForLoadedAnnotation(S annotation, java.lang.Class&lt;S&gt; annotationType) { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;        private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static &lt;U extends java.lang.annotation.Annotation&gt; net.bytebuddy.description.annotation.AnnotationDescription.Loadable&lt;U&gt; of(U annotation) { /* compiled code */ }
+&nbsp;
+&nbsp;        public S load() { /* compiled code */ }
+&nbsp;
+&nbsp;        private static java.util.Map&lt;java.lang.String,net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt;&gt; asValue(java.lang.annotation.Annotation annotation) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; asValue(java.lang.Object value, java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;REC_CATCH_EXCEPTION&quot;}, justification = &quot;Exception should always be wrapped for clarity.&quot;)
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; getValue(net.bytebuddy.description.method.MethodDescription.InDefinedShape property) { /* compiled code */ }
+&nbsp;
+&nbsp;        public &lt;T extends java.lang.annotation.Annotation&gt; net.bytebuddy.description.annotation.AnnotationDescription.Loadable&lt;T&gt; prepare(java.lang.Class&lt;T&gt; annotationType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getAnnotationType() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static abstract class AbstractBase implements net.bytebuddy.description.annotation.AnnotationDescription {
+&nbsp;        private static final java.util.Set&lt;java.lang.annotation.ElementType&gt; DEFAULT_TARGET;
+&nbsp;        private static final net.bytebuddy.description.method.MethodDescription.InDefinedShape RETENTION_VALUE;
+&nbsp;        private static final net.bytebuddy.description.method.MethodDescription.InDefinedShape TARGET_VALUE;
+&nbsp;
+&nbsp;        public AbstractBase() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; getValue(java.lang.String property) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.annotation.RetentionPolicy getRetention() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.util.Set&lt;java.lang.annotation.ElementType&gt; getElementTypes() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isSupportedOn(java.lang.annotation.ElementType elementType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isSupportedOn(java.lang.String elementType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isInherited() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isDocumented() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.CachedReturnPlugin.Enhance(&quot;hashCode&quot;)
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object other) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String toString() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static class AnnotationInvocationHandler &lt;T extends java.lang.annotation.Annotation&gt; implements java.lang.reflect.InvocationHandler {
+&nbsp;        private static final java.lang.String HASH_CODE = &quot;hashCode&quot;;
+&nbsp;        private static final java.lang.String EQUALS = &quot;equals&quot;;
+&nbsp;        private static final java.lang.String TO_STRING = &quot;toString&quot;;
+&nbsp;        private static final java.lang.String ANNOTATION_TYPE = &quot;annotationType&quot;;
+&nbsp;        private static final java.lang.Object[] NO_ARGUMENT;
+&nbsp;        private final java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt; annotationType;
+&nbsp;        private final java.util.LinkedHashMap&lt;java.lang.reflect.Method,net.bytebuddy.description.annotation.AnnotationValue.Loaded&lt;?&gt;&gt; values;
+&nbsp;
+&nbsp;        protected AnnotationInvocationHandler(java.lang.Class&lt;T&gt; annotationType, java.util.LinkedHashMap&lt;java.lang.reflect.Method,net.bytebuddy.description.annotation.AnnotationValue.Loaded&lt;?&gt;&gt; values) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static &lt;S extends java.lang.annotation.Annotation&gt; S of(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader, java.lang.Class&lt;S&gt; annotationType, java.util.Map&lt;java.lang.String,? extends net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt;&gt; values) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.Object invoke(java.lang.Object proxy, java.lang.reflect.Method method, @net.bytebuddy.utility.nullability.MaybeNull java.lang.Object[] argument) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected java.lang.String toStringRepresentation() { /* compiled code */ }
+&nbsp;
+&nbsp;        private int hashCodeRepresentation() { /* compiled code */ }
+&nbsp;
+&nbsp;        private boolean equalsRepresentation(java.lang.Object self, java.lang.Object other) { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.CachedReturnPlugin.Enhance(&quot;hashCode&quot;)
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object other) { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static enum RenderingDispatcher {
+&nbsp;        LEGACY_VM, JAVA_14_CAPABLE_VM, JAVA_19_CAPABLE_VM;
+&nbsp;
+&nbsp;        public static final net.bytebuddy.description.annotation.AnnotationDescription.RenderingDispatcher CURRENT;
+&nbsp;
+&nbsp;        private RenderingDispatcher() { /* compiled code */ }
+&nbsp;
+&nbsp;        public void appendPrefix(java.lang.StringBuilder toString, java.lang.String key, int count) { /* compiled code */ }
+&nbsp;
+&nbsp;        public void appendType(java.lang.StringBuilder toString, net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface Loadable &lt;S extends java.lang.annotation.Annotation&gt; extends net.bytebuddy.description.annotation.AnnotationDescription {
+&nbsp;        S load();
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

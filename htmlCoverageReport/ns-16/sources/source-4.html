@@ -1,0 +1,553 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > InstrumentedType</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.dynamic.scaffold</a>
+</div>
+
+<h1>Coverage Summary for Class: InstrumentedType (net.bytebuddy.dynamic.scaffold)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">InstrumentedType$Default</td>
+<td class="coverageStat">
+  <span class="percent">
+    67.3%
+  </span>
+  <span class="absValue">
+    (35/52)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    52%
+  </span>
+  <span class="absValue">
+    (181/348)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">InstrumentedType$Factory</td>
+  </tr>
+  <tr>
+    <td class="name">InstrumentedType$Factory$Default</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (13/13)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">InstrumentedType$Factory$Default$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    88%
+  </span>
+  <span class="absValue">
+    (22/25)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">InstrumentedType$Factory$Default$2</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">InstrumentedType$Prepareable</td>
+  </tr>
+  <tr>
+    <td class="name">InstrumentedType$WithFlexibleName</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    69.5%
+  </span>
+  <span class="absValue">
+    (41/59)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    55.9%
+  </span>
+  <span class="absValue">
+    (217/388)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.dynamic.scaffold;
+&nbsp;
+&nbsp;public interface InstrumentedType extends net.bytebuddy.description.type.TypeDescription {
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withField(net.bytebuddy.description.field.FieldDescription.Token token);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withAuxiliaryField(net.bytebuddy.description.field.FieldDescription.Token token, java.lang.Object o);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withMethod(net.bytebuddy.description.method.MethodDescription.Token token);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withRecordComponent(net.bytebuddy.description.type.RecordComponentDescription.Token token);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withModifiers(int i);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withInterfaces(net.bytebuddy.description.type.TypeList.Generic generic);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withTypeVariable(net.bytebuddy.description.type.TypeVariableToken typeVariableToken);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withAnnotations(java.util.List&lt;? extends net.bytebuddy.description.annotation.AnnotationDescription&gt; list);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withNestHost(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withNestMembers(net.bytebuddy.description.type.TypeList typeList);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withEnclosingType(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withEnclosingMethod(net.bytebuddy.description.method.MethodDescription.InDefinedShape inDefinedShape);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withDeclaringType(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withDeclaredTypes(net.bytebuddy.description.type.TypeList typeList);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withPermittedSubclasses(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeList typeList);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withLocalClass(boolean b);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withAnonymousClass(boolean b);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withRecord(boolean b);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withInitializer(net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.InstrumentedType withInitializer(net.bytebuddy.implementation.bytecode.ByteCodeAppender byteCodeAppender);
+&nbsp;
+&nbsp;    net.bytebuddy.implementation.LoadedTypeInitializer getLoadedTypeInitializer();
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.TypeInitializer getTypeInitializer();
+&nbsp;
+&nbsp;    net.bytebuddy.description.type.TypeDescription validated();
+&nbsp;
+&nbsp;    static class Frozen extends net.bytebuddy.description.type.TypeDescription.AbstractBase.OfSimpleType implements net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName {
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription typeDescription;
+&nbsp;        private final net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer;
+&nbsp;
+&nbsp;        protected Frozen(net.bytebuddy.description.type.TypeDescription typeDescription, net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationList getDeclaredAnnotations() { /* compiled code */ }
+&nbsp;
+&nbsp;        public int getModifiers() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList.Generic getTypeVariables() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String getName() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public net.bytebuddy.description.type.TypeDescription.Generic getSuperClass() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList.Generic getInterfaces() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.field.FieldList&lt;net.bytebuddy.description.field.FieldDescription.InDefinedShape&gt; getDeclaredFields() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.method.MethodList&lt;net.bytebuddy.description.method.MethodDescription.InDefinedShape&gt; getDeclaredMethods() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isAnonymousType() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isLocalType() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public net.bytebuddy.description.type.PackageDescription getPackage() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getEnclosingType() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getDeclaringType() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList getDeclaredTypes() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public net.bytebuddy.description.method.MethodDescription.InDefinedShape getEnclosingMethod() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public java.lang.String getGenericSignature() { /* compiled code */ }
+&nbsp;
+&nbsp;        public int getActualModifiers(boolean superFlag) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getNestHost() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList getNestMembers() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.RecordComponentList&lt;net.bytebuddy.description.type.RecordComponentDescription.InDefinedShape&gt; getRecordComponents() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isRecord() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isSealed() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList getPermittedSubtypes() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withField(net.bytebuddy.description.field.FieldDescription.Token token) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withAuxiliaryField(net.bytebuddy.description.field.FieldDescription.Token token, java.lang.Object value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withMethod(net.bytebuddy.description.method.MethodDescription.Token token) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withRecordComponent(net.bytebuddy.description.type.RecordComponentDescription.Token token) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withModifiers(int modifiers) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withInterfaces(net.bytebuddy.description.type.TypeList.Generic interfaceTypes) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withTypeVariable(net.bytebuddy.description.type.TypeVariableToken typeVariable) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withAnnotations(java.util.List&lt;? extends net.bytebuddy.description.annotation.AnnotationDescription&gt; annotationDescriptions) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withNestHost(net.bytebuddy.description.type.TypeDescription nestHost) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withNestMembers(net.bytebuddy.description.type.TypeList nestMembers) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withEnclosingType(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeDescription enclosingType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withEnclosingMethod(net.bytebuddy.description.method.MethodDescription.InDefinedShape enclosingMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withDeclaringType(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeDescription declaringType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withDeclaredTypes(net.bytebuddy.description.type.TypeList declaredTypes) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withPermittedSubclasses(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeList permittedSubclasses) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withLocalClass(boolean localClass) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withAnonymousClass(boolean anonymousClass) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withRecord(boolean record) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withInitializer(net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withInitializer(net.bytebuddy.implementation.bytecode.ByteCodeAppender byteCodeAppender) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withName(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withTypeVariables(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.type.TypeVariableToken&gt; transformer) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.LoadedTypeInitializer getLoadedTypeInitializer() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.TypeInitializer getTypeInitializer() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public net.bytebuddy.ClassFileVersion getClassFileVersion() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeDescription validated() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static class Default extends net.bytebuddy.description.type.TypeDescription.AbstractBase.OfSimpleType implements net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName {
+&nbsp;        private static final java.util.Set&lt;java.lang.String&gt; KEYWORDS;
+&nbsp;        private final java.lang.String name;
+&nbsp;        private final int modifiers;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription.Generic superClass;
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.type.TypeVariableToken&gt; typeVariables;
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription.Generic&gt; interfaceTypes;
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.field.FieldDescription.Token&gt; fieldTokens;
+&nbsp;        private final java.util.Map&lt;java.lang.String,java.lang.Object&gt; auxiliaryFields;
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.method.MethodDescription.Token&gt; methodTokens;
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.type.RecordComponentDescription.Token&gt; recordComponentTokens;
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.annotation.AnnotationDescription&gt; annotationDescriptions;
+&nbsp;        private final net.bytebuddy.dynamic.scaffold.TypeInitializer typeInitializer;
+&nbsp;        private final net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription declaringType;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        private final net.bytebuddy.description.method.MethodDescription.InDefinedShape enclosingMethod;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription enclosingType;
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; declaredTypes;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; permittedSubclasses;
+&nbsp;        private final boolean anonymousClass;
+&nbsp;        private final boolean localClass;
+&nbsp;        private final boolean record;
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription nestHost;
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; nestMembers;
+&nbsp;
+&nbsp;        protected Default(java.lang.String name, int modifiers, @net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeDescription.Generic superClass, java.util.List&lt;? extends net.bytebuddy.description.type.TypeVariableToken&gt; typeVariables, java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription.Generic&gt; interfaceTypes, java.util.List&lt;? extends net.bytebuddy.description.field.FieldDescription.Token&gt; fieldTokens, java.util.Map&lt;java.lang.String,java.lang.Object&gt; auxiliaryFieldValues, java.util.List&lt;? extends net.bytebuddy.description.method.MethodDescription.Token&gt; methodTokens, java.util.List&lt;? extends net.bytebuddy.description.type.RecordComponentDescription.Token&gt; recordComponentTokens, java.util.List&lt;? extends net.bytebuddy.description.annotation.AnnotationDescription&gt; annotationDescriptions, net.bytebuddy.dynamic.scaffold.TypeInitializer typeInitializer, net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer, @net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeDescription declaringType, @net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.method.MethodDescription.InDefinedShape enclosingMethod, @net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeDescription enclosingType, java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; declaredTypes, @net.bytebuddy.utility.nullability.MaybeNull java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; permittedSubclasses, boolean anonymousClass, boolean localClass, boolean record, net.bytebuddy.description.type.TypeDescription nestHost, java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; nestMembers) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.scaffold.InstrumentedType of(java.lang.String name, net.bytebuddy.description.type.TypeDescription.Generic superClass, net.bytebuddy.description.modifier.ModifierContributor.ForType... modifierContributor) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.scaffold.InstrumentedType of(java.lang.String name, net.bytebuddy.description.type.TypeDescription.Generic superClass, int modifiers) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withModifiers(int modifiers) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withField(net.bytebuddy.description.field.FieldDescription.Token token) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withAuxiliaryField(net.bytebuddy.description.field.FieldDescription.Token token, java.lang.Object value) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withMethod(net.bytebuddy.description.method.MethodDescription.Token token) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withRecordComponent(net.bytebuddy.description.type.RecordComponentDescription.Token token) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withInterfaces(net.bytebuddy.description.type.TypeList.Generic interfaceTypes) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withAnnotations(java.util.List&lt;? extends net.bytebuddy.description.annotation.AnnotationDescription&gt; annotationDescriptions) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withNestHost(net.bytebuddy.description.type.TypeDescription nestHost) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withNestMembers(net.bytebuddy.description.type.TypeList nestMembers) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withEnclosingType(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeDescription enclosingType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withEnclosingMethod(net.bytebuddy.description.method.MethodDescription.InDefinedShape enclosingMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withDeclaringType(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeDescription declaringType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withDeclaredTypes(net.bytebuddy.description.type.TypeList declaredTypes) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withPermittedSubclasses(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeList permittedSubclasses) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withTypeVariable(net.bytebuddy.description.type.TypeVariableToken typeVariable) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withName(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withTypeVariables(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.type.TypeVariableToken&gt; transformer) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withLocalClass(boolean localClass) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withAnonymousClass(boolean anonymousClass) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withRecord(boolean record) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withInitializer(net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withInitializer(net.bytebuddy.implementation.bytecode.ByteCodeAppender byteCodeAppender) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.LoadedTypeInitializer getLoadedTypeInitializer() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.TypeInitializer getTypeInitializer() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public net.bytebuddy.description.method.MethodDescription.InDefinedShape getEnclosingMethod() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getEnclosingType() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList getDeclaredTypes() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isAnonymousType() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isLocalType() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public net.bytebuddy.description.type.PackageDescription getPackage() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.annotation.AnnotationList getDeclaredAnnotations() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getDeclaringType() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        public net.bytebuddy.description.type.TypeDescription.Generic getSuperClass() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList.Generic getInterfaces() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.field.FieldList&lt;net.bytebuddy.description.field.FieldDescription.InDefinedShape&gt; getDeclaredFields() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.method.MethodList&lt;net.bytebuddy.description.method.MethodDescription.InDefinedShape&gt; getDeclaredMethods() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList.Generic getTypeVariables() { /* compiled code */ }
+&nbsp;
+&nbsp;        public int getModifiers() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String getName() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getNestHost() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList getNestMembers() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.RecordComponentList&lt;net.bytebuddy.description.type.RecordComponentDescription.InDefinedShape&gt; getRecordComponents() { /* compiled code */ }
+&nbsp;
+&nbsp;        @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE&quot;}, justification = &quot;Assuming super class for given instance.&quot;)
+&nbsp;        public boolean isRecord() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isSealed() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList getPermittedSubtypes() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeDescription validated() { /* compiled code */ }
+&nbsp;
+&nbsp;        private static boolean isValidIdentifier(java.lang.String[] identifier) { /* compiled code */ }
+&nbsp;
+&nbsp;        private static boolean isValidIdentifier(java.lang.String identifier) { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface Factory {
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName represent(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName subclass(java.lang.String s, int i, net.bytebuddy.description.type.TypeDescription.Generic generic);
+&nbsp;
+&nbsp;        static abstract enum Default implements net.bytebuddy.dynamic.scaffold.InstrumentedType.Factory {
+&nbsp;            MODIFIABLE, FROZEN;
+&nbsp;
+&nbsp;            private Default() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName subclass(java.lang.String name, int modifiers, net.bytebuddy.description.type.TypeDescription.Generic superClass) { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface Prepareable {
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType);
+&nbsp;
+&nbsp;        static enum NoOp implements net.bytebuddy.dynamic.scaffold.InstrumentedType.Prepareable {
+&nbsp;            INSTANCE;
+&nbsp;
+&nbsp;            private NoOp() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface WithFlexibleName extends net.bytebuddy.dynamic.scaffold.InstrumentedType {
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withField(net.bytebuddy.description.field.FieldDescription.Token token);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withAuxiliaryField(net.bytebuddy.description.field.FieldDescription.Token token, java.lang.Object o);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withMethod(net.bytebuddy.description.method.MethodDescription.Token token);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withRecordComponent(net.bytebuddy.description.type.RecordComponentDescription.Token token);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withModifiers(int i);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withInterfaces(net.bytebuddy.description.type.TypeList.Generic generic);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withNestHost(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withNestMembers(net.bytebuddy.description.type.TypeList typeList);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withEnclosingType(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withEnclosingMethod(net.bytebuddy.description.method.MethodDescription.InDefinedShape inDefinedShape);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withDeclaringType(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withDeclaredTypes(net.bytebuddy.description.type.TypeList typeList);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withPermittedSubclasses(@net.bytebuddy.utility.nullability.MaybeNull net.bytebuddy.description.type.TypeList typeList);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withLocalClass(boolean b);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withAnonymousClass(boolean b);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withRecord(boolean b);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withTypeVariable(net.bytebuddy.description.type.TypeVariableToken typeVariableToken);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withAnnotations(java.util.List&lt;? extends net.bytebuddy.description.annotation.AnnotationDescription&gt; list);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withInitializer(net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withInitializer(net.bytebuddy.implementation.bytecode.ByteCodeAppender byteCodeAppender);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withName(java.lang.String s);
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.InstrumentedType.WithFlexibleName withTypeVariables(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; elementMatcher, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.type.TypeVariableToken&gt; transformer);
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

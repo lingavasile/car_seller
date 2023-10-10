@@ -1,0 +1,134 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > FieldInitializer</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito.internal.util.reflection</a>
+</div>
+
+<h1>Coverage Summary for Class: FieldInitializer (org.mockito.internal.util.reflection)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+</tr>
+  <tr>
+    <td class="name">FieldInitializer$ConstructorArgumentResolver</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito.internal.util.reflection;
+&nbsp;
+&nbsp;public class FieldInitializer {
+&nbsp;    private final java.lang.Object fieldOwner;
+&nbsp;    private final java.lang.reflect.Field field;
+&nbsp;    private final org.mockito.internal.util.reflection.FieldInitializer.ConstructorInstantiator instantiator;
+&nbsp;
+&nbsp;    public FieldInitializer(java.lang.Object fieldOwner, java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;    public FieldInitializer(java.lang.Object fieldOwner, java.lang.reflect.Field field, org.mockito.internal.util.reflection.FieldInitializer.ConstructorArgumentResolver argResolver) { /* compiled code */ }
+&nbsp;
+&nbsp;    private FieldInitializer(java.lang.Object fieldOwner, java.lang.reflect.Field field, org.mockito.internal.util.reflection.FieldInitializer.ConstructorInstantiator instantiator) { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.internal.util.reflection.FieldInitializationReport initialize() { /* compiled code */ }
+&nbsp;
+&nbsp;    private void checkNotLocal(java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void checkNotInner(java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void checkNotInterface(java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void checkNotAbstract(java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void checkNotEnum(java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;    private org.mockito.internal.util.reflection.FieldInitializationReport acquireFieldInstance() throws java.lang.IllegalAccessException { /* compiled code */ }
+&nbsp;
+&nbsp;    static class NoArgConstructorInstantiator implements org.mockito.internal.util.reflection.FieldInitializer.ConstructorInstantiator {
+&nbsp;        private final java.lang.Object testClass;
+&nbsp;        private final java.lang.reflect.Field field;
+&nbsp;
+&nbsp;        NoArgConstructorInstantiator(java.lang.Object testClass, java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;        public org.mockito.internal.util.reflection.FieldInitializationReport instantiate() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    private static interface ConstructorInstantiator {
+&nbsp;        org.mockito.internal.util.reflection.FieldInitializationReport instantiate();
+&nbsp;    }
+&nbsp;
+&nbsp;    static class ParameterizedConstructorInstantiator implements org.mockito.internal.util.reflection.FieldInitializer.ConstructorInstantiator {
+&nbsp;        private final java.lang.Object testClass;
+&nbsp;        private final java.lang.reflect.Field field;
+&nbsp;        private final org.mockito.internal.util.reflection.FieldInitializer.ConstructorArgumentResolver argResolver;
+&nbsp;        private final java.util.Comparator&lt;java.lang.reflect.Constructor&lt;?&gt;&gt; byParameterNumber;
+&nbsp;
+&nbsp;        ParameterizedConstructorInstantiator(java.lang.Object testClass, java.lang.reflect.Field field, org.mockito.internal.util.reflection.FieldInitializer.ConstructorArgumentResolver argumentResolver) { /* compiled code */ }
+&nbsp;
+&nbsp;        public org.mockito.internal.util.reflection.FieldInitializationReport instantiate() { /* compiled code */ }
+&nbsp;
+&nbsp;        private void checkParameterized(java.lang.reflect.Constructor&lt;?&gt; constructor, java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;        private java.lang.reflect.Constructor&lt;?&gt; biggestConstructor(java.lang.Class&lt;?&gt; clazz) { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    public static interface ConstructorArgumentResolver {
+&nbsp;        java.lang.Object[] resolveTypeInstances(java.lang.Class&lt;?&gt;... classes);
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

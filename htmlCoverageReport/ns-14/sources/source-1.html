@@ -1,0 +1,708 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ClassFileLocator</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.dynamic</a>
+</div>
+
+<h1>Coverage Summary for Class: ClassFileLocator (net.bytebuddy.dynamic)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">ClassFileLocator$ForClassLoader</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (5/15)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    27.3%
+  </span>
+  <span class="absValue">
+    (9/33)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ClassFileLocator$ForClassLoader$BootLoaderProxyCreationAction</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ClassFileLocator$Resolution</td>
+  </tr>
+  <tr>
+    <td class="name">ClassFileLocator$Resolution$Explicit</td>
+<td class="coverageStat">
+  <span class="percent">
+    66.7%
+  </span>
+  <span class="absValue">
+    (2/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/4)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ClassFileLocator$Resolution$Illegal</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/4)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ClassFileLocator$Simple</td>
+<td class="coverageStat">
+  <span class="percent">
+    42.9%
+  </span>
+  <span class="absValue">
+    (3/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    27.8%
+  </span>
+  <span class="absValue">
+    (5/18)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    40%
+  </span>
+  <span class="absValue">
+    (12/30)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    32.3%
+  </span>
+  <span class="absValue">
+    (20/62)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.dynamic;
+&nbsp;
+&nbsp;public interface ClassFileLocator extends java.io.Closeable {
+&nbsp;    java.lang.String CLASS_FILE_EXTENSION = &quot;.class&quot;;
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String s) throws java.io.IOException;
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Compound implements net.bytebuddy.dynamic.ClassFileLocator, java.io.Closeable {
+&nbsp;        private final java.util.List&lt;net.bytebuddy.dynamic.ClassFileLocator&gt; classFileLocators;
+&nbsp;
+&nbsp;        public Compound(net.bytebuddy.dynamic.ClassFileLocator... classFileLocator) { /* compiled code */ }
+&nbsp;
+&nbsp;        public Compound(java.util.List&lt;? extends net.bytebuddy.dynamic.ClassFileLocator&gt; classFileLocators) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public void close() throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Filtering implements net.bytebuddy.dynamic.ClassFileLocator {
+&nbsp;        private final net.bytebuddy.matcher.ElementMatcher&lt;? super java.lang.String&gt; matcher;
+&nbsp;        private final net.bytebuddy.dynamic.ClassFileLocator delegate;
+&nbsp;
+&nbsp;        public Filtering(net.bytebuddy.matcher.ElementMatcher&lt;? super java.lang.String&gt; matcher, net.bytebuddy.dynamic.ClassFileLocator delegate) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public void close() throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class PackageDiscriminating implements net.bytebuddy.dynamic.ClassFileLocator {
+&nbsp;        private final java.util.Map&lt;java.lang.String,net.bytebuddy.dynamic.ClassFileLocator&gt; classFileLocators;
+&nbsp;
+&nbsp;        public PackageDiscriminating(java.util.Map&lt;java.lang.String,net.bytebuddy.dynamic.ClassFileLocator&gt; classFileLocators) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public void close() throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForInstrumentation implements net.bytebuddy.dynamic.ClassFileLocator {
+&nbsp;        private static final net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.Dispatcher DISPATCHER;
+&nbsp;        private final java.lang.instrument.Instrumentation instrumentation;
+&nbsp;        private final net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate classLoadingDelegate;
+&nbsp;        private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;        public ForInstrumentation(java.lang.instrument.Instrumentation instrumentation, @net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader) { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;        private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }
+&nbsp;
+&nbsp;        public ForInstrumentation(java.lang.instrument.Instrumentation instrumentation, net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate classLoadingDelegate) { /* compiled code */ }
+&nbsp;
+&nbsp;        private static java.lang.instrument.Instrumentation resolveByteBuddyAgentInstrumentation() { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator fromInstalledAgent(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator of(java.lang.instrument.Instrumentation instrumentation, java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;        public void close() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        protected static class ExtractionClassFileTransformer implements java.lang.instrument.ClassFileTransformer {
+&nbsp;            @net.bytebuddy.utility.nullability.AlwaysNull
+&nbsp;            private static final byte[] DO_NOT_TRANSFORM;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            private final java.lang.ClassLoader classLoader;
+&nbsp;            private final java.lang.String typeName;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;VO_VOLATILE_REFERENCE_TO_ARRAY&quot;}, justification = &quot;The array is not to be modified by contract&quot;)
+&nbsp;            private volatile byte[] binaryRepresentation;
+&nbsp;
+&nbsp;            protected ExtractionClassFileTransformer(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader, java.lang.String typeName) { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;EI_EXPOSE_REP&quot;, &quot;EI_EXPOSE_REP2&quot;}, justification = &quot;The array is not modified by class contract.&quot;)
+&nbsp;            public byte[] transform(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String internalName, @net.bytebuddy.utility.nullability.MaybeNull java.lang.Class&lt;?&gt; redefinedType, java.security.ProtectionDomain protectionDomain, byte[] binaryRepresentation) { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;EI_EXPOSE_REP&quot;}, justification = &quot;The array is not to be modified by contract&quot;)
+&nbsp;            protected byte[] getBinaryRepresentation() { /* compiled code */ }
+<b class="nc">&nbsp;        }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;        public static interface ClassLoadingDelegate {
+&nbsp;            java.lang.Class&lt;?&gt; locate(java.lang.String s) throws java.lang.ClassNotFoundException;
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            java.lang.ClassLoader getClassLoader();
+&nbsp;
+<b class="nc">&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance</b>
+&nbsp;            static class Explicit implements net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate {
+&nbsp;                private final net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate fallbackDelegate;
+&nbsp;                private final java.util.Map&lt;java.lang.String,java.lang.Class&lt;?&gt;&gt; types;
+&nbsp;
+&nbsp;                public Explicit(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader, java.util.Collection&lt;? extends java.lang.Class&lt;?&gt;&gt; types) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;                public Explicit(net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate fallbackDelegate, java.util.Collection&lt;? extends java.lang.Class&lt;?&gt;&gt; types) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;                public static net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate of(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.lang.Class&lt;?&gt; locate(java.lang.String name) throws java.lang.ClassNotFoundException { /* compiled code */ }
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;                public java.lang.ClassLoader getClassLoader() { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            static class ForDelegatingClassLoader extends net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.Default {
+&nbsp;                private static final java.lang.String DELEGATING_CLASS_LOADER_NAME = &quot;sun.reflect.DelegatingClassLoader&quot;;
+&nbsp;                private static final int ONLY = 0;
+&nbsp;                private static final net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.ForDelegatingClassLoader.Dispatcher.Initializable DISPATCHER;
+&nbsp;                private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;                protected ForDelegatingClassLoader(java.lang.ClassLoader classLoader) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;                @net.bytebuddy.build.AccessControllerPlugin.Enhance</b>
+&nbsp;                private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }
+&nbsp;
+&nbsp;                protected static boolean isDelegating(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader) { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.lang.Class&lt;?&gt; locate(java.lang.String name) throws java.lang.ClassNotFoundException { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;                protected static interface Dispatcher {</b>
+&nbsp;                    java.util.Vector&lt;java.lang.Class&lt;?&gt;&gt; extract(java.lang.ClassLoader classLoader);
+&nbsp;
+&nbsp;                    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;                    static class Unresolved implements net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.ForDelegatingClassLoader.Dispatcher.Initializable {
+&nbsp;                        private final java.lang.String message;
+&nbsp;
+&nbsp;                        public Unresolved(java.lang.String message) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;                        public net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.ForDelegatingClassLoader.Dispatcher initialize() { /* compiled code */ }
+&nbsp;
+&nbsp;                        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                        public int hashCode() { /* compiled code */ }
+&nbsp;                    }
+&nbsp;
+&nbsp;                    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;                    static class Resolved implements net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.ForDelegatingClassLoader.Dispatcher, net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.ForDelegatingClassLoader.Dispatcher.Initializable, java.security.PrivilegedAction&lt;net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.ForDelegatingClassLoader.Dispatcher&gt; {
+&nbsp;                        private final java.lang.reflect.Field field;
+&nbsp;                        private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;                        public Resolved(java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;                        @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;                        private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }
+&nbsp;
+&nbsp;                        public net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.ForDelegatingClassLoader.Dispatcher initialize() { /* compiled code */ }
+&nbsp;
+&nbsp;                        public java.util.Vector&lt;java.lang.Class&lt;?&gt;&gt; extract(java.lang.ClassLoader classLoader) { /* compiled code */ }
+&nbsp;
+&nbsp;                        public net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.ForDelegatingClassLoader.Dispatcher run() { /* compiled code */ }
+&nbsp;
+&nbsp;                        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                        public int hashCode() { /* compiled code */ }
+&nbsp;                    }
+&nbsp;
+&nbsp;                    static enum CreationAction implements java.security.PrivilegedAction&lt;net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.ForDelegatingClassLoader.Dispatcher.Initializable&gt; {
+&nbsp;                        INSTANCE;
+&nbsp;
+&nbsp;                        private CreationAction() { /* compiled code */ }
+&nbsp;
+&nbsp;                        public net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.ForDelegatingClassLoader.Dispatcher.Initializable run() { /* compiled code */ }
+&nbsp;                    }
+&nbsp;
+&nbsp;                    static interface Initializable {
+&nbsp;                        net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate.ForDelegatingClassLoader.Dispatcher initialize();
+&nbsp;                    }
+&nbsp;                }
+&nbsp;            }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            static class Default implements net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate {
+&nbsp;                private static final java.lang.ClassLoader BOOT_LOADER_PROXY;
+<b class="fc">&nbsp;                protected final java.lang.ClassLoader classLoader;</b>
+<b class="fc">&nbsp;</b>
+&nbsp;                protected Default(java.lang.ClassLoader classLoader) { /* compiled code */ }
+&nbsp;
+&nbsp;                public static net.bytebuddy.dynamic.ClassFileLocator.ForInstrumentation.ClassLoadingDelegate of(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader) { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.lang.Class&lt;?&gt; locate(java.lang.String name) throws java.lang.ClassNotFoundException { /* compiled code */ }
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;                public java.lang.ClassLoader getClassLoader() { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;                protected static enum BootLoaderProxyCreationAction implements java.security.PrivilegedAction&lt;java.lang.ClassLoader&gt; {
+&nbsp;                    INSTANCE;
+&nbsp;
+&nbsp;                    private BootLoaderProxyCreationAction() { /* compiled code */ }
+&nbsp;
+&nbsp;                    public java.lang.ClassLoader run() { /* compiled code */ }
+&nbsp;                }
+<b class="nc">&nbsp;            }</b>
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.instrument.Instrumentation&quot;)
+&nbsp;        protected static interface Dispatcher {
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;isRetransformClassesSupported&quot;)
+&nbsp;            boolean isRetransformClassesSupported(java.lang.instrument.Instrumentation instrumentation);
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;addTransformer&quot;)
+&nbsp;            void addTransformer(java.lang.instrument.Instrumentation instrumentation, java.lang.instrument.ClassFileTransformer classFileTransformer, boolean b);
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;retransformClasses&quot;)</b>
+<b class="nc">&nbsp;            void retransformClasses(java.lang.instrument.Instrumentation instrumentation, java.lang.Class&lt;?&gt;[] classes) throws java.lang.instrument.UnmodifiableClassException;</b>
+<b class="nc">&nbsp;        }</b>
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForUrl implements net.bytebuddy.dynamic.ClassFileLocator {
+&nbsp;        private final java.lang.ClassLoader classLoader;
+&nbsp;        private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;        public ForUrl(java.net.URL... url) { /* compiled code */ }
+&nbsp;
+&nbsp;        public ForUrl(java.util.Collection&lt;? extends java.net.URL&gt; urls) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        @net.bytebuddy.build.AccessControllerPlugin.Enhance</b>
+<b class="nc">&nbsp;        private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) throws java.io.IOException { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public void close() throws java.io.IOException { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+<b class="fc">&nbsp;        protected static class ClassLoaderCreationAction implements java.security.PrivilegedAction&lt;java.lang.ClassLoader&gt; {</b>
+<b class="fc">&nbsp;            private final java.net.URL[] url;</b>
+&nbsp;
+&nbsp;            protected ClassLoaderCreationAction(java.net.URL[] url) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.ClassLoader run() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForFolder implements net.bytebuddy.dynamic.ClassFileLocator {
+&nbsp;        private final java.io.File folder;
+&nbsp;
+&nbsp;        public ForFolder(java.io.File folder) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public void close() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+<b class="fc">&nbsp;    static class ForModuleFile implements net.bytebuddy.dynamic.ClassFileLocator {</b>
+&nbsp;        private static final java.lang.String JMOD_FILE_EXTENSION = &quot;.jmod&quot;;
+&nbsp;        private static final java.util.List&lt;java.lang.String&gt; BOOT_LOCATIONS;
+&nbsp;        private final java.util.zip.ZipFile zipFile;
+&nbsp;
+&nbsp;        public ForModuleFile(java.util.zip.ZipFile zipFile) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofBootPath() throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofBootPath(java.io.File bootPath) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofModulePath() throws java.io.IOException { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofModulePath(java.lang.String modulePath) throws java.io.IOException { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofModulePath(java.lang.String modulePath, java.lang.String baseFolder) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator of(java.io.File file) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public void close() throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;        public int hashCode() { /* compiled code */ }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForJarFile implements net.bytebuddy.dynamic.ClassFileLocator {
+&nbsp;        private static final java.util.List&lt;java.lang.String&gt; RUNTIME_LOCATIONS;
+&nbsp;        private final java.util.jar.JarFile jarFile;
+&nbsp;
+&nbsp;        public ForJarFile(java.util.jar.JarFile jarFile) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator of(java.io.File file) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofClassPath() throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofClassPath(java.lang.String classPath) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofRuntimeJar() throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) throws java.io.IOException { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;        public void close() throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+<b class="nc">&nbsp;    static class ForModule implements net.bytebuddy.dynamic.ClassFileLocator {</b>
+&nbsp;        private static final java.lang.Object[] NO_ARGUMENT;
+&nbsp;        private final net.bytebuddy.utility.JavaModule module;
+&nbsp;
+&nbsp;        protected ForModule(net.bytebuddy.utility.JavaModule module) { /* compiled code */ }
+&nbsp;
+&nbsp;        @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;REC_CATCH_EXCEPTION&quot;}, justification = &quot;Exception should always be wrapped for clarity&quot;)
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofBootLayer() { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator of(net.bytebuddy.utility.JavaModule module) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        protected static net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(net.bytebuddy.utility.JavaModule module, java.lang.String typeName) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public void close() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        public static class WeaklyReferenced extends java.lang.ref.WeakReference&lt;java.lang.Object&gt; implements net.bytebuddy.dynamic.ClassFileLocator {
+&nbsp;            private final int hashCode;
+&nbsp;
+<b class="nc">&nbsp;            protected WeaklyReferenced(java.lang.Object module) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;            public static net.bytebuddy.dynamic.ClassFileLocator of(net.bytebuddy.utility.JavaModule module) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;            public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) throws java.io.IOException { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;            public void close() { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object other) { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForClassLoader implements net.bytebuddy.dynamic.ClassFileLocator {
+&nbsp;        private static final java.lang.ClassLoader BOOT_LOADER_PROXY;
+<b class="nc">&nbsp;        private final java.lang.ClassLoader classLoader;</b>
+&nbsp;        private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;        protected ForClassLoader(java.lang.ClassLoader classLoader) { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;        private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofSystemLoader() { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofPlatformLoader() { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofBootLoader() { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator of(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;        public static byte[] read(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static java.util.Map&lt;java.lang.Class&lt;?&gt;,byte[]&gt; read(java.lang.Class&lt;?&gt;... type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static java.util.Map&lt;java.lang.Class&lt;?&gt;,byte[]&gt; read(java.util.Collection&lt;? extends java.lang.Class&lt;?&gt;&gt; types) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static java.util.Map&lt;java.lang.String,byte[]&gt; readToNames(java.lang.Class&lt;?&gt;... type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static java.util.Map&lt;java.lang.String,byte[]&gt; readToNames(java.util.Collection&lt;? extends java.lang.Class&lt;?&gt;&gt; types) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) throws java.io.IOException { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public void close() { /* compiled code */ }
+&nbsp;
+&nbsp;        protected static net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.ClassLoader classLoader, java.lang.String name) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        public static class WeaklyReferenced extends java.lang.ref.WeakReference&lt;java.lang.ClassLoader&gt; implements net.bytebuddy.dynamic.ClassFileLocator {
+<b class="nc">&nbsp;            private final int hashCode;</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;            protected WeaklyReferenced(java.lang.ClassLoader classLoader) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;            public static net.bytebuddy.dynamic.ClassFileLocator of(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;            public void close() { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object other) { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        protected static enum BootLoaderProxyCreationAction implements java.security.PrivilegedAction&lt;java.lang.ClassLoader&gt; {
+&nbsp;            INSTANCE;
+&nbsp;
+&nbsp;            private BootLoaderProxyCreationAction() { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;            public java.lang.ClassLoader run() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Simple implements net.bytebuddy.dynamic.ClassFileLocator {
+&nbsp;        private final java.util.Map&lt;java.lang.String,byte[]&gt; classFiles;
+&nbsp;
+&nbsp;        public Simple(java.util.Map&lt;java.lang.String,byte[]&gt; classFiles) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator of(java.lang.String typeName, byte[] binaryRepresentation) { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator of(net.bytebuddy.dynamic.DynamicType dynamicType) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator of(java.util.Map&lt;net.bytebuddy.description.type.TypeDescription,byte[]&gt; binaryRepresentations) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.dynamic.ClassFileLocator ofResources(java.util.Map&lt;java.lang.String,byte[]&gt; binaryRepresentations) { /* compiled code */ }</b>
+&nbsp;
+<b class="nc">&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public void close() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+<b class="fc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    static enum NoOp implements net.bytebuddy.dynamic.ClassFileLocator {
+&nbsp;        INSTANCE;
+&nbsp;
+<b class="fc">&nbsp;        private NoOp() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.ClassFileLocator.Resolution locate(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;        public void close() { /* compiled code */ }
+&nbsp;    }
+<b class="fc">&nbsp;</b>
+&nbsp;    static interface Resolution {
+&nbsp;        boolean isResolved();
+&nbsp;
+&nbsp;        byte[] resolve();
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class Explicit implements net.bytebuddy.dynamic.ClassFileLocator.Resolution {
+&nbsp;            private final byte[] binaryRepresentation;
+&nbsp;
+&nbsp;            @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;EI_EXPOSE_REP2&quot;}, justification = &quot;The array is not modified by class contract.&quot;)
+&nbsp;            public Explicit(byte[] binaryRepresentation) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean isResolved() { /* compiled code */ }
+&nbsp;
+&nbsp;            @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;EI_EXPOSE_REP&quot;}, justification = &quot;The array is not modified by class contract.&quot;)
+&nbsp;            public byte[] resolve() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class Illegal implements net.bytebuddy.dynamic.ClassFileLocator.Resolution {
+&nbsp;            private final java.lang.String typeName;
+&nbsp;
+&nbsp;            public Illegal(java.lang.String typeName) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean isResolved() { /* compiled code */ }
+&nbsp;
+&nbsp;            public byte[] resolve() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

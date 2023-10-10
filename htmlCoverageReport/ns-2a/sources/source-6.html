@@ -1,0 +1,683 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > JavaConstant</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.utility</a>
+</div>
+
+<h1>Coverage Summary for Class: JavaConstant (net.bytebuddy.utility)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">JavaConstant$Simple</td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (4/16)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    14.3%
+  </span>
+  <span class="absValue">
+    (17/119)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">JavaConstant$Simple$Dispatcher</td>
+  </tr>
+  <tr>
+    <td class="name">JavaConstant$Simple$Dispatcher$OfClassDesc</td>
+  </tr>
+  <tr>
+    <td class="name">JavaConstant$Simple$Dispatcher$OfDirectMethodHandleDesc</td>
+  </tr>
+  <tr>
+    <td class="name">JavaConstant$Simple$Dispatcher$OfDirectMethodHandleDesc$ForKind</td>
+  </tr>
+  <tr>
+    <td class="name">JavaConstant$Simple$Dispatcher$OfDynamicConstantDesc</td>
+  </tr>
+  <tr>
+    <td class="name">JavaConstant$Simple$Dispatcher$OfMethodHandleDesc</td>
+  </tr>
+  <tr>
+    <td class="name">JavaConstant$Simple$Dispatcher$OfMethodTypeDesc</td>
+  </tr>
+  <tr>
+    <td class="name">JavaConstant$Simple$OfTrivialValue</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">JavaConstant$Simple$OfTrivialValue$ForString</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (7/21)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    16.1%
+  </span>
+  <span class="absValue">
+    (20/124)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.utility;
+&nbsp;
+&nbsp;public interface JavaConstant extends net.bytebuddy.utility.ConstantValue {
+&nbsp;    java.lang.Object toDescription();
+&nbsp;
+&nbsp;    &lt;T&gt; T accept(net.bytebuddy.utility.JavaConstant.Visitor&lt;T&gt; visitor);
+&nbsp;
+&nbsp;    static class Dynamic implements net.bytebuddy.utility.JavaConstant {
+&nbsp;        public static final java.lang.String DEFAULT_NAME = &quot;_&quot;;
+&nbsp;        private final java.lang.String name;
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription typeDescription;
+&nbsp;        private final net.bytebuddy.utility.JavaConstant.MethodHandle bootstrap;
+&nbsp;        private final java.util.List&lt;net.bytebuddy.utility.JavaConstant&gt; arguments;
+&nbsp;
+&nbsp;        protected Dynamic(java.lang.String name, net.bytebuddy.description.type.TypeDescription typeDescription, net.bytebuddy.utility.JavaConstant.MethodHandle bootstrap, java.util.List&lt;net.bytebuddy.utility.JavaConstant&gt; arguments) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic ofNullConstant() { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant ofPrimitiveType(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant ofPrimitiveType(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant ofEnumeration(java.lang.Enum&lt;?&gt; enumeration) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant ofEnumeration(net.bytebuddy.description.enumeration.EnumerationDescription enumerationDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic ofField(java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic ofField(net.bytebuddy.description.field.FieldDescription.InDefinedShape fieldDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic ofInvocation(java.lang.reflect.Method method, java.lang.Object... constant) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic ofInvocation(java.lang.reflect.Method method, java.util.List&lt;?&gt; constants) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic ofInvocation(java.lang.reflect.Constructor&lt;?&gt; constructor, java.lang.Object... constant) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic ofInvocation(java.lang.reflect.Constructor&lt;?&gt; constructor, java.util.List&lt;?&gt; constants) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic ofInvocation(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription, java.lang.Object... constant) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic ofInvocation(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription, java.util.List&lt;?&gt; constants) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant ofVarHandle(java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant ofVarHandle(net.bytebuddy.description.field.FieldDescription.InDefinedShape fieldDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant ofArrayVarHandle(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant ofArrayVarHandle(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic bootstrap(java.lang.String name, java.lang.reflect.Method method, java.lang.Object... constant) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic bootstrap(java.lang.String name, java.lang.reflect.Method method, java.util.List&lt;?&gt; constants) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic bootstrap(java.lang.String name, java.lang.reflect.Constructor&lt;?&gt; constructor, java.lang.Object... constant) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic bootstrap(java.lang.String name, java.lang.reflect.Constructor&lt;?&gt; constructor, java.util.List&lt;?&gt; constants) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic bootstrap(java.lang.String name, net.bytebuddy.description.method.MethodDescription.InDefinedShape bootstrapMethod, java.lang.Object... constant) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.Dynamic bootstrap(java.lang.String name, net.bytebuddy.description.method.MethodDescription.InDefinedShape bootstrap, java.util.List&lt;?&gt; arguments) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String getName() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.utility.JavaConstant.MethodHandle getBootstrap() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.util.List&lt;net.bytebuddy.utility.JavaConstant&gt; getArguments() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.utility.JavaConstant withType(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.utility.JavaConstant withType(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.Object toDescription() { /* compiled code */ }
+&nbsp;
+&nbsp;        public &lt;T&gt; T accept(net.bytebuddy.utility.JavaConstant.Visitor&lt;T&gt; visitor) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getTypeDescription() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.StackManipulation toStackManipulation() { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object object) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String toString() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static class MethodHandle implements net.bytebuddy.utility.JavaConstant {
+&nbsp;        protected static final net.bytebuddy.utility.JavaConstant.MethodHandle.MethodHandleInfo METHOD_HANDLE_INFO;
+&nbsp;        protected static final net.bytebuddy.utility.JavaConstant.MethodHandle.MethodType METHOD_TYPE;
+&nbsp;        protected static final net.bytebuddy.utility.JavaConstant.MethodHandle.MethodHandles METHOD_HANDLES;
+&nbsp;        protected static final net.bytebuddy.utility.JavaConstant.MethodHandle.MethodHandles.Lookup METHOD_HANDLES_LOOKUP;
+&nbsp;        private final net.bytebuddy.utility.JavaConstant.MethodHandle.HandleType handleType;
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription ownerType;
+&nbsp;        private final java.lang.String name;
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription returnType;
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; parameterTypes;
+&nbsp;        private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;        protected MethodHandle(net.bytebuddy.utility.JavaConstant.MethodHandle.HandleType handleType, net.bytebuddy.description.type.TypeDescription ownerType, java.lang.String name, net.bytebuddy.description.type.TypeDescription returnType, java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; parameterTypes) { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;        private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodHandle ofLoaded(java.lang.Object methodHandle) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodHandle ofLoaded(java.lang.Object methodHandle, java.lang.Object lookup) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodHandle of(java.lang.reflect.Method method) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodHandle of(java.lang.reflect.Constructor&lt;?&gt; constructor) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodHandle of(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodHandle ofSpecial(java.lang.reflect.Method method, java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodHandle ofSpecial(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription, net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodHandle ofGetter(java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodHandle ofGetter(net.bytebuddy.description.field.FieldDescription.InDefinedShape fieldDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodHandle ofSetter(java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodHandle ofSetter(net.bytebuddy.description.field.FieldDescription.InDefinedShape fieldDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static java.lang.Class&lt;?&gt; lookupType(java.lang.Object callerClassLookup) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.Object toDescription() { /* compiled code */ }
+&nbsp;
+&nbsp;        public &lt;T&gt; T accept(net.bytebuddy.utility.JavaConstant.Visitor&lt;T&gt; visitor) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getTypeDescription() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.StackManipulation toStackManipulation() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.utility.JavaConstant.MethodHandle.HandleType getHandleType() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getOwnerType() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String getName() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getReturnType() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList getParameterTypes() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String getDescriptor() { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object other) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String toString() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.invoke.MethodHandles&quot;)
+&nbsp;        protected static interface MethodHandles {
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.IsStatic
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;publicLookup&quot;)
+&nbsp;            java.lang.Object publicLookup();
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.invoke.MethodHandles$Lookup&quot;)
+&nbsp;            static interface Lookup {
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;lookupClass&quot;)
+<b class="fc">&nbsp;                java.lang.Class&lt;?&gt; lookupClass(java.lang.Object o);</b>
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;revealDirect&quot;)
+&nbsp;                java.lang.Object revealDirect(java.lang.Object o, @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.invoke.MethodHandle&quot;) java.lang.Object o1);
+&nbsp;            }
+<b class="fc">&nbsp;        }</b>
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.invoke.MethodType&quot;)
+&nbsp;        protected static interface MethodType {
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;returnType&quot;)
+<b class="fc">&nbsp;            java.lang.Class&lt;?&gt; returnType(java.lang.Object o);</b>
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;parameterArray&quot;)
+&nbsp;            java.lang.Class&lt;?&gt;[] parameterArray(java.lang.Object o);
+&nbsp;        }
+<b class="fc">&nbsp;</b>
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.invoke.MethodHandleInfo&quot;)
+&nbsp;        protected static interface MethodHandleInfo {
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;getName&quot;)
+&nbsp;            java.lang.String getName(java.lang.Object o);
+<b class="fc">&nbsp;</b>
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;getDeclaringClass&quot;)
+&nbsp;            java.lang.Class&lt;?&gt; getDeclaringClass(java.lang.Object o);
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;getReferenceKind&quot;)
+<b class="fc">&nbsp;            int getReferenceKind(java.lang.Object o);</b>
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;getMethodType&quot;)
+&nbsp;            java.lang.Object getMethodType(java.lang.Object o);
+&nbsp;
+<b class="fc">&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.IsConstructor</b>
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;revealDirect&quot;)
+&nbsp;            java.lang.Object revealDirect(@net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.invoke.MethodHandle&quot;) java.lang.Object o);
+&nbsp;        }
+&nbsp;
+&nbsp;        public static enum HandleType {
+&nbsp;            INVOKE_VIRTUAL, INVOKE_STATIC, INVOKE_SPECIAL, INVOKE_INTERFACE, INVOKE_SPECIAL_CONSTRUCTOR, PUT_FIELD, GET_FIELD, PUT_STATIC_FIELD, GET_STATIC_FIELD;
+&nbsp;
+&nbsp;            private final int identifier;
+&nbsp;            private final boolean field;
+&nbsp;
+&nbsp;            private HandleType(int identifier, boolean field) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected static net.bytebuddy.utility.JavaConstant.MethodHandle.HandleType of(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected static net.bytebuddy.utility.JavaConstant.MethodHandle.HandleType of(int identifier) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected static net.bytebuddy.utility.JavaConstant.MethodHandle.HandleType ofSpecial(net.bytebuddy.description.method.MethodDescription.InDefinedShape methodDescription) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;            protected static net.bytebuddy.utility.JavaConstant.MethodHandle.HandleType ofGetter(net.bytebuddy.description.field.FieldDescription.InDefinedShape fieldDescription) { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+&nbsp;            protected static net.bytebuddy.utility.JavaConstant.MethodHandle.HandleType ofSetter(net.bytebuddy.description.field.FieldDescription.InDefinedShape fieldDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int getIdentifier() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean isField() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static class MethodType implements net.bytebuddy.utility.JavaConstant {
+&nbsp;        private static final net.bytebuddy.utility.JavaConstant.MethodType.Dispatcher DISPATCHER;
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription returnType;
+<b class="nc">&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; parameterTypes;</b>
+&nbsp;        private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;        protected MethodType(net.bytebuddy.description.type.TypeDescription returnType, java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; parameterTypes) { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;        private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType ofLoaded(java.lang.Object methodType) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType of(java.lang.Class&lt;?&gt; returnType, java.lang.Class&lt;?&gt;... parameterType) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType of(net.bytebuddy.description.type.TypeDescription returnType, net.bytebuddy.description.type.TypeDescription... parameterType) { /* compiled code */ }</b>
+&nbsp;
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType of(net.bytebuddy.description.type.TypeDescription returnType, java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; parameterTypes) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType of(java.lang.reflect.Method method) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType of(java.lang.reflect.Constructor&lt;?&gt; constructor) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType of(net.bytebuddy.description.method.MethodDescription methodDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType ofSignature(java.lang.reflect.Method method) { /* compiled code */ }
+&nbsp;
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType ofSignature(java.lang.reflect.Constructor&lt;?&gt; constructor) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType ofSignature(net.bytebuddy.description.method.MethodDescription methodDescription) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="fc">&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType ofSetter(java.lang.reflect.Field field) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="fc">&nbsp;        @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE&quot;}, justification = &quot;Assuming declaring type for type member.&quot;)</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType ofSetter(net.bytebuddy.description.field.FieldDescription fieldDescription) { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType ofGetter(java.lang.reflect.Field field) { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;        @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE&quot;}, justification = &quot;Assuming declaring type for type member.&quot;)</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType ofGetter(net.bytebuddy.description.field.FieldDescription fieldDescription) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType ofConstant(java.lang.Object instance) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType ofConstant(java.lang.Class&lt;?&gt; type) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;        public static net.bytebuddy.utility.JavaConstant.MethodType ofConstant(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getReturnType() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeList getParameterTypes() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String getDescriptor() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.Object toDescription() { /* compiled code */ }
+&nbsp;
+&nbsp;        public &lt;T&gt; T accept(net.bytebuddy.utility.JavaConstant.Visitor&lt;T&gt; visitor) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.description.type.TypeDescription getTypeDescription() { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;        public net.bytebuddy.implementation.bytecode.StackManipulation toStackManipulation() { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object other) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String toString() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.invoke.MethodType&quot;)
+&nbsp;        protected static interface Dispatcher {
+<b class="nc">&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;returnType&quot;)</b>
+&nbsp;            java.lang.Class&lt;?&gt; returnType(java.lang.Object o);
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;parameterArray&quot;)
+&nbsp;            java.lang.Class&lt;?&gt;[] parameterArray(java.lang.Object o);
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static abstract class Simple &lt;T&gt; implements net.bytebuddy.utility.JavaConstant {
+&nbsp;        protected static final net.bytebuddy.utility.JavaConstant.Simple.Dispatcher CONSTANT_DESC;
+&nbsp;        protected static final net.bytebuddy.utility.JavaConstant.Simple.Dispatcher.OfClassDesc CLASS_DESC;
+<b class="nc">&nbsp;        protected static final net.bytebuddy.utility.JavaConstant.Simple.Dispatcher.OfMethodTypeDesc METHOD_TYPE_DESC;</b>
+<b class="nc">&nbsp;        protected static final net.bytebuddy.utility.JavaConstant.Simple.Dispatcher.OfMethodHandleDesc METHOD_HANDLE_DESC;</b>
+<b class="nc">&nbsp;        protected static final net.bytebuddy.utility.JavaConstant.Simple.Dispatcher.OfDirectMethodHandleDesc DIRECT_METHOD_HANDLE_DESC;</b>
+<b class="nc">&nbsp;        protected static final net.bytebuddy.utility.JavaConstant.Simple.Dispatcher.OfDirectMethodHandleDesc.ForKind DIRECT_METHOD_HANDLE_DESC_KIND;</b>
+<b class="nc">&nbsp;        protected static final net.bytebuddy.utility.JavaConstant.Simple.Dispatcher.OfDynamicConstantDesc DYNAMIC_CONSTANT_DESC;</b>
+<b class="nc">&nbsp;        protected final T value;</b>
+<b class="nc">&nbsp;        private final net.bytebuddy.description.type.TypeDescription typeDescription;</b>
+<b class="nc">&nbsp;        private static final boolean ACCESS_CONTROLLER;</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        protected Simple(T value, net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        @net.bytebuddy.build.AccessControllerPlugin.Enhance</b>
+<b class="nc">&nbsp;        private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant ofLoaded(java.lang.Object value) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull</b>
+<b class="nc">&nbsp;        protected static net.bytebuddy.utility.JavaConstant ofLoadedOrNull(java.lang.Object value) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant ofDescription(java.lang.Object value, @net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant ofDescription(java.lang.Object value, net.bytebuddy.dynamic.ClassFileLocator classFileLocator) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;        public static net.bytebuddy.utility.JavaConstant ofDescription(java.lang.Object value, net.bytebuddy.pool.TypePool typePool) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant of(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public static net.bytebuddy.utility.JavaConstant wrap(java.lang.Object value) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public static java.util.List&lt;net.bytebuddy.utility.JavaConstant&gt; wrap(java.util.List&lt;?&gt; values) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public T getValue() { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public net.bytebuddy.description.type.TypeDescription getTypeDescription() { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public int hashCode() { /* compiled code */ }</b>
+&nbsp;
+<b class="nc">&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object object) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public java.lang.String toString() { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.ConstantDesc&quot;)</b>
+<b class="nc">&nbsp;        protected static interface Dispatcher {</b>
+<b class="nc">&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Instance</b>
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;isInstance&quot;)
+<b class="nc">&nbsp;            boolean isInstance(java.lang.Object o);</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Container</b>
+<b class="nc">&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;toArray&quot;)</b>
+<b class="nc">&nbsp;            java.lang.Object[] toArray(int i);</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.DynamicConstantDesc&quot;)</b>
+&nbsp;            static interface OfDynamicConstantDesc extends net.bytebuddy.utility.JavaConstant.Simple.Dispatcher {
+<b class="nc">&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.IsStatic</b>
+<b class="nc">&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;ofCanonical&quot;)</b>
+<b class="nc">&nbsp;                java.lang.Object ofCanonical(@net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.DirectMethodHandleDesc&quot;) java.lang.Object o, java.lang.String s, @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.ClassDesc&quot;) java.lang.Object o1, @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.ConstantDesc&quot;) java.lang.Object[] objects);</b>
+<b class="nc">&nbsp;</b>
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;bootstrapArgs&quot;)
+<b class="nc">&nbsp;                java.lang.Object[] bootstrapArgs(java.lang.Object o);</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;constantName&quot;)</b>
+<b class="nc">&nbsp;                java.lang.String constantName(java.lang.Object o);</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;constantType&quot;)</b>
+<b class="nc">&nbsp;                java.lang.Object constantType(java.lang.Object o);</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;bootstrapMethod&quot;)</b>
+<b class="nc">&nbsp;                java.lang.Object bootstrapMethod(java.lang.Object o);</b>
+<b class="nc">&nbsp;            }</b>
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.DirectMethodHandleDesc&quot;)
+&nbsp;            static interface OfDirectMethodHandleDesc extends net.bytebuddy.utility.JavaConstant.Simple.Dispatcher {
+<b class="nc">&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;refKind&quot;)</b>
+&nbsp;                int refKind(java.lang.Object o);
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;methodName&quot;)
+&nbsp;                java.lang.String methodName(java.lang.Object o);
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;owner&quot;)
+&nbsp;                java.lang.Object owner(java.lang.Object o);
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;lookupDescriptor&quot;)
+&nbsp;                java.lang.String lookupDescriptor(java.lang.Object o);
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.DirectMethodHandleDesc$Kind&quot;)</b>
+&nbsp;                static interface ForKind {
+<b class="nc">&nbsp;                    @net.bytebuddy.utility.dispatcher.JavaDispatcher.IsStatic</b>
+&nbsp;                    @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;valueOf&quot;)
+&nbsp;                    java.lang.Object valueOf(int i, boolean b);
+&nbsp;                }
+&nbsp;            }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.MethodHandleDesc&quot;)
+&nbsp;            static interface OfMethodHandleDesc extends net.bytebuddy.utility.JavaConstant.Simple.Dispatcher {
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.IsStatic
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;of&quot;)
+<b class="nc">&nbsp;                java.lang.Object of(@net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.DirectMethodHandleDesc$Kind&quot;) java.lang.Object o, @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.ClassDesc&quot;) java.lang.Object o1, java.lang.String s, java.lang.String s1);</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;invocationType&quot;)</b>
+<b class="nc">&nbsp;                java.lang.Object invocationType(java.lang.Object o);</b>
+&nbsp;            }
+<b class="nc">&nbsp;</b>
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.MethodTypeDesc&quot;)
+&nbsp;            static interface OfMethodTypeDesc extends net.bytebuddy.utility.JavaConstant.Simple.Dispatcher {
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.IsStatic
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;of&quot;)
+&nbsp;                java.lang.Object of(@net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.ClassDesc&quot;) java.lang.Object o, @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.ClassDesc&quot;) java.lang.Object[] objects);
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.IsStatic
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;ofDescriptor&quot;)
+&nbsp;                java.lang.Object ofDescriptor(java.lang.String s);
+&nbsp;
+<b class="nc">&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;returnType&quot;)</b>
+<b class="nc">&nbsp;                java.lang.Object returnType(java.lang.Object o);</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;parameterArray&quot;)</b>
+<b class="nc">&nbsp;                java.lang.Object[] parameterArray(java.lang.Object o);</b>
+&nbsp;            }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;java.lang.constant.ClassDesc&quot;)
+&nbsp;            static interface OfClassDesc extends net.bytebuddy.utility.JavaConstant.Simple.Dispatcher {
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.IsStatic
+&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;ofDescriptor&quot;)
+&nbsp;                java.lang.Object ofDescriptor(java.lang.String s);
+&nbsp;
+<b class="nc">&nbsp;                @net.bytebuddy.utility.dispatcher.JavaDispatcher.Proxied(&quot;descriptorString&quot;)</b>
+&nbsp;                java.lang.String descriptorString(java.lang.Object o);
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        protected static class OfTypeDescription extends net.bytebuddy.utility.JavaConstant.Simple&lt;net.bytebuddy.description.type.TypeDescription&gt; {
+&nbsp;            protected OfTypeDescription(net.bytebuddy.description.type.TypeDescription value) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;            public java.lang.Object toDescription() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.bytecode.StackManipulation toStackManipulation() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;            public &lt;T&gt; T accept(net.bytebuddy.utility.JavaConstant.Visitor&lt;T&gt; visitor) { /* compiled code */ }</b>
+&nbsp;        }
+&nbsp;
+&nbsp;        protected static abstract class OfTrivialValue &lt;S&gt; extends net.bytebuddy.utility.JavaConstant.Simple&lt;S&gt; {
+&nbsp;            protected OfTrivialValue(S value, net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;            public java.lang.Object toDescription() { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;            public &lt;T&gt; T accept(net.bytebuddy.utility.JavaConstant.Visitor&lt;T&gt; visitor) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected static class ForString extends net.bytebuddy.utility.JavaConstant.Simple.OfTrivialValue&lt;java.lang.String&gt; {
+&nbsp;                public ForString(java.lang.String value) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;                public net.bytebuddy.implementation.bytecode.StackManipulation toStackManipulation() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            protected static class ForDouble extends net.bytebuddy.utility.JavaConstant.Simple.OfTrivialValue&lt;java.lang.Double&gt; {
+&nbsp;                public ForDouble(java.lang.Double value) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.bytecode.StackManipulation toStackManipulation() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            protected static class ForFloat extends net.bytebuddy.utility.JavaConstant.Simple.OfTrivialValue&lt;java.lang.Float&gt; {
+&nbsp;                public ForFloat(java.lang.Float value) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.bytecode.StackManipulation toStackManipulation() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            protected static class ForLong extends net.bytebuddy.utility.JavaConstant.Simple.OfTrivialValue&lt;java.lang.Long&gt; {
+<b class="fc">&nbsp;                public ForLong(java.lang.Long value) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.bytecode.StackManipulation toStackManipulation() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            protected static class ForInteger extends net.bytebuddy.utility.JavaConstant.Simple.OfTrivialValue&lt;java.lang.Integer&gt; {
+&nbsp;                public ForInteger(java.lang.Integer value) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;                public net.bytebuddy.implementation.bytecode.StackManipulation toStackManipulation() { /* compiled code */ }
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface Visitor &lt;T&gt; {
+<b class="nc">&nbsp;        T onValue(net.bytebuddy.utility.JavaConstant.Simple&lt;?&gt; simple);</b>
+&nbsp;
+&nbsp;        T onType(net.bytebuddy.utility.JavaConstant.Simple&lt;net.bytebuddy.description.type.TypeDescription&gt; simple);
+&nbsp;
+&nbsp;        T onMethodType(net.bytebuddy.utility.JavaConstant.MethodType methodType);
+&nbsp;
+&nbsp;        T onMethodHandle(net.bytebuddy.utility.JavaConstant.MethodHandle methodHandle);
+&nbsp;
+&nbsp;        T onDynamic(net.bytebuddy.utility.JavaConstant.Dynamic dynamic);
+&nbsp;
+&nbsp;        static enum NoOp implements net.bytebuddy.utility.JavaConstant.Visitor&lt;net.bytebuddy.utility.JavaConstant&gt; {
+&nbsp;            INSTANCE;
+&nbsp;
+&nbsp;            private NoOp() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.utility.JavaConstant onValue(net.bytebuddy.utility.JavaConstant.Simple&lt;?&gt; constant) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.utility.JavaConstant onType(net.bytebuddy.utility.JavaConstant.Simple&lt;net.bytebuddy.description.type.TypeDescription&gt; constant) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.utility.JavaConstant onMethodType(net.bytebuddy.utility.JavaConstant.MethodType constant) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.utility.JavaConstant onMethodHandle(net.bytebuddy.utility.JavaConstant.MethodHandle constant) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.utility.JavaConstant onDynamic(net.bytebuddy.utility.JavaConstant.Dynamic constant) { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

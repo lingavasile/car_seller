@@ -1,0 +1,333 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > LatentMatcher</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.matcher</a>
+</div>
+
+<h1>Coverage Summary for Class: LatentMatcher (net.bytebuddy.matcher)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">LatentMatcher$Disjunction</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (8/8)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">LatentMatcher$ForFieldToken</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">LatentMatcher$ForFieldToken$ResolvedMatcher</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">LatentMatcher$ForMethodToken</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">LatentMatcher$ForMethodToken$ResolvedMatcher</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">LatentMatcher$Resolved</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (13/13)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (23/23)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.matcher;
+&nbsp;
+&nbsp;public interface LatentMatcher &lt;T&gt; {
+&nbsp;    net.bytebuddy.matcher.ElementMatcher&lt;? super T&gt; resolve(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Disjunction &lt;S&gt; implements net.bytebuddy.matcher.LatentMatcher&lt;S&gt; {
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.matcher.LatentMatcher&lt;? super S&gt;&gt; matchers;
+&nbsp;
+&nbsp;        public Disjunction(net.bytebuddy.matcher.LatentMatcher&lt;? super S&gt;... matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;        public Disjunction(java.util.List&lt;? extends net.bytebuddy.matcher.LatentMatcher&lt;? super S&gt;&gt; matchers) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.matcher.ElementMatcher&lt;? super S&gt; resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Conjunction &lt;S&gt; implements net.bytebuddy.matcher.LatentMatcher&lt;S&gt; {
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.matcher.LatentMatcher&lt;? super S&gt;&gt; matchers;
+&nbsp;
+&nbsp;        public Conjunction(net.bytebuddy.matcher.LatentMatcher&lt;? super S&gt;... matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;        public Conjunction(java.util.List&lt;? extends net.bytebuddy.matcher.LatentMatcher&lt;? super S&gt;&gt; matchers) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.matcher.ElementMatcher&lt;? super S&gt; resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForRecordComponentToken implements net.bytebuddy.matcher.LatentMatcher&lt;net.bytebuddy.description.type.RecordComponentDescription&gt; {
+&nbsp;        private final net.bytebuddy.description.type.RecordComponentDescription.Token token;
+&nbsp;
+&nbsp;        public ForRecordComponentToken(net.bytebuddy.description.type.RecordComponentDescription.Token token) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.RecordComponentDescription&gt; resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForMethodToken implements net.bytebuddy.matcher.LatentMatcher&lt;net.bytebuddy.description.method.MethodDescription&gt; {
+&nbsp;        private final net.bytebuddy.description.method.MethodDescription.Token token;
+&nbsp;
+&nbsp;        public ForMethodToken(net.bytebuddy.description.method.MethodDescription.Token token) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static class ResolvedMatcher extends net.bytebuddy.matcher.ElementMatcher.Junction.ForNonNullValues&lt;net.bytebuddy.description.method.MethodDescription&gt; {
+&nbsp;            private final net.bytebuddy.description.method.MethodDescription.SignatureToken signatureToken;
+&nbsp;
+&nbsp;            protected ResolvedMatcher(net.bytebuddy.description.method.MethodDescription.SignatureToken signatureToken) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean doMatch(net.bytebuddy.description.method.MethodDescription target) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForFieldToken implements net.bytebuddy.matcher.LatentMatcher&lt;net.bytebuddy.description.field.FieldDescription&gt; {
+&nbsp;        private final net.bytebuddy.description.field.FieldDescription.Token token;
+&nbsp;
+&nbsp;        public ForFieldToken(net.bytebuddy.description.field.FieldDescription.Token token) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.field.FieldDescription&gt; resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static class ResolvedMatcher extends net.bytebuddy.matcher.ElementMatcher.Junction.ForNonNullValues&lt;net.bytebuddy.description.field.FieldDescription&gt; {
+&nbsp;            private final net.bytebuddy.description.field.FieldDescription.SignatureToken signatureToken;
+&nbsp;
+&nbsp;            protected ResolvedMatcher(net.bytebuddy.description.field.FieldDescription.SignatureToken signatureToken) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected boolean doMatch(net.bytebuddy.description.field.FieldDescription target) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+<b class="fc">&nbsp;    }</b>
+<b class="fc">&nbsp;</b>
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Resolved &lt;S&gt; implements net.bytebuddy.matcher.LatentMatcher&lt;S&gt; {
+&nbsp;        private final net.bytebuddy.matcher.ElementMatcher&lt;? super S&gt; matcher;
+&nbsp;
+&nbsp;        public Resolved(net.bytebuddy.matcher.ElementMatcher&lt;? super S&gt; matcher) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;        public net.bytebuddy.matcher.ElementMatcher&lt;? super S&gt; resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static enum ForSelfDeclaredMethod implements net.bytebuddy.matcher.LatentMatcher&lt;net.bytebuddy.description.method.MethodDescription&gt; {
+&nbsp;        DECLARED, NOT_DECLARED;
+&nbsp;
+&nbsp;        private final boolean inverted;
+&nbsp;
+&nbsp;        private ForSelfDeclaredMethod(boolean inverted) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

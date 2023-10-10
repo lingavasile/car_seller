@@ -1,0 +1,371 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > NamingStrategy</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy</a>
+</div>
+
+<h1>Coverage Summary for Class: NamingStrategy (net.bytebuddy)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">NamingStrategy$AbstractBase</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (2/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (2/4)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">NamingStrategy$Suffixing</td>
+<td class="coverageStat">
+  <span class="percent">
+    40%
+  </span>
+  <span class="absValue">
+    (2/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    72.7%
+  </span>
+  <span class="absValue">
+    (8/11)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">NamingStrategy$Suffixing$BaseNameResolver</td>
+  </tr>
+  <tr>
+    <td class="name">NamingStrategy$Suffixing$BaseNameResolver$ForUnnamedType</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">NamingStrategy$SuffixingRandom</td>
+<td class="coverageStat">
+  <span class="percent">
+    55.6%
+  </span>
+  <span class="absValue">
+    (5/9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    60%
+  </span>
+  <span class="absValue">
+    (6/10)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    55%
+  </span>
+  <span class="absValue">
+    (11/20)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    67.9%
+  </span>
+  <span class="absValue">
+    (19/28)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy;
+&nbsp;
+&nbsp;public interface NamingStrategy {
+&nbsp;    java.lang.String BYTE_BUDDY_RENAME_PACKAGE = &quot;net.bytebuddy.renamed&quot;;
+&nbsp;    java.lang.String NO_PREFIX = &quot;&quot;;
+&nbsp;
+&nbsp;    java.lang.String subclass(net.bytebuddy.description.type.TypeDescription.Generic generic);
+&nbsp;
+&nbsp;    java.lang.String redefine(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;    java.lang.String rebase(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class PrefixingRandom extends net.bytebuddy.NamingStrategy.AbstractBase {
+&nbsp;        private final java.lang.String prefix;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.ValueHandling(net.bytebuddy.build.HashCodeAndEqualsPlugin.ValueHandling.Sort.IGNORE)
+&nbsp;        private final net.bytebuddy.utility.RandomString randomString;
+&nbsp;
+&nbsp;        public PrefixingRandom(java.lang.String prefix) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected java.lang.String name(net.bytebuddy.description.type.TypeDescription superClass) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class SuffixingRandom extends net.bytebuddy.NamingStrategy.Suffixing {
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.ValueHandling(net.bytebuddy.build.HashCodeAndEqualsPlugin.ValueHandling.Sort.IGNORE)
+&nbsp;        private final net.bytebuddy.utility.RandomString randomString;
+&nbsp;
+&nbsp;        public SuffixingRandom(java.lang.String suffix) { /* compiled code */ }
+&nbsp;
+&nbsp;        public SuffixingRandom(java.lang.String suffix, java.lang.String javaLangPackagePrefix) { /* compiled code */ }
+&nbsp;
+&nbsp;        /**
+&nbsp;         * @deprecated
+&nbsp;         */
+&nbsp;        @java.lang.Deprecated
+&nbsp;        public SuffixingRandom(java.lang.String suffix, net.bytebuddy.NamingStrategy.SuffixingRandom.BaseNameResolver baseNameResolver) { /* compiled code */ }
+&nbsp;
+&nbsp;        public SuffixingRandom(java.lang.String suffix, net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver baseNameResolver) { /* compiled code */ }
+&nbsp;
+&nbsp;        /**
+&nbsp;         * @deprecated
+&nbsp;         */
+&nbsp;        @java.lang.Deprecated
+&nbsp;        public SuffixingRandom(java.lang.String suffix, net.bytebuddy.NamingStrategy.SuffixingRandom.BaseNameResolver baseNameResolver, java.lang.String javaLangPackagePrefix) { /* compiled code */ }
+&nbsp;
+&nbsp;        public SuffixingRandom(java.lang.String suffix, net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver baseNameResolver, java.lang.String javaLangPackagePrefix) { /* compiled code */ }
+&nbsp;
+&nbsp;        /**
+&nbsp;         * @deprecated
+&nbsp;         */
+&nbsp;        @java.lang.Deprecated
+&nbsp;        public SuffixingRandom(java.lang.String suffix, net.bytebuddy.NamingStrategy.SuffixingRandom.BaseNameResolver baseNameResolver, java.lang.String javaLangPackagePrefix, net.bytebuddy.utility.RandomString randomString) { /* compiled code */ }
+&nbsp;
+&nbsp;        public SuffixingRandom(java.lang.String suffix, net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver baseNameResolver, java.lang.String javaLangPackagePrefix, net.bytebuddy.utility.RandomString randomString) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected java.lang.String name(net.bytebuddy.description.type.TypeDescription superClass) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;        /**
+&nbsp;         * @deprecated
+&nbsp;         */
+&nbsp;        @java.lang.Deprecated
+&nbsp;        public static interface BaseNameResolver extends net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver {
+<b class="fc">&nbsp;            /**</b>
+&nbsp;             * @deprecated
+&nbsp;             */
+&nbsp;            @java.lang.Deprecated
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            static class ForFixedValue extends net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver.ForFixedValue implements net.bytebuddy.NamingStrategy.SuffixingRandom.BaseNameResolver {
+&nbsp;                public ForFixedValue(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            /**
+&nbsp;             * @deprecated
+<b class="nc">&nbsp;             */</b>
+&nbsp;            @java.lang.Deprecated
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            static class ForGivenType extends net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver.ForGivenType implements net.bytebuddy.NamingStrategy.SuffixingRandom.BaseNameResolver {
+&nbsp;                public ForGivenType(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            /**
+&nbsp;             * @deprecated
+&nbsp;             */
+&nbsp;            @java.lang.Deprecated
+&nbsp;            static enum ForUnnamedType implements net.bytebuddy.NamingStrategy.SuffixingRandom.BaseNameResolver {
+&nbsp;                INSTANCE;
+&nbsp;
+&nbsp;                private ForUnnamedType() { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.lang.String resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Suffixing extends net.bytebuddy.NamingStrategy.AbstractBase {
+&nbsp;        private static final java.lang.String JAVA_PACKAGE = &quot;java.&quot;;
+&nbsp;        private final java.lang.String suffix;
+&nbsp;        private final java.lang.String javaLangPackagePrefix;
+&nbsp;        private final net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver baseNameResolver;
+&nbsp;
+&nbsp;        public Suffixing(java.lang.String suffix) { /* compiled code */ }
+&nbsp;
+&nbsp;        public Suffixing(java.lang.String suffix, java.lang.String javaLangPackagePrefix) { /* compiled code */ }
+&nbsp;
+&nbsp;        public Suffixing(java.lang.String suffix, net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver baseNameResolver) { /* compiled code */ }
+&nbsp;
+&nbsp;        public Suffixing(java.lang.String suffix, net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver baseNameResolver, java.lang.String javaLangPackagePrefix) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected java.lang.String name(net.bytebuddy.description.type.TypeDescription superClass) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;        public static interface BaseNameResolver {</b>
+&nbsp;            java.lang.String resolve(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            static class WithCallerSuffix implements net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver {
+&nbsp;                private final net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver delegate;
+&nbsp;
+&nbsp;                public WithCallerSuffix(net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver delegate) { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.lang.String resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;                public int hashCode() { /* compiled code */ }</b>
+&nbsp;            }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            static class ForFixedValue implements net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver {
+&nbsp;                private final java.lang.String name;
+&nbsp;
+&nbsp;                public ForFixedValue(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.lang.String resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            static class ForGivenType implements net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver {
+&nbsp;                private final net.bytebuddy.description.type.TypeDescription typeDescription;
+&nbsp;
+&nbsp;                public ForGivenType(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.lang.String resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;                public int hashCode() { /* compiled code */ }</b>
+<b class="fc">&nbsp;            }</b>
+&nbsp;
+&nbsp;            static enum ForUnnamedType implements net.bytebuddy.NamingStrategy.Suffixing.BaseNameResolver {
+&nbsp;                INSTANCE;
+&nbsp;
+<b class="fc">&nbsp;                private ForUnnamedType() { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;                public java.lang.String resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }</b>
+&nbsp;            }
+<b class="fc">&nbsp;        }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    static abstract class AbstractBase implements net.bytebuddy.NamingStrategy {
+&nbsp;        public AbstractBase() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String subclass(net.bytebuddy.description.type.TypeDescription.Generic superClass) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected abstract java.lang.String name(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;        public java.lang.String redefine(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String rebase(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

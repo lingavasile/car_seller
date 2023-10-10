@@ -1,0 +1,403 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > PackageDefinitionStrategy</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.dynamic.loading</a>
+</div>
+
+<h1>Coverage Summary for Class: PackageDefinitionStrategy (net.bytebuddy.dynamic.loading)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">PackageDefinitionStrategy$Definition</td>
+  </tr>
+  <tr>
+    <td class="name">PackageDefinitionStrategy$Definition$Trivial</td>
+<td class="coverageStat">
+  <span class="percent">
+    90%
+  </span>
+  <span class="absValue">
+    (9/10)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    92.3%
+  </span>
+  <span class="absValue">
+    (12/13)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">PackageDefinitionStrategy$Definition$Undefined</td>
+<td class="coverageStat">
+  <span class="percent">
+    20%
+  </span>
+  <span class="absValue">
+    (2/10)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    27.3%
+  </span>
+  <span class="absValue">
+    (3/11)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">PackageDefinitionStrategy$NoOp</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">PackageDefinitionStrategy$Trivial</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    62.5%
+  </span>
+  <span class="absValue">
+    (15/24)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    70%
+  </span>
+  <span class="absValue">
+    (21/30)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.dynamic.loading;
+&nbsp;
+&nbsp;public interface PackageDefinitionStrategy {
+&nbsp;    net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.Definition define(java.lang.ClassLoader classLoader, java.lang.String s, java.lang.String s1);
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ManifestReading implements net.bytebuddy.dynamic.loading.PackageDefinitionStrategy {
+&nbsp;        @net.bytebuddy.utility.nullability.AlwaysNull
+&nbsp;        private static final java.net.URL NOT_SEALED;
+&nbsp;        private static final java.util.jar.Attributes.Name[] ATTRIBUTE_NAMES;
+&nbsp;        private final net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.ManifestReading.SealBaseLocator sealBaseLocator;
+&nbsp;
+&nbsp;        public ManifestReading() { /* compiled code */ }
+&nbsp;
+&nbsp;        public ManifestReading(net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.ManifestReading.SealBaseLocator sealBaseLocator) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.Definition define(java.lang.ClassLoader classLoader, java.lang.String packageName, java.lang.String typeName) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        public static interface SealBaseLocator {
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            java.net.URL findSealBase(java.lang.ClassLoader classLoader, java.lang.String s);
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            static class ForTypeResourceUrl implements net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.ManifestReading.SealBaseLocator {
+&nbsp;                private static final int EXCLUDE_INITIAL_SLASH = 1;
+&nbsp;                private static final java.lang.String CLASS_FILE_EXTENSION = &quot;.class&quot;;
+&nbsp;                private static final java.lang.String JAR_FILE = &quot;jar&quot;;
+&nbsp;                private static final java.lang.String FILE_SYSTEM = &quot;file&quot;;
+&nbsp;                private static final java.lang.String RUNTIME_IMAGE = &quot;jrt&quot;;
+&nbsp;                private final net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.ManifestReading.SealBaseLocator fallback;
+&nbsp;
+&nbsp;                public ForTypeResourceUrl() { /* compiled code */ }
+&nbsp;
+&nbsp;                public ForTypeResourceUrl(net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.ManifestReading.SealBaseLocator fallback) { /* compiled code */ }
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;                public java.net.URL findSealBase(java.lang.ClassLoader classLoader, java.lang.String typeName) { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+<b class="fc">&nbsp;            static class ForFixedValue implements net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.ManifestReading.SealBaseLocator {</b>
+&nbsp;                @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;                @net.bytebuddy.build.HashCodeAndEqualsPlugin.ValueHandling(net.bytebuddy.build.HashCodeAndEqualsPlugin.ValueHandling.Sort.REVERSE_NULLABILITY)
+&nbsp;                private final java.net.URL sealBase;
+&nbsp;
+<b class="fc">&nbsp;                public ForFixedValue(@net.bytebuddy.utility.nullability.MaybeNull java.net.URL sealBase) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;                public java.net.URL findSealBase(java.lang.ClassLoader classLoader, java.lang.String typeName) { /* compiled code */ }
+&nbsp;
+&nbsp;                @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;DMI_BLOCKING_METHODS_ON_URL&quot;}, justification = &quot;Package sealing relies on URL equality.&quot;)
+<b class="fc">&nbsp;                public int hashCode() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;                @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;DMI_BLOCKING_METHODS_ON_URL&quot;}, justification = &quot;Package sealing relies on URL equality.&quot;)
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object other) { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            static enum NonSealing implements net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.ManifestReading.SealBaseLocator {
+<b class="fc">&nbsp;                INSTANCE;</b>
+&nbsp;
+&nbsp;                private NonSealing() { /* compiled code */ }
+&nbsp;
+&nbsp;                @net.bytebuddy.utility.nullability.MaybeNull
+<b class="fc">&nbsp;                public java.net.URL findSealBase(java.lang.ClassLoader classLoader, java.lang.String typeName) { /* compiled code */ }</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface Definition {
+<b class="fc">&nbsp;        boolean isDefined();</b>
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        java.lang.String getSpecificationTitle();
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        java.lang.String getSpecificationVersion();
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        java.lang.String getSpecificationVendor();
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        java.lang.String getImplementationTitle();
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        java.lang.String getImplementationVersion();
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        java.lang.String getImplementationVendor();
+&nbsp;
+&nbsp;        @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;        java.net.URL getSealBase();
+&nbsp;
+&nbsp;        boolean isCompatibleTo(java.lang.Package aPackage);
+&nbsp;
+&nbsp;        static class Simple implements net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.Definition {
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            protected final java.net.URL sealBase;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            private final java.lang.String specificationTitle;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            private final java.lang.String specificationVersion;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            private final java.lang.String specificationVendor;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            private final java.lang.String implementationTitle;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            private final java.lang.String implementationVersion;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            private final java.lang.String implementationVendor;
+&nbsp;
+&nbsp;            public Simple(@net.bytebuddy.utility.nullability.MaybeNull java.lang.String specificationTitle, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String specificationVersion, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String specificationVendor, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String implementationTitle, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String implementationVersion, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String implementationVendor, @net.bytebuddy.utility.nullability.MaybeNull java.net.URL sealBase) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean isDefined() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.lang.String getSpecificationTitle() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.lang.String getSpecificationVersion() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.lang.String getSpecificationVendor() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.lang.String getImplementationTitle() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.lang.String getImplementationVersion() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.lang.String getImplementationVendor() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.net.URL getSealBase() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean isCompatibleTo(java.lang.Package definedPackage) { /* compiled code */ }
+&nbsp;
+&nbsp;            @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;DMI_BLOCKING_METHODS_ON_URL&quot;}, justification = &quot;Package sealing relies on URL equality.&quot;)
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;            @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;DMI_BLOCKING_METHODS_ON_URL&quot;}, justification = &quot;Package sealing relies on URL equality.&quot;)
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object other) { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        static enum Trivial implements net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.Definition {
+&nbsp;            INSTANCE;
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.AlwaysNull
+&nbsp;            private static final java.lang.String NO_VALUE;
+&nbsp;            @net.bytebuddy.utility.nullability.AlwaysNull
+&nbsp;            private static final java.net.URL NOT_SEALED;
+&nbsp;
+&nbsp;            private Trivial() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean isDefined() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.lang.String getSpecificationTitle() { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull</b>
+&nbsp;            public java.lang.String getSpecificationVersion() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.lang.String getSpecificationVendor() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.lang.String getImplementationTitle() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.lang.String getImplementationVersion() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;            public java.lang.String getImplementationVendor() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;            public java.net.URL getSealBase() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean isCompatibleTo(java.lang.Package definedPackage) { /* compiled code */ }
+<b class="nc">&nbsp;        }</b>
+&nbsp;
+&nbsp;        static enum Undefined implements net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.Definition {
+&nbsp;            INSTANCE;
+&nbsp;
+&nbsp;            private Undefined() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;            public boolean isDefined() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;            public java.lang.String getSpecificationTitle() { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.String getSpecificationVersion() { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.String getSpecificationVendor() { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;            public java.lang.String getImplementationTitle() { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.String getImplementationVersion() { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.lang.String getImplementationVendor() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;            public java.net.URL getSealBase() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;            public boolean isCompatibleTo(java.lang.Package definedPackage) { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static enum Trivial implements net.bytebuddy.dynamic.loading.PackageDefinitionStrategy {
+<b class="nc">&nbsp;        INSTANCE;</b>
+&nbsp;
+&nbsp;        private Trivial() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.Definition define(java.lang.ClassLoader classLoader, java.lang.String packageName, java.lang.String typeName) { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    static enum NoOp implements net.bytebuddy.dynamic.loading.PackageDefinitionStrategy {</b>
+&nbsp;        INSTANCE;
+&nbsp;
+&nbsp;        private NoOp() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.Definition define(java.lang.ClassLoader classLoader, java.lang.String packageName, java.lang.String typeName) { /* compiled code */ }
+&nbsp;    }
+<b class="nc">&nbsp;}</b>
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

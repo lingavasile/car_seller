@@ -1,0 +1,550 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > MethodDelegation</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.implementation</a>
+</div>
+
+<h1>Coverage Summary for Class: MethodDelegation (net.bytebuddy.implementation)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">MethodDelegation</td>
+<td class="coverageStat">
+  <span class="percent">
+    19.4%
+  </span>
+  <span class="absValue">
+    (6/31)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    35.9%
+  </span>
+  <span class="absValue">
+    (14/39)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">MethodDelegation$Appender</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (11/11)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodDelegation$ImplementationDelegate</td>
+  </tr>
+  <tr>
+    <td class="name">MethodDelegation$ImplementationDelegate$Compiled</td>
+  </tr>
+  <tr>
+    <td class="name">MethodDelegation$ImplementationDelegate$Compiled$ForStaticCall</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/5)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodDelegation$ImplementationDelegate$ForStaticMethod</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (9/9)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodDelegation$WithCustomProperties</td>
+<td class="coverageStat">
+  <span class="percent">
+    20%
+  </span>
+  <span class="absValue">
+    (6/30)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    28.3%
+  </span>
+  <span class="absValue">
+    (13/46)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    31%
+  </span>
+  <span class="absValue">
+    (22/71)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    47.3%
+  </span>
+  <span class="absValue">
+    (52/110)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.implementation;
+&nbsp;
+&nbsp;@net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;public class MethodDelegation implements net.bytebuddy.implementation.Implementation.Composable {
+&nbsp;    private final net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate implementationDelegate;
+&nbsp;    private final java.util.List&lt;net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders;
+&nbsp;    private final net.bytebuddy.implementation.bind.MethodDelegationBinder.AmbiguityResolver ambiguityResolver;
+&nbsp;    private final net.bytebuddy.implementation.bind.MethodDelegationBinder.TerminationHandler terminationHandler;
+&nbsp;    private final net.bytebuddy.implementation.bind.MethodDelegationBinder.BindingResolver bindingResolver;
+&nbsp;    private final net.bytebuddy.implementation.bytecode.assign.Assigner assigner;
+&nbsp;
+&nbsp;    protected MethodDelegation(net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate implementationDelegate, java.util.List&lt;net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders, net.bytebuddy.implementation.bind.MethodDelegationBinder.AmbiguityResolver ambiguityResolver, net.bytebuddy.implementation.bind.MethodDelegationBinder.BindingResolver bindingResolver) { /* compiled code */ }
+&nbsp;
+&nbsp;    private MethodDelegation(net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate implementationDelegate, java.util.List&lt;net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders, net.bytebuddy.implementation.bind.MethodDelegationBinder.AmbiguityResolver ambiguityResolver, net.bytebuddy.implementation.bind.MethodDelegationBinder.TerminationHandler terminationHandler, net.bytebuddy.implementation.bind.MethodDelegationBinder.BindingResolver bindingResolver, net.bytebuddy.implementation.bytecode.assign.Assigner assigner) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.String fieldName) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.String fieldName, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.reflect.Type type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.reflect.Type type, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.reflect.Type type, java.lang.String fieldName) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.reflect.Type type, java.lang.String fieldName, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, net.bytebuddy.description.type.TypeDefinition typeDefinition) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, net.bytebuddy.description.type.TypeDefinition typeDefinition, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, net.bytebuddy.description.type.TypeDefinition typeDefinition, java.lang.String fieldName) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, net.bytebuddy.description.type.TypeDefinition typeDefinition, java.lang.String fieldName, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation toConstructor(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation toConstructor(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation toField(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation toField(java.lang.String name, net.bytebuddy.dynamic.scaffold.FieldLocator.Factory fieldLocatorFactory) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation toField(java.lang.String name, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation toField(java.lang.String name, net.bytebuddy.dynamic.scaffold.FieldLocator.Factory fieldLocatorFactory, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation toMethodReturnOf(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation toMethodReturnOf(java.lang.String name, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation.WithCustomProperties withDefaultConfiguration() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.MethodDelegation.WithCustomProperties withEmptyConfiguration() { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.implementation.Implementation.Composable withAssigner(net.bytebuddy.implementation.bytecode.assign.Assigner assigner) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.implementation.Implementation andThen(net.bytebuddy.implementation.Implementation implementation) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.implementation.Implementation.Composable andThen(net.bytebuddy.implementation.Implementation.Composable implementation) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.implementation.bytecode.ByteCodeAppender appender(net.bytebuddy.implementation.Implementation.Target implementationTarget) { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;    public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    public static class WithCustomProperties {
+&nbsp;        private final net.bytebuddy.implementation.bind.MethodDelegationBinder.AmbiguityResolver ambiguityResolver;
+&nbsp;        private final java.util.List&lt;net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders;
+&nbsp;        private final net.bytebuddy.implementation.bind.MethodDelegationBinder.BindingResolver bindingResolver;
+&nbsp;        private final net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher;
+&nbsp;
+&nbsp;        protected WithCustomProperties(net.bytebuddy.implementation.bind.MethodDelegationBinder.AmbiguityResolver ambiguityResolver, java.util.List&lt;net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders) { /* compiled code */ }
+&nbsp;
+&nbsp;        private WithCustomProperties(net.bytebuddy.implementation.bind.MethodDelegationBinder.AmbiguityResolver ambiguityResolver, java.util.List&lt;net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders, net.bytebuddy.implementation.bind.MethodDelegationBinder.BindingResolver bindingResolver, net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation.WithCustomProperties withResolvers(net.bytebuddy.implementation.bind.MethodDelegationBinder.AmbiguityResolver... ambiguityResolver) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation.WithCustomProperties withResolvers(java.util.List&lt;? extends net.bytebuddy.implementation.bind.MethodDelegationBinder.AmbiguityResolver&gt; ambiguityResolvers) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation.WithCustomProperties withBinders(net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;... parameterBinder) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation.WithCustomProperties withBinders(java.util.List&lt;? extends net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation.WithCustomProperties withBindingResolver(net.bytebuddy.implementation.bind.MethodDelegationBinder.BindingResolver bindingResolver) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation.WithCustomProperties filter(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.String fieldName) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.String fieldName, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.reflect.Type type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.reflect.Type type, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.reflect.Type type, java.lang.String fieldName) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, java.lang.reflect.Type type, java.lang.String fieldName, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, net.bytebuddy.description.type.TypeDefinition typeDefinition) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, net.bytebuddy.description.type.TypeDefinition typeDefinition, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, net.bytebuddy.description.type.TypeDefinition typeDefinition, java.lang.String fieldName) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation to(java.lang.Object target, net.bytebuddy.description.type.TypeDefinition typeDefinition, java.lang.String fieldName, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation toConstructor(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation toConstructor(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation toField(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation toField(java.lang.String name, net.bytebuddy.dynamic.scaffold.FieldLocator.Factory fieldLocatorFactory) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation toField(java.lang.String name, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation toField(java.lang.String name, net.bytebuddy.dynamic.scaffold.FieldLocator.Factory fieldLocatorFactory, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation toMethodReturnOf(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.MethodDelegation toMethodReturnOf(java.lang.String name, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    protected static class Appender implements net.bytebuddy.implementation.bytecode.ByteCodeAppender {
+&nbsp;        private final net.bytebuddy.implementation.Implementation.Target implementationTarget;
+&nbsp;        private final net.bytebuddy.implementation.bind.MethodDelegationBinder.Record processor;
+&nbsp;        private final net.bytebuddy.implementation.bind.MethodDelegationBinder.TerminationHandler terminationHandler;
+&nbsp;        private final net.bytebuddy.implementation.bytecode.assign.Assigner assigner;
+&nbsp;        private final net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled compiled;
+&nbsp;
+&nbsp;        protected Appender(net.bytebuddy.implementation.Implementation.Target implementationTarget, net.bytebuddy.implementation.bind.MethodDelegationBinder.Record processor, net.bytebuddy.implementation.bind.MethodDelegationBinder.TerminationHandler terminationHandler, net.bytebuddy.implementation.bytecode.assign.Assigner assigner, net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled compiled) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext, net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    protected static interface ImplementationDelegate extends net.bytebuddy.dynamic.scaffold.InstrumentedType.Prepareable {
+&nbsp;        java.lang.String FIELD_NAME_PREFIX = &quot;delegate&quot;;
+&nbsp;
+&nbsp;        net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled compile(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class ForConstruction implements net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate {
+&nbsp;            private final net.bytebuddy.description.type.TypeDescription typeDescription;
+&nbsp;            private final java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records;
+&nbsp;
+&nbsp;            protected ForConstruction(net.bytebuddy.description.type.TypeDescription typeDescription, java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected static net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate of(net.bytebuddy.description.type.TypeDescription typeDescription, net.bytebuddy.description.method.MethodList&lt;?&gt; methods, net.bytebuddy.implementation.bind.MethodDelegationBinder methodDelegationBinder) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled compile(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class ForMethodReturn implements net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate {
+&nbsp;            private final java.lang.String name;
+&nbsp;            private final net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler;
+&nbsp;            private final java.util.List&lt;? extends net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders;
+&nbsp;            private final net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher;
+&nbsp;
+&nbsp;            protected ForMethodReturn(java.lang.String name, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler, java.util.List&lt;? extends net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders, net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled compile(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static abstract class ForField implements net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate {
+&nbsp;            protected final java.lang.String fieldName;
+&nbsp;            protected final net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler;
+&nbsp;            protected final java.util.List&lt;? extends net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders;
+&nbsp;            protected final net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher;
+&nbsp;
+&nbsp;            protected ForField(java.lang.String fieldName, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler, java.util.List&lt;? extends net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders, net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled compile(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected abstract net.bytebuddy.description.field.FieldDescription resolve(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            protected static class WithLookup extends net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.ForField {
+&nbsp;                private final net.bytebuddy.dynamic.scaffold.FieldLocator.Factory fieldLocatorFactory;
+&nbsp;
+<b class="fc">&nbsp;                protected WithLookup(java.lang.String fieldName, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler, java.util.List&lt;? extends net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders, net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher, net.bytebuddy.dynamic.scaffold.FieldLocator.Factory fieldLocatorFactory) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;                public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;                protected net.bytebuddy.description.field.FieldDescription resolve(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            protected static class WithInstance extends net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.ForField {
+&nbsp;                private final java.lang.Object target;
+&nbsp;                private final net.bytebuddy.description.type.TypeDescription.Generic fieldType;
+&nbsp;
+&nbsp;                protected WithInstance(java.lang.String fieldName, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler, java.util.List&lt;? extends net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;?&gt;&gt; parameterBinders, net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher, java.lang.Object target, net.bytebuddy.description.type.TypeDescription.Generic fieldType) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;                protected net.bytebuddy.description.field.FieldDescription resolve(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;                public int hashCode() { /* compiled code */ }</b>
+<b class="fc">&nbsp;            }</b>
+<b class="fc">&nbsp;        }</b>
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance</b>
+<b class="fc">&nbsp;        static class ForStaticMethod implements net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate {</b>
+&nbsp;            private final java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records;
+&nbsp;
+&nbsp;            protected ForStaticMethod(java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected static net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate of(net.bytebuddy.description.method.MethodList&lt;?&gt; methods, net.bytebuddy.implementation.bind.MethodDelegationBinder methodDelegationBinder) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled compile(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+<b class="fc">&nbsp;        }</b>
+&nbsp;
+&nbsp;        static interface Compiled {
+&nbsp;            net.bytebuddy.implementation.bytecode.StackManipulation prepare(net.bytebuddy.description.method.MethodDescription methodDescription);
+&nbsp;
+&nbsp;            net.bytebuddy.implementation.bind.MethodDelegationBinder.MethodInvoker invoke();
+&nbsp;
+&nbsp;            java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; getRecords();
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            static class ForConstruction implements net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled {
+&nbsp;                private final net.bytebuddy.description.type.TypeDescription typeDescription;
+&nbsp;                private final java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records;
+&nbsp;
+<b class="nc">&nbsp;                protected ForConstruction(net.bytebuddy.description.type.TypeDescription typeDescription, java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.bytecode.StackManipulation prepare(net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.bind.MethodDelegationBinder.MethodInvoker invoke() { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; getRecords() { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+<b class="nc">&nbsp;            static class ForMethodReturn implements net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled {</b>
+&nbsp;                private final net.bytebuddy.description.method.MethodDescription methodDescription;
+&nbsp;                private final java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records;
+&nbsp;
+&nbsp;                protected ForMethodReturn(net.bytebuddy.description.method.MethodDescription methodDescription, java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.bytecode.StackManipulation prepare(net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.bind.MethodDelegationBinder.MethodInvoker invoke() { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; getRecords() { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+<b class="nc">&nbsp;            }</b>
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            static class ForField implements net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled {
+&nbsp;                private final net.bytebuddy.description.field.FieldDescription fieldDescription;
+&nbsp;                private final java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records;
+&nbsp;
+&nbsp;                protected ForField(net.bytebuddy.description.field.FieldDescription fieldDescription, java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.bytecode.StackManipulation prepare(net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.bind.MethodDelegationBinder.MethodInvoker invoke() { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; getRecords() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            static class ForStaticCall implements net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled {
+&nbsp;                private final java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records;
+&nbsp;
+&nbsp;                protected ForStaticCall(java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; records) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.bytecode.StackManipulation prepare(net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.bind.MethodDelegationBinder.MethodInvoker invoke() { /* compiled code */ }
+&nbsp;
+&nbsp;                public java.util.List&lt;net.bytebuddy.implementation.bind.MethodDelegationBinder.Record&gt; getRecords() { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

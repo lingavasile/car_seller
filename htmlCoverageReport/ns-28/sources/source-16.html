@@ -1,0 +1,168 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ModifierMatcher</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.matcher</a>
+</div>
+
+<h1>Coverage Summary for Class: ModifierMatcher (net.bytebuddy.matcher)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ModifierMatcher</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (4/5)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">ModifierMatcher$Mode</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (4/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    96.2%
+  </span>
+  <span class="absValue">
+    (25/26)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    77.8%
+  </span>
+  <span class="absValue">
+    (7/9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    93.5%
+  </span>
+  <span class="absValue">
+    (29/31)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.matcher;
+&nbsp;
+&nbsp;@net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;public class ModifierMatcher &lt;T extends net.bytebuddy.description.ModifierReviewable&gt; extends net.bytebuddy.matcher.ElementMatcher.Junction.ForNonNullValues&lt;T&gt; {
+&nbsp;    private final net.bytebuddy.matcher.ModifierMatcher.Mode mode;
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; of(net.bytebuddy.matcher.ModifierMatcher.Mode mode) { /* compiled code */ }
+&nbsp;
+&nbsp;    public ModifierMatcher(net.bytebuddy.matcher.ModifierMatcher.Mode mode) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected boolean doMatch(T target) { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String toString() { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;    public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static enum Mode {
+&nbsp;        PUBLIC, PROTECTED, PRIVATE, FINAL, STATIC, SYNCHRONIZED, NATIVE, STRICT, VAR_ARGS, SYNTHETIC, BRIDGE, ABSTRACT, INTERFACE, ANNOTATION, VOLATILE, TRANSIENT, MANDATED, ENUMERATION;
+&nbsp;
+&nbsp;        private final int modifiers;
+&nbsp;        private final java.lang.String description;
+&nbsp;        private final net.bytebuddy.matcher.ModifierMatcher&lt;?&gt; matcher;
+&nbsp;
+&nbsp;        private Mode(int modifiers, java.lang.String description) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected java.lang.String getDescription() { /* compiled code */ }
+&nbsp;
+&nbsp;        protected int getModifiers() { /* compiled code */ }
+&nbsp;
+&nbsp;        protected net.bytebuddy.matcher.ModifierMatcher&lt;?&gt; getMatcher() { /* compiled code */ }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

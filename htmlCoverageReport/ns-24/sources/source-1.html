@@ -1,0 +1,286 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > FieldAccess</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.implementation.bytecode.member</a>
+</div>
+
+<h1>Coverage Summary for Class: FieldAccess (net.bytebuddy.implementation.bytecode.member)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">FieldAccess</td>
+<td class="coverageStat">
+  <span class="percent">
+    83.3%
+  </span>
+  <span class="absValue">
+    (5/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    64.7%
+  </span>
+  <span class="absValue">
+    (11/17)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">FieldAccess$AccessDispatcher</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/5)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">FieldAccess$AccessDispatcher$AbstractFieldInstruction</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (6/6)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">FieldAccess$AccessDispatcher$FieldGetInstruction</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">FieldAccess$AccessDispatcher$FieldPutInstruction</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">FieldAccess$Defined</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    94.4%
+  </span>
+  <span class="absValue">
+    (17/18)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    82.9%
+  </span>
+  <span class="absValue">
+    (29/35)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.implementation.bytecode.member;
+&nbsp;
+&nbsp;public enum FieldAccess {
+&nbsp;    STATIC, INSTANCE;
+&nbsp;
+&nbsp;    private final int putterOpcode;
+&nbsp;    private final int getterOpcode;
+&nbsp;    private final int targetSizeChange;
+&nbsp;
+&nbsp;    private FieldAccess(int putterOpcode, int getterOpcode, net.bytebuddy.implementation.bytecode.StackSize targetSizeChange) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.bytecode.StackManipulation forEnumeration(net.bytebuddy.description.enumeration.EnumerationDescription enumerationDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.bytecode.member.FieldAccess.Defined forField(net.bytebuddy.description.field.FieldDescription.InDefinedShape fieldDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.bytecode.member.FieldAccess.Defined forField(net.bytebuddy.description.field.FieldDescription fieldDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance(includeSyntheticFields = true)
+&nbsp;    protected class AccessDispatcher implements net.bytebuddy.implementation.bytecode.member.FieldAccess.Defined {
+&nbsp;        private final net.bytebuddy.description.field.FieldDescription.InDefinedShape fieldDescription;
+&nbsp;
+&nbsp;        protected AccessDispatcher(net.bytebuddy.description.field.FieldDescription.InDefinedShape fieldDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.StackManipulation read() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.StackManipulation write() { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance(includeSyntheticFields = true)
+&nbsp;        protected class FieldPutInstruction extends net.bytebuddy.implementation.bytecode.member.FieldAccess.AccessDispatcher.AbstractFieldInstruction {
+&nbsp;            protected FieldPutInstruction() { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;            protected int getOpcode() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;            protected net.bytebuddy.implementation.bytecode.StackManipulation.Size resolveSize(net.bytebuddy.implementation.bytecode.StackSize fieldSize) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance(includeSyntheticFields = true)
+&nbsp;        protected class FieldGetInstruction extends net.bytebuddy.implementation.bytecode.member.FieldAccess.AccessDispatcher.AbstractFieldInstruction {
+&nbsp;            protected FieldGetInstruction() { /* compiled code */ }
+&nbsp;
+&nbsp;            protected int getOpcode() { /* compiled code */ }
+&nbsp;
+&nbsp;            protected net.bytebuddy.implementation.bytecode.StackManipulation.Size resolveSize(net.bytebuddy.implementation.bytecode.StackSize fieldSize) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        private abstract class AbstractFieldInstruction extends net.bytebuddy.implementation.bytecode.StackManipulation.AbstractBase {
+&nbsp;            private AbstractFieldInstruction() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.bytecode.StackManipulation.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected abstract int getOpcode();
+&nbsp;
+&nbsp;            protected abstract net.bytebuddy.implementation.bytecode.StackManipulation.Size resolveSize(net.bytebuddy.implementation.bytecode.StackSize stackSize);
+&nbsp;        }
+<b class="fc">&nbsp;    }</b>
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance</b>
+<b class="fc">&nbsp;    protected static class OfGenericField implements net.bytebuddy.implementation.bytecode.member.FieldAccess.Defined {</b>
+&nbsp;        private final net.bytebuddy.description.type.TypeDefinition targetType;
+&nbsp;        private final net.bytebuddy.implementation.bytecode.member.FieldAccess.Defined defined;
+&nbsp;
+&nbsp;        protected OfGenericField(net.bytebuddy.description.type.TypeDefinition targetType, net.bytebuddy.implementation.bytecode.member.FieldAccess.Defined defined) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected static net.bytebuddy.implementation.bytecode.member.FieldAccess.Defined of(net.bytebuddy.description.field.FieldDescription fieldDescription, net.bytebuddy.implementation.bytecode.member.FieldAccess.Defined fieldAccess) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.StackManipulation read() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;        public net.bytebuddy.implementation.bytecode.StackManipulation write() { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;        public int hashCode() { /* compiled code */ }
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    public static interface Defined {
+&nbsp;        net.bytebuddy.implementation.bytecode.StackManipulation read();
+&nbsp;
+&nbsp;        net.bytebuddy.implementation.bytecode.StackManipulation write();
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

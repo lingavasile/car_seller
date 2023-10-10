@@ -1,0 +1,182 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > CustomerRepoTest</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.vasile.linga.repository.CustomerRepo</a>
+</div>
+
+<h1>Coverage Summary for Class: CustomerRepoTest (com.vasile.linga.repository.CustomerRepo)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CustomerRepoTest</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (16/16)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.vasile.linga.repository.CustomerRepo;
+&nbsp;
+&nbsp;import com.vasile.linga.CarNotFoundException;
+&nbsp;import com.vasile.linga.CustomerNotFoundException;
+&nbsp;import com.vasile.linga.interfaces.IDiscounter;
+&nbsp;import com.vasile.linga.interfaces.IStateEvaluator;
+&nbsp;import com.vasile.linga.models.CarTypes.PetrolCar;
+&nbsp;import com.vasile.linga.models.Customer;
+&nbsp;import com.vasile.linga.models.EngineTypes.PetrolEngine;
+&nbsp;import com.vasile.linga.utils.AutomobileState;
+&nbsp;import org.junit.jupiter.api.Assertions;
+&nbsp;import org.junit.jupiter.api.BeforeEach;
+&nbsp;import org.junit.jupiter.api.DisplayName;
+&nbsp;import org.junit.jupiter.api.Test;
+&nbsp;import org.junit.jupiter.api.parallel.Execution;
+&nbsp;import org.mockito.Mock;
+&nbsp;import org.mockito.MockitoAnnotations;
+&nbsp;
+&nbsp;import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
+&nbsp;import static org.mockito.ArgumentMatchers.*;
+&nbsp;import static org.mockito.Mockito.verify;
+&nbsp;import static org.mockito.Mockito.when;
+&nbsp;
+&nbsp;@Execution(CONCURRENT)
+<b class="fc">&nbsp;public class CustomerRepoTest {</b>
+&nbsp;    @Mock
+&nbsp;    IDiscounter mockDiscounter;
+&nbsp;    @Mock
+&nbsp;    IStateEvaluator mockStateEvaluator;
+&nbsp;    @Mock
+&nbsp;    CustomerRepo customerRepo;
+&nbsp;    @Mock
+&nbsp;    Customer customer;
+&nbsp;    PetrolCar bmw_m3;
+&nbsp;
+&nbsp;
+&nbsp;    @BeforeEach
+&nbsp;    void setup(){
+<b class="fc">&nbsp;        MockitoAnnotations.openMocks(this);</b>
+<b class="fc">&nbsp;        customerRepo = new CustomerRepo(mockDiscounter,mockStateEvaluator);</b>
+<b class="fc">&nbsp;        bmw_m3 = new PetrolCar(&quot;GH3588JFEJ3523&quot;,&quot;BMW&quot;,&quot;M3 E46&quot;,2002,4000,60,</b>
+&nbsp;                new PetrolEngine(&quot;1252523JHJ35&quot;,&quot;BM34M12&quot;,234135,1600,120,70,25,12.8));
+<b class="fc">&nbsp;        customer = new Customer(1,&quot;Linga Vasile&quot;);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    @DisplayName(&quot;Test buyCar function with non null customer and car&quot;)
+&nbsp;    void test_buyCar_WithNonNullCustomerAndCar(){
+<b class="fc">&nbsp;        when(mockDiscounter.discount(anyString(),anyDouble())).thenReturn(3600.0);</b>
+<b class="fc">&nbsp;        when(mockStateEvaluator.stateCar(anyInt())).thenReturn(AutomobileState.GOOD_STATE);</b>
+&nbsp;
+<b class="fc">&nbsp;        customerRepo.buyCar(bmw_m3,customer);</b>
+&nbsp;
+<b class="fc">&nbsp;        Assertions.assertEquals(bmw_m3,customer.getCar());</b>
+<b class="fc">&nbsp;        Assertions.assertEquals(3600.0,customer.getFinalPrice(),0.01);</b>
+&nbsp;
+<b class="fc">&nbsp;        verify(mockDiscounter).discount(AutomobileState.GOOD_STATE,4000);</b>
+<b class="fc">&nbsp;        verify(mockStateEvaluator).stateCar(60);</b>
+&nbsp;
+&nbsp;
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    @DisplayName(&quot;Test buyCar function with null customer should throw CustomerNotFoundException&quot;)
+&nbsp;    void test_buyCar_WithNUllCustomer(){
+<b class="fc">&nbsp;        CustomerNotFoundException exception = Assertions.assertThrows(CustomerNotFoundException.class, () -&gt; customerRepo.buyCar(bmw_m3,null));</b>
+&nbsp;
+<b class="fc">&nbsp;        Assertions.assertEquals(&quot;customer is null&quot;,exception.getMessage());</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    @DisplayName(&quot;Test buyCar function with null car should throw CarNotFoundException&quot;)
+&nbsp;    void test_buyCar_WithNUllCar(){
+<b class="fc">&nbsp;        CarNotFoundException exception = Assertions.assertThrows(CarNotFoundException.class, () -&gt; customerRepo.buyCar(null,customer));</b>
+&nbsp;
+<b class="fc">&nbsp;        Assertions.assertEquals(&quot;car is null&quot;,exception.getMessage());</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

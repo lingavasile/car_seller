@@ -1,0 +1,156 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > InvocationContainerImpl</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito.internal.stubbing</a>
+</div>
+
+<h1>Coverage Summary for Class: InvocationContainerImpl (org.mockito.internal.stubbing)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">InvocationContainerImpl</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    65%
+  </span>
+  <span class="absValue">
+    (13/20)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    64.5%
+  </span>
+  <span class="absValue">
+    (40/62)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito.internal.stubbing;
+&nbsp;
+&nbsp;public class InvocationContainerImpl implements org.mockito.invocation.InvocationContainer, java.io.Serializable {
+&nbsp;    private static final long serialVersionUID = -5334301962749537177L;
+&nbsp;    private final java.util.LinkedList&lt;org.mockito.internal.stubbing.StubbedInvocationMatcher&gt; stubbed;
+&nbsp;    private final org.mockito.internal.stubbing.DoAnswerStyleStubbing doAnswerStyleStubbing;
+&nbsp;    private final org.mockito.internal.verification.RegisteredInvocations registeredInvocations;
+&nbsp;    private final org.mockito.quality.Strictness mockStrictness;
+&nbsp;    private org.mockito.invocation.MatchableInvocation invocationForStubbing;
+&nbsp;
+&nbsp;    public InvocationContainerImpl(org.mockito.mock.MockCreationSettings&lt;?&gt; mockSettings) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void setInvocationForPotentialStubbing(org.mockito.invocation.MatchableInvocation invocation) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void resetInvocationForPotentialStubbing(org.mockito.invocation.MatchableInvocation invocationMatcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void addAnswer(org.mockito.stubbing.Answer&lt;?&gt; answer, org.mockito.quality.Strictness stubbingStrictness) { /* compiled code */ }
+&nbsp;
+&nbsp;    public org.mockito.internal.stubbing.StubbedInvocationMatcher addAnswer(org.mockito.stubbing.Answer&lt;?&gt; answer, boolean isConsecutive, org.mockito.quality.Strictness stubbingStrictness) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void addConsecutiveAnswer(org.mockito.stubbing.Answer&lt;?&gt; answer) { /* compiled code */ }
+&nbsp;
+&nbsp;    java.lang.Object answerTo(org.mockito.invocation.Invocation invocation) throws java.lang.Throwable { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public org.mockito.internal.stubbing.StubbedInvocationMatcher findAnswerFor(org.mockito.invocation.Invocation invocation) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;    public void setAnswersForStubbing(java.util.List&lt;org.mockito.stubbing.Answer&lt;?&gt;&gt; answers, org.mockito.quality.Strictness strictness) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public boolean hasAnswersForStubbing() { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean hasInvocationForPotentialStubbing() { /* compiled code */ }
+&nbsp;
+&nbsp;    public void setMethodForStubbing(org.mockito.invocation.MatchableInvocation invocation) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;    public java.lang.String toString() { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;    public java.util.List&lt;org.mockito.invocation.Invocation&gt; getInvocations() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public void clearInvocations() { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;    public java.util.Collection&lt;org.mockito.stubbing.Stubbing&gt; getStubbingsAscending() { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+&nbsp;    public java.lang.Object invokedMock() { /* compiled code */ }
+&nbsp;
+&nbsp;    private org.mockito.internal.verification.RegisteredInvocations createRegisteredInvocations(org.mockito.mock.MockCreationSettings&lt;?&gt; mockSettings) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public org.mockito.stubbing.Answer&lt;?&gt; findStubbedAnswer() { /* compiled code */ }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

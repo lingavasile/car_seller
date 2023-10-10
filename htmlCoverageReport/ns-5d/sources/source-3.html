@@ -1,0 +1,203 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > LocationImpl</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito.internal.debugging</a>
+</div>
+
+<h1>Coverage Summary for Class: LocationImpl (org.mockito.internal.debugging)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">LocationImpl</td>
+<td class="coverageStat">
+  <span class="percent">
+    60%
+  </span>
+  <span class="absValue">
+    (9/15)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    62.5%
+  </span>
+  <span class="absValue">
+    (25/40)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">LocationImpl$MetadataShim</td>
+<td class="coverageStat">
+  <span class="percent">
+    28.6%
+  </span>
+  <span class="absValue">
+    (2/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    37.5%
+  </span>
+  <span class="absValue">
+    (3/8)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (11/22)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    58.3%
+  </span>
+  <span class="absValue">
+    (28/48)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito.internal.debugging;
+&nbsp;
+&nbsp;class LocationImpl implements org.mockito.invocation.Location, java.io.Serializable {
+&nbsp;    private static final long serialVersionUID = 2954388321980069195L;
+&nbsp;    private static final java.lang.String UNEXPECTED_ERROR_SUFFIX = &quot;\nThis is unexpected and is likely due to a change in either Java&#39;s StackWalker or Reflection APIs.\nIt&#39;s worth trying to upgrade to a newer version of Mockito, or otherwise to file a bug report.&quot;;
+&nbsp;    private static final int BUFFER_SIZE = 16;
+&nbsp;    private static final java.lang.StackWalker STACK_WALKER;
+&nbsp;    private static final java.lang.String PREFIX = &quot;-&gt; at &quot;;
+&nbsp;    private static final org.mockito.exceptions.stacktrace.StackTraceCleaner CLEANER;
+&nbsp;    private static final java.util.function.Function&lt;java.lang.StackWalker.StackFrame,org.mockito.exceptions.stacktrace.StackTraceCleaner.StackFrameMetadata&gt; toStackFrameMetadata;
+&nbsp;    private static final java.util.function.Predicate&lt;org.mockito.exceptions.stacktrace.StackTraceCleaner.StackFrameMetadata&gt; cleanerIsIn;
+&nbsp;    private static final int FRAMES_TO_SKIP;
+&nbsp;    private final org.mockito.exceptions.stacktrace.StackTraceCleaner.StackFrameMetadata sfm;
+&nbsp;    private volatile java.lang.String stackTraceLine;
+&nbsp;
+&nbsp;    LocationImpl(boolean isInline) { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String getSourceFile() { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String toString() { /* compiled code */ }
+&nbsp;
+&nbsp;    private java.lang.String stackTraceLine() { /* compiled code */ }
+&nbsp;
+&nbsp;    private static org.mockito.exceptions.stacktrace.StackTraceCleaner.StackFrameMetadata getStackFrame(boolean isInline) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static boolean usingDefaultStackTraceCleaner() { /* compiled code */ }
+&nbsp;
+&nbsp;    private static java.lang.String noStackTraceFailureMessage() { /* compiled code */ }
+&nbsp;
+&nbsp;    private static int framesToSkip() { /* compiled code */ }
+&nbsp;
+&nbsp;    private static &lt;T&gt; T stackWalk(java.util.function.Function&lt;java.util.stream.Stream&lt;java.lang.StackWalker.StackFrame&gt;,T&gt; function) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static java.lang.StackWalker stackWalker() { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;    private static final class MetadataShim implements org.mockito.exceptions.stacktrace.StackTraceCleaner.StackFrameMetadata, java.io.Serializable {</b>
+&nbsp;        private static final long serialVersionUID = 8491903719411428648L;
+&nbsp;        private final java.lang.StackWalker.StackFrame stackFrame;
+&nbsp;
+&nbsp;        private MetadataShim(java.lang.StackWalker.StackFrame stackFrame) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;        public java.lang.String getClassName() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public java.lang.String getMethodName() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String getFileName() { /* compiled code */ }
+&nbsp;
+&nbsp;        public int getLineNumber() { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;        public java.lang.String toString() { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+&nbsp;        private java.lang.Object writeReplace() { /* compiled code */ }
+<b class="fc">&nbsp;    }</b>
+&nbsp;
+<b class="fc">&nbsp;    private static final class SerializableShim implements org.mockito.exceptions.stacktrace.StackTraceCleaner.StackFrameMetadata, java.io.Serializable {</b>
+&nbsp;        private static final long serialVersionUID = 7908320459080898690L;
+&nbsp;        private final java.lang.StackTraceElement ste;
+&nbsp;
+&nbsp;        private SerializableShim(java.lang.StackTraceElement ste) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;        public java.lang.String getClassName() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public java.lang.String getMethodName() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.String getFileName() { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;        public int getLineNumber() { /* compiled code */ }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

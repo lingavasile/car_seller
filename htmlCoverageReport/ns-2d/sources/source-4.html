@@ -1,0 +1,187 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > MetadataAwareClassVisitor</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.utility.visitor</a>
+</div>
+
+<h1>Coverage Summary for Class: MetadataAwareClassVisitor (net.bytebuddy.utility.visitor)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">MetadataAwareClassVisitor</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    29%
+  </span>
+  <span class="absValue">
+    (9/31)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    47.1%
+  </span>
+  <span class="absValue">
+    (33/70)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.utility.visitor;
+&nbsp;
+&nbsp;public abstract class MetadataAwareClassVisitor extends net.bytebuddy.jar.asm.ClassVisitor {
+&nbsp;    private boolean triggerNestHost;
+&nbsp;    private boolean triggerOuterClass;
+&nbsp;    private boolean triggerAttributes;
+&nbsp;
+&nbsp;    protected MetadataAwareClassVisitor(int api, net.bytebuddy.jar.asm.ClassVisitor classVisitor) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected void onNestHost() { /* compiled code */ }
+&nbsp;
+&nbsp;    protected void onOuterType() { /* compiled code */ }
+&nbsp;
+&nbsp;    protected void onAfterAttributes() { /* compiled code */ }
+&nbsp;
+&nbsp;    private void considerTriggerNestHost() { /* compiled code */ }
+&nbsp;
+&nbsp;    private void considerTriggerOuterClass() { /* compiled code */ }
+&nbsp;
+&nbsp;    private void considerTriggerAfterAttributes() { /* compiled code */ }
+&nbsp;
+&nbsp;    public final void visitNestHost(java.lang.String nestHost) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected void onVisitNestHost(java.lang.String nestHost) { /* compiled code */ }
+&nbsp;
+&nbsp;    public final void visitOuterClass(java.lang.String owner, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String name, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String descriptor) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected void onVisitOuterClass(java.lang.String owner, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String name, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String descriptor) { /* compiled code */ }
+&nbsp;
+&nbsp;    public final void visitPermittedSubclass(java.lang.String permittedSubclass) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected void onVisitPermittedSubclass(java.lang.String permittedSubclass) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    public net.bytebuddy.jar.asm.RecordComponentVisitor visitRecordComponent(java.lang.String name, java.lang.String descriptor, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String signature) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    protected net.bytebuddy.jar.asm.RecordComponentVisitor onVisitRecordComponent(java.lang.String name, java.lang.String descriptor, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String signature) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    public final net.bytebuddy.jar.asm.AnnotationVisitor visitAnnotation(java.lang.String descriptor, boolean visible) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+<b class="fc">&nbsp;    protected net.bytebuddy.jar.asm.AnnotationVisitor onVisitAnnotation(java.lang.String descriptor, boolean visible) { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull</b>
+<b class="fc">&nbsp;    public final net.bytebuddy.jar.asm.AnnotationVisitor visitTypeAnnotation(int typeReference, net.bytebuddy.jar.asm.TypePath typePath, java.lang.String descriptor, boolean visible) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    protected net.bytebuddy.jar.asm.AnnotationVisitor onVisitTypeAnnotation(int typeReference, net.bytebuddy.jar.asm.TypePath typePath, java.lang.String descriptor, boolean visible) { /* compiled code */ }
+&nbsp;
+&nbsp;    public final void visitAttribute(net.bytebuddy.jar.asm.Attribute attribute) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected void onVisitAttribute(net.bytebuddy.jar.asm.Attribute attribute) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public final void visitNestMember(java.lang.String nestMember) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected void onVisitNestMember(java.lang.String nestMember) { /* compiled code */ }
+&nbsp;
+&nbsp;    public final void visitInnerClass(java.lang.String name, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String outerName, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String innerName, int modifiers) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    protected void onVisitInnerClass(java.lang.String internalName, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String outerName, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String innerName, int modifiers) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    public final net.bytebuddy.jar.asm.FieldVisitor visitField(int modifiers, java.lang.String internalName, java.lang.String descriptor, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String signature, @net.bytebuddy.utility.nullability.MaybeNull java.lang.Object value) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    protected net.bytebuddy.jar.asm.FieldVisitor onVisitField(int modifiers, java.lang.String internalName, java.lang.String descriptor, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String signature, @net.bytebuddy.utility.nullability.MaybeNull java.lang.Object value) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    public final net.bytebuddy.jar.asm.MethodVisitor visitMethod(int modifiers, java.lang.String internalName, java.lang.String descriptor, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String signature, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String[] exception) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    protected net.bytebuddy.jar.asm.MethodVisitor onVisitMethod(int modifiers, java.lang.String internalName, java.lang.String descriptor, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String signature, @net.bytebuddy.utility.nullability.MaybeNull java.lang.String[] exception) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;    public final void visitEnd() { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+&nbsp;    protected void onVisitEnd() { /* compiled code */ }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

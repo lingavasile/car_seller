@@ -1,0 +1,160 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > PrimitiveBoxingDelegate</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.implementation.bytecode.assign.primitive</a>
+</div>
+
+<h1>Coverage Summary for Class: PrimitiveBoxingDelegate (net.bytebuddy.implementation.bytecode.assign.primitive)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">PrimitiveBoxingDelegate</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    84.4%
+  </span>
+  <span class="absValue">
+    (27/32)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">PrimitiveBoxingDelegate$BoxingStackManipulation</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (8/8)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (8/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    87.5%
+  </span>
+  <span class="absValue">
+    (35/40)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.implementation.bytecode.assign.primitive;
+&nbsp;
+&nbsp;public enum PrimitiveBoxingDelegate {
+&nbsp;    BOOLEAN, BYTE, SHORT, CHARACTER, INTEGER, LONG, FLOAT, DOUBLE;
+&nbsp;
+&nbsp;    private final net.bytebuddy.description.type.TypeDescription wrapperType;
+&nbsp;    private final net.bytebuddy.implementation.bytecode.StackManipulation.Size size;
+&nbsp;    private final java.lang.String boxingMethodName;
+&nbsp;    private final java.lang.String boxingMethodDescriptor;
+&nbsp;
+&nbsp;    private PrimitiveBoxingDelegate(java.lang.Class&lt;?&gt; wrapperType, net.bytebuddy.implementation.bytecode.StackSize sizeDifference, java.lang.String boxingMethodName, java.lang.String boxingMethodDescriptor) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.bytecode.assign.primitive.PrimitiveBoxingDelegate forPrimitive(net.bytebuddy.description.type.TypeDefinition typeDefinition) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.implementation.bytecode.StackManipulation assignBoxedTo(net.bytebuddy.description.type.TypeDescription.Generic target, net.bytebuddy.implementation.bytecode.assign.Assigner chainedAssigner, net.bytebuddy.implementation.bytecode.assign.Assigner.Typing typing) { /* compiled code */ }
+&nbsp;
+&nbsp;    private class BoxingStackManipulation implements net.bytebuddy.implementation.bytecode.StackManipulation {
+&nbsp;        private final net.bytebuddy.implementation.bytecode.StackManipulation stackManipulation;
+&nbsp;
+&nbsp;        public BoxingStackManipulation(net.bytebuddy.implementation.bytecode.StackManipulation stackManipulation) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean isValid() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.StackManipulation.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext) { /* compiled code */ }
+&nbsp;    }
+<b class="fc">&nbsp;}</b>
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

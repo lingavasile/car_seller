@@ -1,0 +1,505 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ElementMatchers</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.matcher</a>
+</div>
+
+<h1>Coverage Summary for Class: ElementMatchers (net.bytebuddy.matcher)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ElementMatchers</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    31%
+  </span>
+  <span class="absValue">
+    (61/197)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    29.3%
+  </span>
+  <span class="absValue">
+    (72/246)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.matcher;
+&nbsp;
+&nbsp;public final class ElementMatchers {
+&nbsp;    private ElementMatchers() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; failSafe(net.bytebuddy.matcher.ElementMatcher&lt;? super T&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; cached(net.bytebuddy.matcher.ElementMatcher&lt;? super T&gt; matcher, java.util.concurrent.ConcurrentMap&lt;? super T,java.lang.Boolean&gt; map) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; cached(net.bytebuddy.matcher.ElementMatcher&lt;? super T&gt; matcher, int evictionSize) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; is(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; is(java.lang.reflect.Field field) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; is(net.bytebuddy.description.field.FieldDescription.InDefinedShape field) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; definedField(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.field.FieldDescription.InDefinedShape&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; is(java.lang.reflect.Method method) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; is(java.lang.reflect.Constructor&lt;?&gt; constructor) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; is(net.bytebuddy.description.method.MethodDescription.InDefinedShape method) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; definedMethod(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription.InDefinedShape&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.ParameterDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; is(net.bytebuddy.description.method.ParameterDescription.InDefinedShape parameter) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.ParameterDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; definedParameter(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.ParameterDescription.InDefinedShape&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.ParameterDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasType(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.ParameterDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasGenericType(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.ParameterDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isMandated() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; is(java.lang.reflect.Type type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.annotation.AnnotationDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; is(java.lang.annotation.Annotation annotation) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; not(net.bytebuddy.matcher.ElementMatcher&lt;? super T&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; any() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; none() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; anyOf(java.lang.Object... value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; anyOf(java.lang.Iterable&lt;?&gt; values) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; anyOf(java.lang.reflect.Type... value) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; anyOf(java.lang.reflect.Constructor&lt;?&gt;... value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; anyOf(java.lang.reflect.Method... value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; anyOf(java.lang.reflect.Field... value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.annotation.AnnotationDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; anyOf(java.lang.annotation.Annotation... value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; noneOf(java.lang.Object... value) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; noneOf(java.lang.Iterable&lt;?&gt; values) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; noneOf(java.lang.reflect.Type... value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; noneOf(java.lang.reflect.Constructor&lt;?&gt;... value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; noneOf(java.lang.reflect.Method... value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; noneOf(java.lang.reflect.Field... value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.annotation.AnnotationDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; noneOf(java.lang.annotation.Annotation... value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;java.lang.Iterable&lt;? extends T&gt;&gt; whereAny(net.bytebuddy.matcher.ElementMatcher&lt;? super T&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;java.lang.Iterable&lt;? extends T&gt;&gt; whereNone(net.bytebuddy.matcher.ElementMatcher&lt;? super T&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription.Generic&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; erasure(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription.Generic&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; erasure(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription.Generic&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; erasure(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends java.lang.Iterable&lt;? extends net.bytebuddy.description.type.TypeDescription.Generic&gt;&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; erasures(java.lang.Class&lt;?&gt;... type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends java.lang.Iterable&lt;? extends net.bytebuddy.description.type.TypeDescription.Generic&gt;&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; erasures(net.bytebuddy.description.type.TypeDescription... type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends java.lang.Iterable&lt;? extends net.bytebuddy.description.type.TypeDescription.Generic&gt;&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; erasures(java.lang.Iterable&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; types) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends java.lang.Iterable&lt;? extends net.bytebuddy.description.type.TypeDescription.Generic&gt;&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; erasures(net.bytebuddy.matcher.ElementMatcher&lt;? super java.lang.Iterable&lt;? extends net.bytebuddy.description.type.TypeDescription&gt;&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isVariable(java.lang.String symbol) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isVariable(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.NamedElement&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; named(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; namedOneOf(java.lang.String... names) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; namedIgnoreCase(java.lang.String name) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; nameStartsWith(java.lang.String prefix) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; nameStartsWithIgnoreCase(java.lang.String prefix) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; nameEndsWith(java.lang.String suffix) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; nameEndsWithIgnoreCase(java.lang.String suffix) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; nameContains(java.lang.String infix) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; nameContainsIgnoreCase(java.lang.String infix) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; nameMatches(java.lang.String regex) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement.WithOptionalName&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isNamed() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.NamedElement.WithDescriptor&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasDescriptor(java.lang.String descriptor) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isDeclaredBy(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isDeclaredBy(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isDeclaredBy(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isDeclaredByGeneric(java.lang.reflect.Type type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isDeclaredByGeneric(net.bytebuddy.description.type.TypeDescription.Generic type) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.ByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isDeclaredByGeneric(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isVisibleTo(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isVisibleTo(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isAccessibleTo(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isAccessibleTo(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.OfAbstraction&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isAbstract() { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.OfEnumeration&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isEnum() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.annotation.AnnotationSource&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isAnnotatedWith(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.annotation.AnnotationSource&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isAnnotatedWith(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.annotation.AnnotationSource&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isAnnotatedWith(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.annotation.AnnotationSource&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; declaresAnnotation(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.annotation.AnnotationDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.OfByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isPublic() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.OfByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isProtected() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.OfByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isPackagePrivate() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.OfByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isPrivate() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.OfByteCodeElement&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isStatic() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isFinal() { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSynthetic() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.ForMethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSynchronized() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.ForMethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isNative() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.ForMethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isStrict() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.ForMethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isVarArgs() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.ModifierReviewable.ForMethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isBridge() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; returnsGeneric(java.lang.reflect.Type type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; returnsGeneric(net.bytebuddy.description.type.TypeDescription.Generic type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; returns(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; returns(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; returns(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; returnsGeneric(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesGenericArgument(int index, java.lang.reflect.Type type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesGenericArgument(int index, net.bytebuddy.description.type.TypeDescription.Generic type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesGenericArgument(int index, net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesGenericArguments(java.lang.reflect.Type... type) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesGenericArguments(net.bytebuddy.description.type.TypeDefinition... type) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesGenericArguments(java.util.List&lt;? extends net.bytebuddy.description.type.TypeDefinition&gt; types) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesGenericArguments(net.bytebuddy.matcher.ElementMatcher&lt;? super java.lang.Iterable&lt;? extends net.bytebuddy.description.type.TypeDescription.Generic&gt;&gt; matchers) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesArgument(int index, java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesArgument(int index, net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesArgument(int index, net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesArguments(java.lang.Class&lt;?&gt;... type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesArguments(net.bytebuddy.description.type.TypeDescription... type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesArguments(java.lang.Iterable&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; types) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesArguments(net.bytebuddy.matcher.ElementMatcher&lt;? super java.lang.Iterable&lt;? extends net.bytebuddy.description.type.TypeDescription&gt;&gt; matchers) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesArguments(int length) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; takesNoArguments() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasParameters(net.bytebuddy.matcher.ElementMatcher&lt;? super java.lang.Iterable&lt;? extends net.bytebuddy.description.method.ParameterDescription&gt;&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; canThrow(java.lang.Class&lt;? extends java.lang.Throwable&gt; exceptionType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; canThrow(net.bytebuddy.description.type.TypeDescription exceptionType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; declaresGenericException(java.lang.reflect.Type exceptionType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; declaresGenericException(net.bytebuddy.description.type.TypeDescription.Generic exceptionType) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; declaresException(java.lang.Class&lt;? extends java.lang.Throwable&gt; exceptionType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; declaresException(net.bytebuddy.description.type.TypeDescription exceptionType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; declaresGenericException(net.bytebuddy.matcher.ElementMatcher&lt;? super java.lang.Iterable&lt;? extends net.bytebuddy.description.type.TypeDescription.Generic&gt;&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isOverriddenFrom(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isOverriddenFrom(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isOverriddenFrom(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isOverriddenFromGeneric(java.lang.reflect.Type type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isOverriddenFromGeneric(net.bytebuddy.description.type.TypeDescription.Generic type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isOverriddenFromGeneric(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isInterface() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isAnnotation() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isMethod() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isConstructor() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isTypeInitializer() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isVirtual() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isDefaultMethod() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isDefaultConstructor() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isMain() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isDefaultFinalizer() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isFinalizer() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isHashCode() { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isEquals() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isClone() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isToString() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSetter() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSetter(java.lang.String property) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSetter(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isGenericSetter(java.lang.reflect.Type type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSetter(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isGenericSetter(net.bytebuddy.description.type.TypeDescription.Generic type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSetter(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isGenericSetter(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isGetter() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isGetter(java.lang.String property) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isGetter(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isGenericGetter(java.lang.reflect.Type type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isGetter(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isGenericGetter(net.bytebuddy.description.type.TypeDescription.Generic type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isGetter(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isGenericGetter(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasMethodName(java.lang.String internalName) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.method.MethodDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasSignature(net.bytebuddy.description.method.MethodDescription.SignatureToken token) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSubTypeOf(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSubTypeOf(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSuperTypeOf(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSuperTypeOf(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasSuperClass(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasGenericSuperClass(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasSuperType(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasGenericSuperType(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; inheritsAnnotation(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; inheritsAnnotation(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; inheritsAnnotation(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasAnnotation(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.annotation.AnnotationDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasClassFileVersionAtLeast(net.bytebuddy.ClassFileVersion classFileVersion) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasClassFileVersionAtMost(net.bytebuddy.ClassFileVersion classFileVersion) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; declaresField(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.field.FieldDescription&gt; matcher) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; declaresMethod(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher) { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; ofSort(net.bytebuddy.description.type.TypeDefinition.Sort sort) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; ofSort(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDefinition.Sort&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isPrimitive() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isArray() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.type.TypeDefinition&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isRecord() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; genericFieldType(java.lang.reflect.Type fieldType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; genericFieldType(net.bytebuddy.description.type.TypeDescription.Generic fieldType) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; genericFieldType(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription.Generic&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; fieldType(java.lang.Class&lt;?&gt; fieldType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; fieldType(net.bytebuddy.description.type.TypeDescription fieldType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; fieldType(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isVolatile() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.field.FieldDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isTransient() { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends net.bytebuddy.description.annotation.AnnotationDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; annotationType(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.annotation.AnnotationDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; annotationType(net.bytebuddy.description.type.TypeDescription type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.annotation.AnnotationDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; annotationType(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.description.annotation.AnnotationDescription&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; targetsElement(java.lang.annotation.ElementType elementType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends java.lang.ClassLoader&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isBootstrapClassLoader() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends java.lang.ClassLoader&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isSystemClassLoader() { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+&nbsp;    public static &lt;T extends java.lang.ClassLoader&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isExtensionClassLoader() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends java.lang.ClassLoader&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isChildOf(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends java.lang.ClassLoader&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; hasChild(net.bytebuddy.matcher.ElementMatcher&lt;? super java.lang.ClassLoader&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends java.lang.ClassLoader&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; isParentOf(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends java.lang.ClassLoader&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; ofType(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.type.TypeDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T extends net.bytebuddy.utility.JavaModule&gt; net.bytebuddy.matcher.ElementMatcher.Junction&lt;T&gt; supportsModules() { /* compiled code */ }
+<b class="nc">&nbsp;}</b>
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

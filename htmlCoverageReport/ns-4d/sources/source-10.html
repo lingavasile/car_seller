@@ -1,0 +1,120 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > MockSettings</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito</a>
+</div>
+
+<h1>Coverage Summary for Class: MockSettings (org.mockito)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+</tr>
+<tr>
+  <td class="name">MockSettings</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito;
+&nbsp;
+&nbsp;@org.mockito.NotExtensible
+&nbsp;public interface MockSettings extends java.io.Serializable {
+&nbsp;    org.mockito.MockSettings extraInterfaces(java.lang.Class&lt;?&gt;... classes);
+&nbsp;
+&nbsp;    org.mockito.MockSettings name(java.lang.String s);
+&nbsp;
+&nbsp;    org.mockito.MockSettings spiedInstance(java.lang.Object o);
+&nbsp;
+&nbsp;    org.mockito.MockSettings defaultAnswer(org.mockito.stubbing.Answer answer);
+&nbsp;
+&nbsp;    org.mockito.MockSettings serializable();
+&nbsp;
+&nbsp;    org.mockito.MockSettings serializable(org.mockito.mock.SerializableMode serializableMode);
+&nbsp;
+&nbsp;    org.mockito.MockSettings verboseLogging();
+&nbsp;
+&nbsp;    org.mockito.MockSettings stubbingLookupListeners(org.mockito.listeners.StubbingLookupListener... stubbingLookupListeners);
+&nbsp;
+&nbsp;    org.mockito.MockSettings invocationListeners(org.mockito.listeners.InvocationListener... invocationListeners);
+&nbsp;
+&nbsp;    org.mockito.MockSettings verificationStartedListeners(org.mockito.listeners.VerificationStartedListener... verificationStartedListeners);
+&nbsp;
+&nbsp;    org.mockito.MockSettings stubOnly();
+&nbsp;
+&nbsp;    org.mockito.MockSettings useConstructor(java.lang.Object... objects);
+&nbsp;
+&nbsp;    org.mockito.MockSettings outerInstance(java.lang.Object o);
+&nbsp;
+&nbsp;    org.mockito.MockSettings withoutAnnotations();
+&nbsp;
+&nbsp;    &lt;T&gt; org.mockito.mock.MockCreationSettings&lt;T&gt; build(java.lang.Class&lt;T&gt; aClass);
+&nbsp;
+&nbsp;    &lt;T&gt; org.mockito.mock.MockCreationSettings&lt;T&gt; buildStatic(java.lang.Class&lt;T&gt; aClass);
+&nbsp;
+&nbsp;    /**
+&nbsp;     * @deprecated
+&nbsp;     */
+&nbsp;    @java.lang.Deprecated
+&nbsp;    org.mockito.MockSettings lenient();
+&nbsp;
+&nbsp;    org.mockito.MockSettings strictness(org.mockito.quality.Strictness strictness);
+&nbsp;
+&nbsp;    org.mockito.MockSettings mockMaker(java.lang.String s);
+&nbsp;
+&nbsp;    org.mockito.MockSettings genericTypeToMock(java.lang.reflect.Type type);
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

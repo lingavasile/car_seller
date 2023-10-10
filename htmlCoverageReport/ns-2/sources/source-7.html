@@ -1,0 +1,182 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > Main</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.vasile.linga</a>
+</div>
+
+<h1>Coverage Summary for Class: Main (com.vasile.linga)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Main</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/30)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.vasile.linga;
+&nbsp;
+&nbsp;import com.vasile.linga.models.CarTypes.ElectricCar;
+&nbsp;import com.vasile.linga.models.CarTypes.PetrolCar;
+&nbsp;import com.vasile.linga.models.Customer;
+&nbsp;import com.vasile.linga.models.EngineTypes.ElectricEngine;
+&nbsp;import com.vasile.linga.models.EngineTypes.PetrolEngine;
+&nbsp;import com.vasile.linga.repository.CarRepo.ElectricCarRepo;
+&nbsp;import com.vasile.linga.repository.CarRepo.PetrolCarRepo;
+&nbsp;import com.vasile.linga.repository.CustomerRepo.CustomerRepo;
+&nbsp;import com.vasile.linga.repository.EngineRepo.ElectricEngineRepo;
+&nbsp;import com.vasile.linga.repository.EngineRepo.PetrolEngineRepo;
+&nbsp;import com.vasile.linga.utils.Discounter;
+&nbsp;import com.vasile.linga.utils.ElectricEngineStatusChecker;
+&nbsp;import com.vasile.linga.utils.PetrolEngineStatusChecker;
+&nbsp;import com.vasile.linga.utils.StateEvaluator;
+&nbsp;import org.apache.logging.log4j.LogManager;
+&nbsp;import org.apache.logging.log4j.core.Logger;
+&nbsp;
+&nbsp;import java.util.List;
+&nbsp;
+&nbsp;
+&nbsp;import static java.util.Arrays.asList;
+&nbsp;
+<b class="nc">&nbsp;public class Main {</b>
+&nbsp;    public static void main(String[] args) {
+<b class="nc">&nbsp;        final Logger logger = (Logger)LogManager.getLogger(Main.class);</b>
+&nbsp;
+<b class="nc">&nbsp;        PetrolEngineRepo petrolEngineRepo = new PetrolEngineRepo(new PetrolEngineStatusChecker());</b>
+<b class="nc">&nbsp;        PetrolCarRepo petrolCarRepo = new PetrolCarRepo(petrolEngineRepo);</b>
+&nbsp;
+<b class="nc">&nbsp;        ElectricEngineRepo electricEngineRepo = new ElectricEngineRepo(new ElectricEngineStatusChecker());</b>
+<b class="nc">&nbsp;        ElectricCarRepo electricCarRepository = new ElectricCarRepo(electricEngineRepo);</b>
+&nbsp;
+<b class="nc">&nbsp;        Discounter discounter = new Discounter();</b>
+<b class="nc">&nbsp;        StateEvaluator stateEvaluator = new StateEvaluator();</b>
+&nbsp;
+<b class="nc">&nbsp;        PetrolCar bmw_m3 = new PetrolCar(&quot;WBSCD0322VEE11260&quot;,&quot;BMW&quot;,&quot;M3 E36&quot;,1997,4000,70,</b>
+&nbsp;                           new PetrolEngine(&quot;HFJEJIU76657FEH&quot;,&quot;BM34M12&quot;,234135,3200,240,70,25,12.8));
+&nbsp;
+<b class="nc">&nbsp;        ElectricCar tesla_plaid = new ElectricCar(&quot;5YJSA1DP3CFF00035&quot;,&quot;Tesla&quot;,&quot;Model S&quot;,2020,400000,90,</b>
+&nbsp;                                  new ElectricEngine(&quot;L78757GDE8976&quot;,&quot;BM34M12&quot;,14135,2300,302,50));
+&nbsp;
+&nbsp;
+<b class="nc">&nbsp;        System.out.println(discounter.discount(stateEvaluator.stateCar(bmw_m3.getStateRating()), bmw_m3.getPrice()));</b>
+<b class="nc">&nbsp;        System.out.println(&quot;------------------------------------------------------------------------------------------------------------------------------------&quot;);</b>
+&nbsp;
+<b class="nc">&nbsp;        System.out.println(electricCarRepository.startElectricEngine(tesla_plaid.getEngine()));</b>
+<b class="nc">&nbsp;        System.out.println(&quot;------------------------------------------------------------------------------------------------------------------------------------&quot;);</b>
+<b class="nc">&nbsp;        System.out.println(&quot;-----------------------------------------------------END----------------------------------------------------------------------------&quot;);</b>
+<b class="nc">&nbsp;        CustomerRepo customerRepo = new CustomerRepo(new Discounter(),new StateEvaluator());</b>
+&nbsp;
+&nbsp;        List&lt;Customer&gt; customers;
+&nbsp;
+<b class="nc">&nbsp;        Customer customer = new Customer(1,&quot;Linga Vasile&quot;);</b>
+<b class="nc">&nbsp;        customerRepo.buyCar(bmw_m3,customer);</b>
+&nbsp;
+<b class="nc">&nbsp;        Customer customer1 = new Customer(2,&quot;Uzun Paula&quot;);</b>
+<b class="nc">&nbsp;        customerRepo.buyCar(tesla_plaid,customer1);</b>
+&nbsp;
+<b class="nc">&nbsp;        customers = asList(customer1,customer);</b>
+&nbsp;
+&nbsp;
+<b class="nc">&nbsp;        for (var item : customers) {</b>
+<b class="nc">&nbsp;            System.out.println(&quot;Customer:&quot;+item.getFullName()+&quot; bought &quot;+item.getCar().getBrand()+&quot; &quot;+item.getCar().getModel()+&quot; at price:&quot;+item.getFinalPrice()+&quot;€&quot;);</b>
+<b class="nc">&nbsp;            System.out.println(&quot;------------------------------------------------------------------------------------------------------------------------------------&quot;);</b>
+<b class="nc">&nbsp;            System.out.println(&quot;\nStarting: &quot;+item.getCar().getBrand()+&quot; &quot;+item.getCar().getModel()+&quot; .....&quot;);</b>
+&nbsp;
+<b class="nc">&nbsp;            if (item.getCar().getClass().getName().equals(&quot;com.vasile.linga.models.CarTypes.ElectricCar&quot;)){</b>
+<b class="nc">&nbsp;                logger.info(&quot;Initializing engine with status:&quot; + electricCarRepository.startElectricEngine(((ElectricCar)item.getCar()).getEngine()));</b>
+&nbsp;            }else {
+<b class="nc">&nbsp;                logger.info(&quot;Initializing engine with status:&quot; + petrolCarRepo.startFuelEngine(((PetrolCar)item.getCar()).getEngine()));</b>
+&nbsp;            }
+<b class="nc">&nbsp;            System.out.println(&quot;------------------------------------------------------------------------------------------------------------------------------------&quot;);</b>
+<b class="nc">&nbsp;        }</b>
+&nbsp;
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

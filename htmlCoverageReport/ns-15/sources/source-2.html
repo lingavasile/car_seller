@@ -1,0 +1,161 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ClassFilePostProcessor</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.dynamic.loading</a>
+</div>
+
+<h1>Coverage Summary for Class: ClassFilePostProcessor (net.bytebuddy.dynamic.loading)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">ClassFilePostProcessor$NoOp</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.dynamic.loading;
+&nbsp;
+&nbsp;public interface ClassFilePostProcessor {
+&nbsp;    byte[] transform(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader, java.lang.String s, @net.bytebuddy.utility.nullability.MaybeNull java.security.ProtectionDomain protectionDomain, byte[] bytes);
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForClassFileTransformer implements net.bytebuddy.dynamic.loading.ClassFilePostProcessor {
+&nbsp;        protected static final java.security.ProtectionDomain ALL_PRIVILEGES;
+&nbsp;        @net.bytebuddy.utility.nullability.AlwaysNull
+&nbsp;        private static final java.lang.Class&lt;?&gt; UNLOADED_TYPE;
+&nbsp;        private final java.lang.instrument.ClassFileTransformer classFileTransformer;
+&nbsp;
+&nbsp;        public ForClassFileTransformer(java.lang.instrument.ClassFileTransformer classFileTransformer) { /* compiled code */ }
+&nbsp;
+&nbsp;        public byte[] transform(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader, java.lang.String name, @net.bytebuddy.utility.nullability.MaybeNull java.security.ProtectionDomain protectionDomain, byte[] binaryRepresentation) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static class AllPermissionsCollection extends java.security.PermissionCollection {
+&nbsp;            private static final long serialVersionUID = 1L;
+&nbsp;
+&nbsp;            protected AllPermissionsCollection() { /* compiled code */ }
+&nbsp;
+&nbsp;            public void add(java.security.Permission permission) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean implies(java.security.Permission permission) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.util.Enumeration&lt;java.security.Permission&gt; elements() { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static enum NoOp implements net.bytebuddy.dynamic.loading.ClassFilePostProcessor {
+&nbsp;        INSTANCE;
+&nbsp;
+&nbsp;        private NoOp() { /* compiled code */ }
+&nbsp;
+&nbsp;        public byte[] transform(@net.bytebuddy.utility.nullability.MaybeNull java.lang.ClassLoader classLoader, java.lang.String name, @net.bytebuddy.utility.nullability.MaybeNull java.security.ProtectionDomain protectionDomain, byte[] binaryRepresentation) { /* compiled code */ }
+&nbsp;    }
+<b class="fc">&nbsp;}</b>
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

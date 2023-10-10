@@ -1,0 +1,227 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > DefaultMethod</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.implementation.bind.annotation</a>
+</div>
+
+<h1>Coverage Summary for Class: DefaultMethod (net.bytebuddy.implementation.bind.annotation)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">DefaultMethod$Binder</td>
+<td class="coverageStat">
+  <span class="percent">
+    66.7%
+  </span>
+  <span class="absValue">
+    (2/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (8/24)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">DefaultMethod$Binder$MethodLocator</td>
+  </tr>
+  <tr>
+    <td class="name">DefaultMethod$Binder$MethodLocator$ForExplicitType</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/5)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">DefaultMethod$Binder$MethodLocator$ForImplicitType</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/3)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    28.6%
+  </span>
+  <span class="absValue">
+    (2/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (8/32)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.implementation.bind.annotation;
+&nbsp;
+&nbsp;@java.lang.annotation.Documented
+&nbsp;@java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.RUNTIME)
+&nbsp;@java.lang.annotation.Target({java.lang.annotation.ElementType.PARAMETER})
+&nbsp;public @interface DefaultMethod {
+&nbsp;    boolean cached() default true;
+&nbsp;
+&nbsp;    boolean privileged() default false;
+&nbsp;
+&nbsp;    java.lang.Class&lt;?&gt; targetType() default void.class;
+&nbsp;
+&nbsp;    boolean nullIfImpossible() default false;
+&nbsp;
+&nbsp;    static enum Binder implements net.bytebuddy.implementation.bind.annotation.TargetMethodAnnotationDrivenBinder.ParameterBinder&lt;net.bytebuddy.implementation.bind.annotation.DefaultMethod&gt; {
+&nbsp;        INSTANCE;
+&nbsp;
+&nbsp;        private static final net.bytebuddy.description.method.MethodDescription.InDefinedShape CACHED;
+&nbsp;        private static final net.bytebuddy.description.method.MethodDescription.InDefinedShape PRIVILEGED;
+&nbsp;        private static final net.bytebuddy.description.method.MethodDescription.InDefinedShape TARGET_TYPE;
+&nbsp;        private static final net.bytebuddy.description.method.MethodDescription.InDefinedShape NULL_IF_IMPOSSIBLE;
+&nbsp;
+&nbsp;        private Binder() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.lang.Class&lt;net.bytebuddy.implementation.bind.annotation.DefaultMethod&gt; getHandledType() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bind.MethodDelegationBinder.ParameterBinding&lt;?&gt; bind(net.bytebuddy.description.annotation.AnnotationDescription.Loadable&lt;net.bytebuddy.implementation.bind.annotation.DefaultMethod&gt; annotation, net.bytebuddy.description.method.MethodDescription source, net.bytebuddy.description.method.ParameterDescription target, net.bytebuddy.implementation.Implementation.Target implementationTarget, net.bytebuddy.implementation.bytecode.assign.Assigner assigner, net.bytebuddy.implementation.bytecode.assign.Assigner.Typing typing) { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static class DelegationMethod implements net.bytebuddy.implementation.bytecode.StackManipulation {
+&nbsp;            private final net.bytebuddy.implementation.Implementation.SpecialMethodInvocation specialMethodInvocation;
+&nbsp;            private final boolean cached;
+&nbsp;            private final boolean privileged;
+&nbsp;
+&nbsp;            protected DelegationMethod(net.bytebuddy.implementation.Implementation.SpecialMethodInvocation specialMethodInvocation, boolean cached, boolean privileged) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean isValid() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.bytecode.StackManipulation.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        protected static interface MethodLocator {
+&nbsp;            net.bytebuddy.implementation.Implementation.SpecialMethodInvocation resolve(net.bytebuddy.implementation.Implementation.Target target, net.bytebuddy.description.method.MethodDescription methodDescription);
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            static class ForExplicitType implements net.bytebuddy.implementation.bind.annotation.DefaultMethod.Binder.MethodLocator {
+&nbsp;                private final net.bytebuddy.description.type.TypeDescription typeDescription;
+&nbsp;
+&nbsp;                protected ForExplicitType(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.Implementation.SpecialMethodInvocation resolve(net.bytebuddy.implementation.Implementation.Target implementationTarget, net.bytebuddy.description.method.MethodDescription source) { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;
+&nbsp;            static enum ForImplicitType implements net.bytebuddy.implementation.bind.annotation.DefaultMethod.Binder.MethodLocator {
+&nbsp;                INSTANCE;
+&nbsp;
+&nbsp;                private ForImplicitType() { /* compiled code */ }
+&nbsp;
+&nbsp;                public net.bytebuddy.implementation.Implementation.SpecialMethodInvocation resolve(net.bytebuddy.implementation.Implementation.Target implementationTarget, net.bytebuddy.description.method.MethodDescription source) { /* compiled code */ }
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

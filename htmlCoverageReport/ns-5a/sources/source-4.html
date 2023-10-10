@@ -1,0 +1,235 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > InlineBytecodeGenerator</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito.internal.creation.bytebuddy</a>
+</div>
+
+<h1>Coverage Summary for Class: InlineBytecodeGenerator (org.mockito.internal.creation.bytebuddy)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">InlineBytecodeGenerator</td>
+<td class="coverageStat">
+  <span class="percent">
+    76.9%
+  </span>
+  <span class="absValue">
+    (10/13)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75.5%
+  </span>
+  <span class="absValue">
+    (148/196)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">InlineBytecodeGenerator$ParameterWritingVisitorWrapper</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (4/5)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">InlineBytecodeGenerator$ParameterWritingVisitorWrapper$MethodParameterStrippingMethodVisitor</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">InlineBytecodeGenerator$ParameterWritingVisitorWrapper$ParameterAddingClassVisitor</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (16/20)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    78.9%
+  </span>
+  <span class="absValue">
+    (15/19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75.8%
+  </span>
+  <span class="absValue">
+    (169/223)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito.internal.creation.bytebuddy;
+&nbsp;
+&nbsp;@org.mockito.internal.SuppressSignatureCheck
+&nbsp;public class InlineBytecodeGenerator implements org.mockito.internal.creation.bytebuddy.BytecodeGenerator, java.lang.instrument.ClassFileTransformer {
+&nbsp;    private static final java.lang.String PRELOAD = &quot;org.mockito.inline.preload&quot;;
+&nbsp;    static final java.util.Set&lt;java.lang.Class&lt;?&gt;&gt; EXCLUDES;
+&nbsp;    private final java.lang.instrument.Instrumentation instrumentation;
+&nbsp;    private final net.bytebuddy.ByteBuddy byteBuddy;
+&nbsp;    private final org.mockito.internal.util.concurrent.WeakConcurrentSet&lt;java.lang.Class&lt;?&gt;&gt; mocked;
+&nbsp;    private final org.mockito.internal.util.concurrent.WeakConcurrentSet&lt;java.lang.Class&lt;?&gt;&gt; flatMocked;
+&nbsp;    private final org.mockito.internal.creation.bytebuddy.BytecodeGenerator subclassEngine;
+&nbsp;    private final net.bytebuddy.asm.AsmVisitorWrapper mockTransformer;
+&nbsp;    private final java.lang.reflect.Method getModule;
+&nbsp;    private final java.lang.reflect.Method canRead;
+&nbsp;    private final java.lang.reflect.Method redefineModule;
+&nbsp;    private volatile java.lang.Throwable lastException;
+&nbsp;
+&nbsp;    public InlineBytecodeGenerator(java.lang.instrument.Instrumentation instrumentation, org.mockito.internal.util.concurrent.WeakConcurrentMap&lt;java.lang.Object,org.mockito.internal.creation.bytebuddy.MockMethodInterceptor&gt; mocks, org.mockito.internal.util.concurrent.DetachedThreadLocal&lt;java.util.Map&lt;java.lang.Class&lt;?&gt;,org.mockito.internal.creation.bytebuddy.MockMethodInterceptor&gt;&gt; mockedStatics, java.util.function.Predicate&lt;java.lang.Class&lt;?&gt;&gt; isMockConstruction, org.mockito.internal.creation.bytebuddy.ConstructionCallback onConstruction) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static void preload() { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; java.lang.Class&lt;? extends T&gt; mockClass(org.mockito.internal.creation.bytebuddy.MockFeatures&lt;T&gt; features) { /* compiled code */ }
+&nbsp;
+&nbsp;    public synchronized void mockClassStatic(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public synchronized void mockClassConstruction(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static void assureInitialization(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    private &lt;T&gt; void triggerRetransformation(java.util.Set&lt;java.lang.Class&lt;?&gt;&gt; types, boolean flat) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void assureCanReadMockito(java.util.Set&lt;java.lang.Class&lt;?&gt;&gt; types) { /* compiled code */ }
+&nbsp;
+&nbsp;    private &lt;T&gt; void checkSupportedCombination(boolean subclassingRequired, org.mockito.internal.creation.bytebuddy.MockFeatures&lt;T&gt; features) { /* compiled code */ }
+&nbsp;
+&nbsp;    private void addInterfaces(java.util.Set&lt;java.lang.Class&lt;?&gt;&gt; types, java.lang.Class&lt;?&gt;[] interfaces) { /* compiled code */ }
+&nbsp;
+&nbsp;    public byte[] transform(java.lang.ClassLoader loader, java.lang.String className, java.lang.Class&lt;?&gt; classBeingRedefined, java.security.ProtectionDomain protectionDomain, byte[] classfileBuffer) { /* compiled code */ }
+&nbsp;
+&nbsp;    public synchronized void clearAllCaches() { /* compiled code */ }
+&nbsp;
+&nbsp;    private static class ParameterWritingVisitorWrapper extends net.bytebuddy.asm.AsmVisitorWrapper.AbstractBase {
+&nbsp;        private final java.lang.Class&lt;?&gt; type;
+&nbsp;
+&nbsp;        private ParameterWritingVisitorWrapper(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.jar.asm.ClassVisitor wrap(net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.jar.asm.ClassVisitor classVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext, net.bytebuddy.pool.TypePool typePool, net.bytebuddy.description.field.FieldList&lt;net.bytebuddy.description.field.FieldDescription.InDefinedShape&gt; fields, net.bytebuddy.description.method.MethodList&lt;?&gt; methods, int writerFlags, int readerFlags) { /* compiled code */ }
+&nbsp;
+&nbsp;        private static class ParameterAddingClassVisitor extends net.bytebuddy.jar.asm.ClassVisitor {
+&nbsp;            private final net.bytebuddy.description.type.TypeDescription typeDescription;
+<b class="fc">&nbsp;</b>
+&nbsp;            private ParameterAddingClassVisitor(net.bytebuddy.jar.asm.ClassVisitor cv, net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;            public net.bytebuddy.jar.asm.MethodVisitor visitMethod(int access, java.lang.String name, java.lang.String desc, java.lang.String signature, java.lang.String[] exceptions) { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        private static class MethodParameterStrippingMethodVisitor extends net.bytebuddy.jar.asm.MethodVisitor {
+&nbsp;            public MethodParameterStrippingMethodVisitor(net.bytebuddy.jar.asm.MethodVisitor mv) { /* compiled code */ }
+&nbsp;
+&nbsp;            public void visitParameter(java.lang.String name, int access) { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > TypeReference</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.jar.asm</a>
+</div>
+
+<h1>Coverage Summary for Class: TypeReference (net.bytebuddy.jar.asm)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">TypeReference</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    31.6%
+  </span>
+  <span class="absValue">
+    (6/19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    24.1%
+  </span>
+  <span class="absValue">
+    (7/29)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.jar.asm;
+&nbsp;
+&nbsp;public class TypeReference {
+&nbsp;    public static final int CLASS_TYPE_PARAMETER = 0;
+&nbsp;    public static final int METHOD_TYPE_PARAMETER = 1;
+&nbsp;    public static final int CLASS_EXTENDS = 16;
+&nbsp;    public static final int CLASS_TYPE_PARAMETER_BOUND = 17;
+&nbsp;    public static final int METHOD_TYPE_PARAMETER_BOUND = 18;
+&nbsp;    public static final int FIELD = 19;
+&nbsp;    public static final int METHOD_RETURN = 20;
+&nbsp;    public static final int METHOD_RECEIVER = 21;
+&nbsp;    public static final int METHOD_FORMAL_PARAMETER = 22;
+&nbsp;    public static final int THROWS = 23;
+&nbsp;    public static final int LOCAL_VARIABLE = 64;
+&nbsp;    public static final int RESOURCE_VARIABLE = 65;
+&nbsp;    public static final int EXCEPTION_PARAMETER = 66;
+&nbsp;    public static final int INSTANCEOF = 67;
+&nbsp;    public static final int NEW = 68;
+&nbsp;    public static final int CONSTRUCTOR_REFERENCE = 69;
+&nbsp;    public static final int METHOD_REFERENCE = 70;
+&nbsp;    public static final int CAST = 71;
+&nbsp;    public static final int CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT = 72;
+&nbsp;    public static final int METHOD_INVOCATION_TYPE_ARGUMENT = 73;
+&nbsp;    public static final int CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT = 74;
+&nbsp;    public static final int METHOD_REFERENCE_TYPE_ARGUMENT = 75;
+&nbsp;    private final int targetTypeAndInfo;
+&nbsp;
+&nbsp;    public TypeReference(int typeRef) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.jar.asm.TypeReference newTypeReference(int sort) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.jar.asm.TypeReference newTypeParameterReference(int sort, int paramIndex) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.jar.asm.TypeReference newTypeParameterBoundReference(int sort, int paramIndex, int boundIndex) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.jar.asm.TypeReference newSuperTypeReference(int itfIndex) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.jar.asm.TypeReference newFormalParameterReference(int paramIndex) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.jar.asm.TypeReference newExceptionReference(int exceptionIndex) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.jar.asm.TypeReference newTryCatchReference(int tryCatchBlockIndex) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.jar.asm.TypeReference newTypeArgumentReference(int sort, int argIndex) { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getSort() { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getTypeParameterIndex() { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getTypeParameterBoundIndex() { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getSuperTypeIndex() { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getFormalParameterIndex() { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getExceptionIndex() { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getTryCatchBlockIndex() { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getTypeArgumentIndex() { /* compiled code */ }
+&nbsp;
+&nbsp;    public int getValue() { /* compiled code */ }
+&nbsp;
+&nbsp;    static void putTarget(int targetTypeAndInfo, net.bytebuddy.jar.asm.ByteVector output) { /* compiled code */ }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

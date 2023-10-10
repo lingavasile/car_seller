@@ -1,0 +1,282 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ClassFileVersion</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy</a>
+</div>
+
+<h1>Coverage Summary for Class: ClassFileVersion (net.bytebuddy)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ClassFileVersion</td>
+<td class="coverageStat">
+  <span class="percent">
+    51.9%
+  </span>
+  <span class="absValue">
+    (14/27)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    30.4%
+  </span>
+  <span class="absValue">
+    (41/135)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">ClassFileVersion$VersionLocator</td>
+  </tr>
+  <tr>
+    <td class="name">ClassFileVersion$VersionLocator$Resolved</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ClassFileVersion$VersionLocator$Resolver</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (6/24)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    58.1%
+  </span>
+  <span class="absValue">
+    (18/31)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    30.9%
+  </span>
+  <span class="absValue">
+    (50/162)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy;
+&nbsp;
+&nbsp;public class ClassFileVersion implements java.lang.Comparable&lt;net.bytebuddy.ClassFileVersion&gt;, java.io.Serializable {
+&nbsp;    private static final long serialVersionUID = 1L;
+&nbsp;    protected static final int BASE_VERSION = 44;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V1;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V2;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V3;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V4;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V5;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V6;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V7;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V8;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V9;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V10;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V11;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V12;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V13;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V14;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V15;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V16;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V17;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V18;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V19;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V20;
+&nbsp;    public static final net.bytebuddy.ClassFileVersion JAVA_V21;
+&nbsp;    private static final net.bytebuddy.ClassFileVersion.VersionLocator VERSION_LOCATOR;
+&nbsp;    private final int versionNumber;
+&nbsp;    private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;    protected ClassFileVersion(int versionNumber) { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;    private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.ClassFileVersion ofMinorMajor(int versionNumber) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.ClassFileVersion ofJavaVersionString(java.lang.String javaVersionString) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.ClassFileVersion ofJavaVersion(int javaVersion) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.ClassFileVersion latest() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.ClassFileVersion ofThisVm() { /* compiled code */ }
+&nbsp;
+&nbsp;    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;REC_CATCH_EXCEPTION&quot;}, justification = &quot;Exception should not be rethrown but trigger a fallback.&quot;)
+<b class="fc">&nbsp;    public static net.bytebuddy.ClassFileVersion ofThisVm(net.bytebuddy.ClassFileVersion fallback) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public static net.bytebuddy.ClassFileVersion of(java.lang.Class&lt;?&gt; type) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.ClassFileVersion of(java.lang.Class&lt;?&gt; type, net.bytebuddy.dynamic.ClassFileLocator classFileLocator) throws java.io.IOException { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public static net.bytebuddy.ClassFileVersion of(net.bytebuddy.description.type.TypeDescription typeDescription, net.bytebuddy.dynamic.ClassFileLocator classFileLocator) throws java.io.IOException { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.ClassFileVersion ofClassFile(byte[] binaryRepresentation) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;    public int getMinorMajorVersion() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public short getMajorVersion() { /* compiled code */ }
+&nbsp;
+&nbsp;    public short getMinorVersion() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public int getJavaVersion() { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean isAtLeast(net.bytebuddy.ClassFileVersion classFileVersion) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;    public boolean isGreaterThan(net.bytebuddy.ClassFileVersion classFileVersion) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public boolean isAtMost(net.bytebuddy.ClassFileVersion classFileVersion) { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean isLessThan(net.bytebuddy.ClassFileVersion classFileVersion) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public net.bytebuddy.ClassFileVersion asPreviewVersion() { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean isPreviewVersion() { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;    public int compareTo(net.bytebuddy.ClassFileVersion other) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;    public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object other) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+&nbsp;    public java.lang.String toString() { /* compiled code */ }
+&nbsp;
+&nbsp;    protected static interface VersionLocator {
+&nbsp;        java.lang.String EARLY_ACCESS = &quot;-ea&quot;;
+<b class="fc">&nbsp;        java.lang.String JAVA_VERSION = &quot;java.version&quot;;</b>
+&nbsp;
+&nbsp;        net.bytebuddy.ClassFileVersion resolve();
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+<b class="fc">&nbsp;        static class Unresolved implements net.bytebuddy.ClassFileVersion.VersionLocator {</b>
+&nbsp;            private final java.lang.String message;
+&nbsp;
+&nbsp;            protected Unresolved(java.lang.String message) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;            public net.bytebuddy.ClassFileVersion resolve() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+<b class="fc">&nbsp;        }</b>
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class Resolved implements net.bytebuddy.ClassFileVersion.VersionLocator {
+&nbsp;            private final net.bytebuddy.ClassFileVersion classFileVersion;
+<b class="fc">&nbsp;</b>
+&nbsp;            protected Resolved(net.bytebuddy.ClassFileVersion classFileVersion) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.ClassFileVersion resolve() { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        static enum Resolver implements java.security.PrivilegedAction&lt;net.bytebuddy.ClassFileVersion.VersionLocator&gt; {</b>
+&nbsp;            INSTANCE;
+&nbsp;
+&nbsp;            private Resolver() { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;            @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(value = {&quot;REC_CATCH_EXCEPTION&quot;}, justification = &quot;Exception should not be rethrown but trigger a fallback.&quot;)</b>
+&nbsp;            public net.bytebuddy.ClassFileVersion.VersionLocator run() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

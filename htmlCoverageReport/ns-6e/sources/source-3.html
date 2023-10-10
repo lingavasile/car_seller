@@ -1,0 +1,118 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > MockCreationSettings</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito.mock</a>
+</div>
+
+<h1>Coverage Summary for Class: MockCreationSettings (org.mockito.mock)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+</tr>
+<tr>
+  <td class="name">MockCreationSettings</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito.mock;
+&nbsp;
+&nbsp;@org.mockito.NotExtensible
+&nbsp;public interface MockCreationSettings &lt;T&gt; {
+&nbsp;    java.lang.Class&lt;T&gt; getTypeToMock();
+&nbsp;
+&nbsp;    java.lang.reflect.Type getGenericTypeToMock();
+&nbsp;
+&nbsp;    java.util.Set&lt;java.lang.Class&lt;?&gt;&gt; getExtraInterfaces();
+&nbsp;
+&nbsp;    org.mockito.mock.MockName getMockName();
+&nbsp;
+&nbsp;    org.mockito.stubbing.Answer&lt;?&gt; getDefaultAnswer();
+&nbsp;
+&nbsp;    java.lang.Object getSpiedInstance();
+&nbsp;
+&nbsp;    boolean isSerializable();
+&nbsp;
+&nbsp;    org.mockito.mock.SerializableMode getSerializableMode();
+&nbsp;
+&nbsp;    boolean isStubOnly();
+&nbsp;
+&nbsp;    boolean isStripAnnotations();
+&nbsp;
+&nbsp;    java.util.List&lt;org.mockito.listeners.StubbingLookupListener&gt; getStubbingLookupListeners();
+&nbsp;
+&nbsp;    java.util.List&lt;org.mockito.listeners.InvocationListener&gt; getInvocationListeners();
+&nbsp;
+&nbsp;    java.util.List&lt;org.mockito.listeners.VerificationStartedListener&gt; getVerificationStartedListeners();
+&nbsp;
+&nbsp;    boolean isUsingConstructor();
+&nbsp;
+&nbsp;    java.lang.Object[] getConstructorArgs();
+&nbsp;
+&nbsp;    java.lang.Object getOuterClassInstance();
+&nbsp;
+&nbsp;    /**
+&nbsp;     * @deprecated
+&nbsp;     */
+&nbsp;    @java.lang.Deprecated
+&nbsp;    boolean isLenient();
+&nbsp;
+&nbsp;    org.mockito.quality.Strictness getStrictness();
+&nbsp;
+&nbsp;    java.lang.String getMockMaker();
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

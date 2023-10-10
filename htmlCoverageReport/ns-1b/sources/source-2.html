@@ -1,0 +1,346 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > MethodCallProxy</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.implementation.auxiliary</a>
+</div>
+
+<h1>Coverage Summary for Class: MethodCallProxy (net.bytebuddy.implementation.auxiliary)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">MethodCallProxy</td>
+<td class="coverageStat">
+  <span class="percent">
+    83.3%
+  </span>
+  <span class="absValue">
+    (5/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    90.3%
+  </span>
+  <span class="absValue">
+    (28/31)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">MethodCallProxy$AssignableSignatureCall</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (10/10)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodCallProxy$ConstructorCall</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodCallProxy$ConstructorCall$Appender</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (18/18)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodCallProxy$MethodCall</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (6/6)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodCallProxy$MethodCall$Appender</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (14/14)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodCallProxy$PrecomputedMethodGraph</td>
+<td class="coverageStat">
+  <span class="percent">
+    40%
+  </span>
+  <span class="absValue">
+    (2/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (3/6)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    85.2%
+  </span>
+  <span class="absValue">
+    (23/27)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    93.3%
+  </span>
+  <span class="absValue">
+    (83/89)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.implementation.auxiliary;
+&nbsp;
+&nbsp;@net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;public class MethodCallProxy implements net.bytebuddy.implementation.auxiliary.AuxiliaryType {
+&nbsp;    private static final java.lang.String FIELD_NAME_PREFIX = &quot;argument&quot;;
+&nbsp;    private final net.bytebuddy.implementation.Implementation.SpecialMethodInvocation specialMethodInvocation;
+&nbsp;    private final boolean serializableProxy;
+&nbsp;    private final net.bytebuddy.implementation.bytecode.assign.Assigner assigner;
+&nbsp;
+&nbsp;    public MethodCallProxy(net.bytebuddy.implementation.Implementation.SpecialMethodInvocation specialMethodInvocation, boolean serializableProxy) { /* compiled code */ }
+&nbsp;
+&nbsp;    public MethodCallProxy(net.bytebuddy.implementation.Implementation.SpecialMethodInvocation specialMethodInvocation, boolean serializableProxy, net.bytebuddy.implementation.bytecode.assign.Assigner assigner) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static java.util.LinkedHashMap&lt;java.lang.String,net.bytebuddy.description.type.TypeDescription&gt; extractFields(net.bytebuddy.description.method.MethodDescription methodDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static java.lang.String fieldName(int index) { /* compiled code */ }
+&nbsp;
+&nbsp;    public java.lang.String getSuffix() { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType make(java.lang.String auxiliaryTypeName, net.bytebuddy.ClassFileVersion classFileVersion, net.bytebuddy.implementation.MethodAccessorFactory methodAccessorFactory) { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;    public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    public static class AssignableSignatureCall extends net.bytebuddy.implementation.bytecode.StackManipulation.AbstractBase {
+&nbsp;        private final net.bytebuddy.implementation.Implementation.SpecialMethodInvocation specialMethodInvocation;
+&nbsp;        private final boolean serializable;
+&nbsp;
+&nbsp;        public AssignableSignatureCall(net.bytebuddy.implementation.Implementation.SpecialMethodInvocation specialMethodInvocation, boolean serializable) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.StackManipulation.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    protected static class MethodCall implements net.bytebuddy.implementation.Implementation {
+&nbsp;        private final net.bytebuddy.description.method.MethodDescription accessorMethod;
+&nbsp;        private final net.bytebuddy.implementation.bytecode.assign.Assigner assigner;
+&nbsp;
+&nbsp;        protected MethodCall(net.bytebuddy.description.method.MethodDescription accessorMethod, net.bytebuddy.implementation.bytecode.assign.Assigner assigner) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.ByteCodeAppender appender(net.bytebuddy.implementation.Implementation.Target implementationTarget) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance(includeSyntheticFields = true)
+&nbsp;        protected class Appender implements net.bytebuddy.implementation.bytecode.ByteCodeAppender {
+&nbsp;            private final net.bytebuddy.description.type.TypeDescription instrumentedType;
+&nbsp;
+&nbsp;            private Appender(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext, net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    protected static enum ConstructorCall implements net.bytebuddy.implementation.Implementation {
+&nbsp;        INSTANCE;
+&nbsp;
+&nbsp;        private final net.bytebuddy.description.method.MethodDescription objectTypeDefaultConstructor;
+&nbsp;
+&nbsp;        private ConstructorCall() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.ByteCodeAppender appender(net.bytebuddy.implementation.Implementation.Target implementationTarget) { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static class Appender implements net.bytebuddy.implementation.bytecode.ByteCodeAppender {
+&nbsp;            private final net.bytebuddy.description.type.TypeDescription instrumentedType;
+&nbsp;
+&nbsp;            private Appender(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext, net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    protected static enum PrecomputedMethodGraph implements net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler {
+&nbsp;        INSTANCE;
+&nbsp;
+<b class="fc">&nbsp;        private final transient net.bytebuddy.dynamic.scaffold.MethodGraph.Linked methodGraph;</b>
+&nbsp;
+&nbsp;        private PrecomputedMethodGraph() { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.MethodGraph.Linked compile(net.bytebuddy.description.type.TypeDefinition typeDefinition) { /* compiled code */ }
+&nbsp;
+&nbsp;        /**
+&nbsp;         * @deprecated
+&nbsp;         */
+&nbsp;        @java.lang.Deprecated
+&nbsp;        public net.bytebuddy.dynamic.scaffold.MethodGraph.Linked compile(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;        public net.bytebuddy.dynamic.scaffold.MethodGraph.Linked compile(net.bytebuddy.description.type.TypeDefinition typeDefinition, net.bytebuddy.description.type.TypeDescription viewPoint) { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;        /**</b>
+<b class="fc">&nbsp;         * @deprecated</b>
+&nbsp;         */
+&nbsp;        @java.lang.Deprecated
+&nbsp;        public net.bytebuddy.dynamic.scaffold.MethodGraph.Linked compile(net.bytebuddy.description.type.TypeDescription typeDefinition, net.bytebuddy.description.type.TypeDescription viewPoint) { /* compiled code */ }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

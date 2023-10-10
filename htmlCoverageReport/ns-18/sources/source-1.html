@@ -1,0 +1,275 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ConstructorStrategy</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.dynamic.scaffold.subclass</a>
+</div>
+
+<h1>Coverage Summary for Class: ConstructorStrategy (net.bytebuddy.dynamic.scaffold.subclass)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">ConstructorStrategy$Default</td>
+<td class="coverageStat">
+  <span class="percent">
+    57.1%
+  </span>
+  <span class="absValue">
+    (4/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    86.4%
+  </span>
+  <span class="absValue">
+    (19/22)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ConstructorStrategy$Default$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ConstructorStrategy$Default$2</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    11.1%
+  </span>
+  <span class="absValue">
+    (1/9)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ConstructorStrategy$Default$3</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    16.7%
+  </span>
+  <span class="absValue">
+    (1/6)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ConstructorStrategy$Default$4</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    16.7%
+  </span>
+  <span class="absValue">
+    (1/6)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ConstructorStrategy$Default$5</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/7)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    60.9%
+  </span>
+  <span class="absValue">
+    (14/23)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    60.4%
+  </span>
+  <span class="absValue">
+    (32/53)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.dynamic.scaffold.subclass;
+&nbsp;
+&nbsp;public interface ConstructorStrategy {
+&nbsp;    java.util.List&lt;net.bytebuddy.description.method.MethodDescription.Token&gt; extractConstructors(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.MethodRegistry inject(net.bytebuddy.description.type.TypeDescription typeDescription, net.bytebuddy.dynamic.scaffold.MethodRegistry methodRegistry);
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class ForDefaultConstructor implements net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy {
+&nbsp;        private final net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; elementMatcher;
+&nbsp;        private final net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory methodAttributeAppenderFactory;
+&nbsp;
+&nbsp;        public ForDefaultConstructor() { /* compiled code */ }
+&nbsp;
+&nbsp;        public ForDefaultConstructor(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; elementMatcher) { /* compiled code */ }
+&nbsp;
+&nbsp;        public ForDefaultConstructor(net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory methodAttributeAppenderFactory) { /* compiled code */ }
+&nbsp;
+&nbsp;        public ForDefaultConstructor(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; elementMatcher, net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory methodAttributeAppenderFactory) { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.util.List&lt;net.bytebuddy.description.method.MethodDescription.Token&gt; extractConstructors(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.MethodRegistry inject(net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.dynamic.scaffold.MethodRegistry methodRegistry) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    static abstract enum Default implements net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy {
+&nbsp;        NO_CONSTRUCTORS, DEFAULT_CONSTRUCTOR, IMITATE_SUPER_CLASS, IMITATE_SUPER_CLASS_PUBLIC, IMITATE_SUPER_CLASS_OPENING;
+&nbsp;
+&nbsp;        private Default() { /* compiled code */ }
+&nbsp;
+&nbsp;        public java.util.List&lt;net.bytebuddy.description.method.MethodDescription.Token&gt; extractConstructors(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected int resolveModifier(int modifiers) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected abstract java.util.List&lt;net.bytebuddy.description.method.MethodDescription.Token&gt; doExtractConstructors(net.bytebuddy.description.type.TypeDescription typeDescription);
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.MethodRegistry inject(net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.dynamic.scaffold.MethodRegistry methodRegistry) { /* compiled code */ }
+&nbsp;
+&nbsp;        protected abstract net.bytebuddy.dynamic.scaffold.MethodRegistry doInject(net.bytebuddy.dynamic.scaffold.MethodRegistry methodRegistry, net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory factory);
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy with(net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory methodAttributeAppenderFactory) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy withInheritedAnnotations() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static class WithMethodAttributeAppenderFactory implements net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy {
+&nbsp;            private final net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy.Default delegate;
+&nbsp;            private final net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory methodAttributeAppenderFactory;
+&nbsp;
+&nbsp;            protected WithMethodAttributeAppenderFactory(net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy.Default delegate, net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory methodAttributeAppenderFactory) { /* compiled code */ }
+&nbsp;
+&nbsp;            public java.util.List&lt;net.bytebuddy.description.method.MethodDescription.Token&gt; extractConstructors(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.MethodRegistry inject(net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.dynamic.scaffold.MethodRegistry methodRegistry) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+<b class="fc">&nbsp;}</b>
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

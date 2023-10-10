@@ -1,0 +1,218 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ArgumentMatchers</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito</a>
+</div>
+
+<h1>Coverage Summary for Class: ArgumentMatchers (org.mockito)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ArgumentMatchers</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    7.3%
+  </span>
+  <span class="absValue">
+    (4/55)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    6.5%
+  </span>
+  <span class="absValue">
+    (7/107)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito;
+&nbsp;
+&nbsp;@org.mockito.CheckReturnValue
+&nbsp;public class ArgumentMatchers {
+&nbsp;    public ArgumentMatchers() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T any() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T any(java.lang.Class&lt;T&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T isA(java.lang.Class&lt;T&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static boolean anyBoolean() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static byte anyByte() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static char anyChar() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static int anyInt() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static long anyLong() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static float anyFloat() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static double anyDouble() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static short anyShort() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static java.lang.String anyString() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; java.util.List&lt;T&gt; anyList() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; java.util.Set&lt;T&gt; anySet() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;K, V&gt; java.util.Map&lt;K,V&gt; anyMap() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; java.util.Collection&lt;T&gt; anyCollection() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; java.lang.Iterable&lt;T&gt; anyIterable() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static boolean eq(boolean value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static byte eq(byte value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static char eq(char value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static double eq(double value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static float eq(float value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static int eq(int value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static long eq(long value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static short eq(short value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T eq(T value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T refEq(T value, java.lang.String... excludeFields) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T same(T value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T isNull() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T isNull(java.lang.Class&lt;T&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T notNull() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T notNull(java.lang.Class&lt;T&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T isNotNull() { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T isNotNull(java.lang.Class&lt;T&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T nullable(java.lang.Class&lt;T&gt; clazz) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static java.lang.String contains(java.lang.String substring) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static java.lang.String matches(java.lang.String regex) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static java.lang.String matches(java.util.regex.Pattern pattern) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static java.lang.String endsWith(java.lang.String suffix) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static java.lang.String startsWith(java.lang.String prefix) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T argThat(org.mockito.ArgumentMatcher&lt;T&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T assertArg(java.util.function.Consumer&lt;T&gt; consumer) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static &lt;T&gt; T assertArg(org.mockito.ThrowingConsumer&lt;T&gt; consumer) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static char charThat(org.mockito.ArgumentMatcher&lt;java.lang.Character&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static boolean booleanThat(org.mockito.ArgumentMatcher&lt;java.lang.Boolean&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static byte byteThat(org.mockito.ArgumentMatcher&lt;java.lang.Byte&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static short shortThat(org.mockito.ArgumentMatcher&lt;java.lang.Short&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static int intThat(org.mockito.ArgumentMatcher&lt;java.lang.Integer&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static long longThat(org.mockito.ArgumentMatcher&lt;java.lang.Long&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static float floatThat(org.mockito.ArgumentMatcher&lt;java.lang.Float&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static double doubleThat(org.mockito.ArgumentMatcher&lt;java.lang.Double&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static void reportMatcher(org.mockito.ArgumentMatcher&lt;?&gt; matcher) { /* compiled code */ }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

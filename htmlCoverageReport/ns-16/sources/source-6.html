@@ -1,0 +1,530 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > MethodRegistry</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.dynamic.scaffold</a>
+</div>
+
+<h1>Coverage Summary for Class: MethodRegistry (net.bytebuddy.dynamic.scaffold)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+  <tr>
+    <td class="name">MethodRegistry$Compiled</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRegistry$Default</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    86.7%
+  </span>
+  <span class="absValue">
+    (52/60)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRegistry$Default$Compiled</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (15/15)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRegistry$Default$Compiled$Entry</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    91.7%
+  </span>
+  <span class="absValue">
+    (11/12)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRegistry$Default$Entry</td>
+<td class="coverageStat">
+  <span class="percent">
+    83.3%
+  </span>
+  <span class="absValue">
+    (5/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    71.4%
+  </span>
+  <span class="absValue">
+    (10/14)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRegistry$Default$Prepared</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (33/33)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRegistry$Default$Prepared$Entry</td>
+<td class="coverageStat">
+  <span class="percent">
+    87.5%
+  </span>
+  <span class="absValue">
+    (7/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    83.3%
+  </span>
+  <span class="absValue">
+    (15/18)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRegistry$Handler</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRegistry$Handler$Compiled</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRegistry$Handler$ForImplementation</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRegistry$Handler$ForImplementation$Compiled</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">MethodRegistry$Prepared</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    95%
+  </span>
+  <span class="absValue">
+    (38/40)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    89.9%
+  </span>
+  <span class="absValue">
+    (143/159)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.dynamic.scaffold;
+&nbsp;
+&nbsp;public interface MethodRegistry {
+&nbsp;    net.bytebuddy.dynamic.scaffold.MethodRegistry prepend(net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; latentMatcher, net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler handler, net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory factory, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.method.MethodDescription&gt; transformer);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.MethodRegistry append(net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; latentMatcher, net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler handler, net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory factory, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.method.MethodDescription&gt; transformer);
+&nbsp;
+&nbsp;    net.bytebuddy.dynamic.scaffold.MethodRegistry.Prepared prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler compiler, net.bytebuddy.dynamic.scaffold.TypeValidation typeValidation, net.bytebuddy.dynamic.VisibilityBridgeStrategy visibilityBridgeStrategy, net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; latentMatcher);
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    static class Default implements net.bytebuddy.dynamic.scaffold.MethodRegistry {
+&nbsp;        private final java.util.List&lt;net.bytebuddy.dynamic.scaffold.MethodRegistry.Default.Entry&gt; entries;
+&nbsp;
+&nbsp;        public Default() { /* compiled code */ }
+&nbsp;
+&nbsp;        private Default(java.util.List&lt;net.bytebuddy.dynamic.scaffold.MethodRegistry.Default.Entry&gt; entries) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.MethodRegistry prepend(net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher, net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler handler, net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory attributeAppenderFactory, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.method.MethodDescription&gt; transformer) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.MethodRegistry append(net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher, net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler handler, net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory attributeAppenderFactory, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.method.MethodDescription&gt; transformer) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.MethodRegistry.Prepared prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler, net.bytebuddy.dynamic.scaffold.TypeValidation typeValidation, net.bytebuddy.dynamic.VisibilityBridgeStrategy visibilityBridgeStrategy, net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; ignoredMethods) { /* compiled code */ }
+&nbsp;
+&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;        public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static class Compiled implements net.bytebuddy.dynamic.scaffold.MethodRegistry.Compiled {
+&nbsp;            private final net.bytebuddy.description.type.TypeDescription instrumentedType;
+&nbsp;            private final net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer;
+&nbsp;            private final net.bytebuddy.dynamic.scaffold.TypeInitializer typeInitializer;
+&nbsp;            private final net.bytebuddy.description.method.MethodList&lt;?&gt; methods;
+&nbsp;            private final java.util.LinkedHashMap&lt;net.bytebuddy.description.method.MethodDescription,net.bytebuddy.dynamic.scaffold.MethodRegistry.Default.Compiled.Entry&gt; implementations;
+&nbsp;            private final boolean supportsBridges;
+&nbsp;
+&nbsp;            protected Compiled(net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer, net.bytebuddy.dynamic.scaffold.TypeInitializer typeInitializer, net.bytebuddy.description.method.MethodList&lt;?&gt; methods, java.util.LinkedHashMap&lt;net.bytebuddy.description.method.MethodDescription,net.bytebuddy.dynamic.scaffold.MethodRegistry.Default.Compiled.Entry&gt; implementations, boolean supportsBridges) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.type.TypeDescription getInstrumentedType() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.LoadedTypeInitializer getLoadedTypeInitializer() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.TypeInitializer getTypeInitializer() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.method.MethodList&lt;?&gt; getMethods() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.method.MethodList&lt;?&gt; getInstrumentedMethods() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.TypeWriter.MethodPool.Record target(net.bytebuddy.description.method.MethodDescription methodDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            protected static class Entry {
+&nbsp;                private final net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler.Compiled handler;
+&nbsp;                private final net.bytebuddy.implementation.attribute.MethodAttributeAppender attributeAppender;
+&nbsp;                private final net.bytebuddy.description.method.MethodDescription methodDescription;
+&nbsp;                private final java.util.Set&lt;net.bytebuddy.description.method.MethodDescription.TypeToken&gt; bridgeTypes;
+&nbsp;                private final net.bytebuddy.description.modifier.Visibility visibility;
+&nbsp;                private final boolean bridgeMethod;
+&nbsp;
+&nbsp;                protected Entry(net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler.Compiled handler, net.bytebuddy.implementation.attribute.MethodAttributeAppender attributeAppender, net.bytebuddy.description.method.MethodDescription methodDescription, java.util.Set&lt;net.bytebuddy.description.method.MethodDescription.TypeToken&gt; bridgeTypes, net.bytebuddy.description.modifier.Visibility visibility, boolean bridgeMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;                protected net.bytebuddy.dynamic.scaffold.TypeWriter.MethodPool.Record bind(net.bytebuddy.description.type.TypeDescription instrumentedType, boolean supportsBridges) { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static class Prepared implements net.bytebuddy.dynamic.scaffold.MethodRegistry.Prepared {
+&nbsp;            private final java.util.LinkedHashMap&lt;net.bytebuddy.description.method.MethodDescription,net.bytebuddy.dynamic.scaffold.MethodRegistry.Default.Prepared.Entry&gt; implementations;
+&nbsp;            private final net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer;
+&nbsp;            private final net.bytebuddy.dynamic.scaffold.TypeInitializer typeInitializer;
+&nbsp;            private final net.bytebuddy.description.type.TypeDescription instrumentedType;
+&nbsp;            private final net.bytebuddy.dynamic.scaffold.MethodGraph.Linked methodGraph;
+&nbsp;            private final net.bytebuddy.description.method.MethodList&lt;?&gt; methods;
+&nbsp;
+&nbsp;            protected Prepared(java.util.LinkedHashMap&lt;net.bytebuddy.description.method.MethodDescription,net.bytebuddy.dynamic.scaffold.MethodRegistry.Default.Prepared.Entry&gt; implementations, net.bytebuddy.implementation.LoadedTypeInitializer loadedTypeInitializer, net.bytebuddy.dynamic.scaffold.TypeInitializer typeInitializer, net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.dynamic.scaffold.MethodGraph.Linked methodGraph, net.bytebuddy.description.method.MethodList&lt;?&gt; methods) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.type.TypeDescription getInstrumentedType() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.LoadedTypeInitializer getLoadedTypeInitializer() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.TypeInitializer getTypeInitializer() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.method.MethodList&lt;?&gt; getMethods() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.description.method.MethodList&lt;?&gt; getInstrumentedMethods() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.MethodRegistry.Compiled compile(net.bytebuddy.implementation.Implementation.Target.Factory implementationTargetFactory, net.bytebuddy.ClassFileVersion classFileVersion) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            protected static class Entry {
+&nbsp;                private final net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler handler;
+&nbsp;                private final net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory attributeAppenderFactory;
+&nbsp;                private final net.bytebuddy.description.method.MethodDescription methodDescription;
+&nbsp;                private final java.util.Set&lt;net.bytebuddy.description.method.MethodDescription.TypeToken&gt; typeTokens;
+&nbsp;                private final net.bytebuddy.description.modifier.Visibility visibility;
+&nbsp;                private final boolean bridgeMethod;
+&nbsp;
+&nbsp;                protected Entry(net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler handler, net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory attributeAppenderFactory, net.bytebuddy.description.method.MethodDescription methodDescription, java.util.Set&lt;net.bytebuddy.description.method.MethodDescription.TypeToken&gt; typeTokens, net.bytebuddy.description.modifier.Visibility visibility, boolean bridgeMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;                protected static net.bytebuddy.dynamic.scaffold.MethodRegistry.Default.Prepared.Entry forVisibilityBridge(net.bytebuddy.description.method.MethodDescription bridgeTarget, net.bytebuddy.description.modifier.Visibility visibility) { /* compiled code */ }
+&nbsp;
+&nbsp;                protected net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler getHandler() { /* compiled code */ }
+&nbsp;
+&nbsp;                protected net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory getAppenderFactory() { /* compiled code */ }
+&nbsp;
+&nbsp;                protected net.bytebuddy.description.method.MethodDescription getMethodDescription() { /* compiled code */ }
+&nbsp;
+&nbsp;                protected java.util.Set&lt;net.bytebuddy.description.method.MethodDescription.TypeToken&gt; resolveBridgeTypes() { /* compiled code */ }
+&nbsp;
+&nbsp;                protected net.bytebuddy.description.modifier.Visibility getVisibility() { /* compiled code */ }
+&nbsp;
+&nbsp;                protected boolean isBridgeMethod() { /* compiled code */ }
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        protected static class Entry implements net.bytebuddy.matcher.LatentMatcher&lt;net.bytebuddy.description.method.MethodDescription&gt; {
+&nbsp;            private final net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher;
+&nbsp;            private final net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler handler;
+&nbsp;            private final net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory attributeAppenderFactory;
+&nbsp;            private final net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.method.MethodDescription&gt; transformer;
+&nbsp;
+&nbsp;            protected Entry(net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher, net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler handler, net.bytebuddy.implementation.attribute.MethodAttributeAppender.Factory attributeAppenderFactory, net.bytebuddy.dynamic.Transformer&lt;net.bytebuddy.description.method.MethodDescription&gt; transformer) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected net.bytebuddy.dynamic.scaffold.MethodRegistry.Default.Prepared.Entry asPreparedEntry(net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.description.method.MethodDescription methodDescription, net.bytebuddy.description.modifier.Visibility visibility) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected net.bytebuddy.dynamic.scaffold.MethodRegistry.Default.Prepared.Entry asPreparedEntry(net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.description.method.MethodDescription methodDescription, java.util.Set&lt;net.bytebuddy.description.method.MethodDescription.TypeToken&gt; methodTypes, net.bytebuddy.description.modifier.Visibility visibility) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected net.bytebuddy.dynamic.scaffold.MethodRegistry.Default.Prepared.Entry asSupplementaryEntry(net.bytebuddy.description.method.MethodDescription methodDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;            protected net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler getHandler() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; resolve(net.bytebuddy.description.type.TypeDescription typeDescription) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface Compiled extends net.bytebuddy.dynamic.scaffold.TypeWriter.MethodPool {
+&nbsp;        net.bytebuddy.description.type.TypeDescription getInstrumentedType();
+&nbsp;
+&nbsp;        net.bytebuddy.description.method.MethodList&lt;?&gt; getMethods();
+&nbsp;
+&nbsp;        net.bytebuddy.description.method.MethodList&lt;?&gt; getInstrumentedMethods();
+&nbsp;
+&nbsp;        net.bytebuddy.implementation.LoadedTypeInitializer getLoadedTypeInitializer();
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.TypeInitializer getTypeInitializer();
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface Prepared {
+&nbsp;        net.bytebuddy.description.type.TypeDescription getInstrumentedType();
+&nbsp;
+&nbsp;        net.bytebuddy.description.method.MethodList&lt;?&gt; getMethods();
+&nbsp;
+&nbsp;        net.bytebuddy.description.method.MethodList&lt;?&gt; getInstrumentedMethods();
+&nbsp;
+&nbsp;        net.bytebuddy.implementation.LoadedTypeInitializer getLoadedTypeInitializer();
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.TypeInitializer getTypeInitializer();
+&nbsp;
+&nbsp;        net.bytebuddy.dynamic.scaffold.MethodRegistry.Compiled compile(net.bytebuddy.implementation.Implementation.Target.Factory factory, net.bytebuddy.ClassFileVersion classFileVersion);
+&nbsp;    }
+&nbsp;
+&nbsp;    static interface Handler extends net.bytebuddy.dynamic.scaffold.InstrumentedType.Prepareable {
+&nbsp;        net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler.Compiled compile(net.bytebuddy.implementation.Implementation.Target target);
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class ForAnnotationValue implements net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler, net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler.Compiled {
+&nbsp;            private final net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; annotationValue;
+&nbsp;
+&nbsp;            public ForAnnotationValue(net.bytebuddy.description.annotation.AnnotationValue&lt;?,?&gt; annotationValue) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler.Compiled compile(net.bytebuddy.implementation.Implementation.Target implementationTarget) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.TypeWriter.MethodPool.Record assemble(net.bytebuddy.description.method.MethodDescription methodDescription, net.bytebuddy.implementation.attribute.MethodAttributeAppender attributeAppender, net.bytebuddy.description.modifier.Visibility visibility) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;        static class ForImplementation implements net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler {
+&nbsp;            private final net.bytebuddy.implementation.Implementation implementation;
+&nbsp;
+&nbsp;            public ForImplementation(net.bytebuddy.implementation.Implementation implementation) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler.ForImplementation.Compiled compile(net.bytebuddy.implementation.Implementation.Target implementationTarget) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;            public int hashCode() { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            protected static class Compiled implements net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler.Compiled {
+&nbsp;                private final net.bytebuddy.implementation.bytecode.ByteCodeAppender byteCodeAppender;
+&nbsp;
+&nbsp;                protected Compiled(net.bytebuddy.implementation.bytecode.ByteCodeAppender byteCodeAppender) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;                public net.bytebuddy.dynamic.scaffold.TypeWriter.MethodPool.Record assemble(net.bytebuddy.description.method.MethodDescription methodDescription, net.bytebuddy.implementation.attribute.MethodAttributeAppender attributeAppender, net.bytebuddy.description.modifier.Visibility visibility) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;        }
+<b class="fc">&nbsp;</b>
+&nbsp;        static interface Compiled {
+&nbsp;            net.bytebuddy.dynamic.scaffold.TypeWriter.MethodPool.Record assemble(net.bytebuddy.description.method.MethodDescription methodDescription, net.bytebuddy.implementation.attribute.MethodAttributeAppender methodAttributeAppender, net.bytebuddy.description.modifier.Visibility visibility);
+&nbsp;        }
+&nbsp;
+&nbsp;        static enum ForVisibilityBridge implements net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler {
+&nbsp;            INSTANCE;
+&nbsp;
+&nbsp;            private ForVisibilityBridge() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler.ForVisibilityBridge.Compiled compile(net.bytebuddy.implementation.Implementation.Target implementationTarget) { /* compiled code */ }
+&nbsp;
+&nbsp;            @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;            protected static class Compiled implements net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler.Compiled {
+&nbsp;                private final net.bytebuddy.description.type.TypeDescription instrumentedType;
+&nbsp;
+&nbsp;                protected Compiled(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;                public net.bytebuddy.dynamic.scaffold.TypeWriter.MethodPool.Record assemble(net.bytebuddy.description.method.MethodDescription methodDescription, net.bytebuddy.implementation.attribute.MethodAttributeAppender attributeAppender, net.bytebuddy.description.modifier.Visibility visibility) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;                public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;                public int hashCode() { /* compiled code */ }
+&nbsp;            }
+&nbsp;        }
+<b class="fc">&nbsp;</b>
+&nbsp;        static enum ForAbstractMethod implements net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler, net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler.Compiled {
+&nbsp;            INSTANCE;
+&nbsp;
+&nbsp;            private ForAbstractMethod() { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.MethodRegistry.Handler.Compiled compile(net.bytebuddy.implementation.Implementation.Target implementationTarget) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.dynamic.scaffold.TypeWriter.MethodPool.Record assemble(net.bytebuddy.description.method.MethodDescription methodDescription, net.bytebuddy.implementation.attribute.MethodAttributeAppender attributeAppender, net.bytebuddy.description.modifier.Visibility visibility) { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

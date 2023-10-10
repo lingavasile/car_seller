@@ -1,0 +1,203 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > Duplication</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy.implementation.bytecode</a>
+</div>
+
+<h1>Coverage Summary for Class: Duplication (net.bytebuddy.implementation.bytecode)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Duplication</td>
+<td class="coverageStat">
+  <span class="percent">
+    66.7%
+  </span>
+  <span class="absValue">
+    (4/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    60%
+  </span>
+  <span class="absValue">
+    (9/15)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">Duplication$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">Duplication$2</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    20%
+  </span>
+  <span class="absValue">
+    (1/5)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">Duplication$3</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    20%
+  </span>
+  <span class="absValue">
+    (1/5)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    53.8%
+  </span>
+  <span class="absValue">
+    (7/13)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    42.9%
+  </span>
+  <span class="absValue">
+    (12/28)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy.implementation.bytecode;
+&nbsp;
+&nbsp;public abstract enum Duplication implements net.bytebuddy.implementation.bytecode.StackManipulation {
+&nbsp;    ZERO, SINGLE, DOUBLE;
+&nbsp;
+&nbsp;    protected final net.bytebuddy.implementation.bytecode.StackManipulation.Size size;
+&nbsp;    private final int opcode;
+&nbsp;
+&nbsp;    private Duplication(net.bytebuddy.implementation.bytecode.StackSize stackSize, int opcode) { /* compiled code */ }
+&nbsp;
+&nbsp;    public static net.bytebuddy.implementation.bytecode.Duplication of(net.bytebuddy.description.type.TypeDefinition typeDefinition) { /* compiled code */ }
+&nbsp;
+&nbsp;    public abstract net.bytebuddy.implementation.bytecode.StackManipulation flipOver(net.bytebuddy.description.type.TypeDefinition typeDefinition);
+&nbsp;
+&nbsp;    public boolean isValid() { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.implementation.bytecode.StackManipulation.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected static enum WithFlip implements net.bytebuddy.implementation.bytecode.StackManipulation {
+&nbsp;        SINGLE_SINGLE, SINGLE_DOUBLE, DOUBLE_SINGLE, DOUBLE_DOUBLE;
+&nbsp;
+<b class="fc">&nbsp;        private final int opcode;</b>
+&nbsp;        private final net.bytebuddy.implementation.bytecode.StackSize stackSize;
+&nbsp;
+&nbsp;        private WithFlip(int opcode, net.bytebuddy.implementation.bytecode.StackSize stackSize) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;        public boolean isValid() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.StackManipulation.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext) { /* compiled code */ }
+<b class="nc">&nbsp;    }</b>
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

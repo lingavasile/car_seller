@@ -1,0 +1,326 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > ByteBuddy</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.bytebuddy</a>
+</div>
+
+<h1>Coverage Summary for Class: ByteBuddy (net.bytebuddy)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ByteBuddy</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (16/48)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    34.8%
+  </span>
+  <span class="absValue">
+    (46/132)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package net.bytebuddy;
+&nbsp;
+&nbsp;@net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;public class ByteBuddy {
+&nbsp;    public static final java.lang.String DEFAULT_NAMING_PROPERTY = &quot;net.bytebuddy.naming&quot;;
+&nbsp;    private static final java.lang.String BYTE_BUDDY_DEFAULT_PREFIX = &quot;ByteBuddy&quot;;
+&nbsp;    private static final java.lang.String BYTE_BUDDY_DEFAULT_SUFFIX = &quot;auxiliary&quot;;
+&nbsp;    private static final java.lang.String BYTE_BUDDY_DEFAULT_CONTEXT_NAME = &quot;synthetic&quot;;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    private static final net.bytebuddy.NamingStrategy DEFAULT_NAMING_STRATEGY;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    private static final net.bytebuddy.implementation.auxiliary.AuxiliaryType.NamingStrategy DEFAULT_AUXILIARY_NAMING_STRATEGY;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    private static final net.bytebuddy.implementation.Implementation.Context.Factory DEFAULT_IMPLEMENTATION_CONTEXT_FACTORY;
+&nbsp;    protected final net.bytebuddy.ClassFileVersion classFileVersion;
+&nbsp;    protected final net.bytebuddy.NamingStrategy namingStrategy;
+&nbsp;    protected final net.bytebuddy.implementation.auxiliary.AuxiliaryType.NamingStrategy auxiliaryTypeNamingStrategy;
+&nbsp;    protected final net.bytebuddy.implementation.attribute.AnnotationValueFilter.Factory annotationValueFilterFactory;
+&nbsp;    protected final net.bytebuddy.implementation.attribute.AnnotationRetention annotationRetention;
+&nbsp;    protected final net.bytebuddy.implementation.Implementation.Context.Factory implementationContextFactory;
+&nbsp;    protected final net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler;
+&nbsp;    protected final net.bytebuddy.dynamic.scaffold.InstrumentedType.Factory instrumentedTypeFactory;
+&nbsp;    protected final net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; ignoredMethods;
+&nbsp;    protected final net.bytebuddy.dynamic.scaffold.TypeValidation typeValidation;
+&nbsp;    protected final net.bytebuddy.dynamic.VisibilityBridgeStrategy visibilityBridgeStrategy;
+&nbsp;    protected final net.bytebuddy.dynamic.scaffold.ClassWriterStrategy classWriterStrategy;
+&nbsp;    private static final boolean ACCESS_CONTROLLER;
+&nbsp;
+&nbsp;    @net.bytebuddy.utility.nullability.MaybeNull
+&nbsp;    @net.bytebuddy.build.AccessControllerPlugin.Enhance
+&nbsp;    private static &lt;T&gt; T doPrivileged(java.security.PrivilegedAction&lt;T&gt; action) { /* compiled code */ }
+&nbsp;
+&nbsp;    public ByteBuddy() { /* compiled code */ }
+&nbsp;
+&nbsp;    public ByteBuddy(net.bytebuddy.ClassFileVersion classFileVersion) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected ByteBuddy(net.bytebuddy.ClassFileVersion classFileVersion, net.bytebuddy.NamingStrategy namingStrategy, net.bytebuddy.implementation.auxiliary.AuxiliaryType.NamingStrategy auxiliaryTypeNamingStrategy, net.bytebuddy.implementation.attribute.AnnotationValueFilter.Factory annotationValueFilterFactory, net.bytebuddy.implementation.attribute.AnnotationRetention annotationRetention, net.bytebuddy.implementation.Implementation.Context.Factory implementationContextFactory, net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler, net.bytebuddy.dynamic.scaffold.InstrumentedType.Factory instrumentedTypeFactory, net.bytebuddy.dynamic.scaffold.TypeValidation typeValidation, net.bytebuddy.dynamic.VisibilityBridgeStrategy visibilityBridgeStrategy, net.bytebuddy.dynamic.scaffold.ClassWriterStrategy classWriterStrategy, net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; ignoredMethods) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; subclass(java.lang.Class&lt;T&gt; superType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; subclass(java.lang.Class&lt;T&gt; superType, net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy constructorStrategy) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; subclass(java.lang.reflect.Type superType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; subclass(java.lang.reflect.Type superType, net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy constructorStrategy) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; subclass(net.bytebuddy.description.type.TypeDefinition superType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; subclass(net.bytebuddy.description.type.TypeDefinition superType, net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy constructorStrategy) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; makeInterface() { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; makeInterface(java.lang.Class&lt;T&gt; interfaceType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; makeInterface(java.lang.reflect.Type... interfaceType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; makeInterface(java.util.List&lt;? extends java.lang.reflect.Type&gt; interfaceTypes) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; makeInterface(net.bytebuddy.description.type.TypeDefinition... interfaceType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; makeInterface(java.util.Collection&lt;? extends net.bytebuddy.description.type.TypeDefinition&gt; interfaceTypes) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; makePackage(java.lang.String name) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; makeRecord() { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;? extends java.lang.annotation.Annotation&gt; makeAnnotation() { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;? extends java.lang.Enum&lt;?&gt;&gt; makeEnumeration(java.lang.String... value) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;? extends java.lang.Enum&lt;?&gt;&gt; makeEnumeration(java.util.Collection&lt;? extends java.lang.String&gt; values) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; redefine(java.lang.Class&lt;T&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; redefine(java.lang.Class&lt;T&gt; type, net.bytebuddy.dynamic.ClassFileLocator classFileLocator) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; redefine(net.bytebuddy.description.type.TypeDescription type, net.bytebuddy.dynamic.ClassFileLocator classFileLocator) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; rebase(java.lang.Class&lt;T&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; rebase(java.lang.Class&lt;T&gt; type, net.bytebuddy.dynamic.ClassFileLocator classFileLocator) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; rebase(java.lang.Class&lt;T&gt; type, net.bytebuddy.dynamic.ClassFileLocator classFileLocator, net.bytebuddy.dynamic.scaffold.inline.MethodNameTransformer methodNameTransformer) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; rebase(net.bytebuddy.description.type.TypeDescription type, net.bytebuddy.dynamic.ClassFileLocator classFileLocator) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; rebase(net.bytebuddy.description.type.TypeDescription type, net.bytebuddy.dynamic.ClassFileLocator classFileLocator, net.bytebuddy.dynamic.scaffold.inline.MethodNameTransformer methodNameTransformer) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; rebase(java.lang.Package aPackage, net.bytebuddy.dynamic.ClassFileLocator classFileLocator) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.dynamic.DynamicType.Builder&lt;?&gt; rebase(net.bytebuddy.description.type.PackageDescription aPackage, net.bytebuddy.dynamic.ClassFileLocator classFileLocator) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; decorate(java.lang.Class&lt;T&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; decorate(java.lang.Class&lt;T&gt; type, net.bytebuddy.dynamic.ClassFileLocator classFileLocator) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; net.bytebuddy.dynamic.DynamicType.Builder&lt;T&gt; decorate(net.bytebuddy.description.type.TypeDescription type, net.bytebuddy.dynamic.ClassFileLocator classFileLocator) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy with(net.bytebuddy.ClassFileVersion classFileVersion) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy with(net.bytebuddy.NamingStrategy namingStrategy) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy with(net.bytebuddy.implementation.auxiliary.AuxiliaryType.NamingStrategy auxiliaryTypeNamingStrategy) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy with(net.bytebuddy.implementation.attribute.AnnotationValueFilter.Factory annotationValueFilterFactory) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy with(net.bytebuddy.implementation.attribute.AnnotationRetention annotationRetention) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy with(net.bytebuddy.implementation.Implementation.Context.Factory implementationContextFactory) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy with(net.bytebuddy.dynamic.scaffold.MethodGraph.Compiler methodGraphCompiler) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy with(net.bytebuddy.dynamic.scaffold.InstrumentedType.Factory instrumentedTypeFactory) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy with(net.bytebuddy.dynamic.scaffold.TypeValidation typeValidation) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy with(net.bytebuddy.dynamic.VisibilityBridgeStrategy visibilityBridgeStrategy) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy with(net.bytebuddy.dynamic.scaffold.ClassWriterStrategy classWriterStrategy) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy ignore(net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; ignoredMethods) { /* compiled code */ }
+&nbsp;
+&nbsp;    public net.bytebuddy.ByteBuddy ignore(net.bytebuddy.matcher.LatentMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; ignoredMethods) { /* compiled code */ }
+&nbsp;
+&nbsp;    public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;    public int hashCode() { /* compiled code */ }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    protected static enum RecordObjectMethod implements net.bytebuddy.implementation.Implementation {
+&nbsp;        HASH_CODE, EQUALS, TO_STRING;
+&nbsp;
+&nbsp;        private final java.lang.String name;
+&nbsp;        private final net.bytebuddy.implementation.bytecode.StackManipulation stackManipulation;
+&nbsp;        private final net.bytebuddy.description.type.TypeDescription returnType;
+&nbsp;        private final java.util.List&lt;? extends net.bytebuddy.description.type.TypeDescription&gt; arguments;
+&nbsp;
+&nbsp;        private RecordObjectMethod(java.lang.String name, net.bytebuddy.implementation.bytecode.StackManipulation stackManipulation, java.lang.Class&lt;?&gt; returnType, java.lang.Class&lt;?&gt;... arguments) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.ByteCodeAppender appender(net.bytebuddy.implementation.Implementation.Target implementationTarget) { /* compiled code */ }
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+&nbsp;    }
+&nbsp;
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    protected static enum RecordConstructorStrategy implements net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy, net.bytebuddy.implementation.Implementation {
+&nbsp;        INSTANCE;
+&nbsp;
+<b class="fc">&nbsp;        private RecordConstructorStrategy() { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public java.util.List&lt;net.bytebuddy.description.method.MethodDescription.Token&gt; extractConstructors(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+<b class="fc">&nbsp;        public net.bytebuddy.dynamic.scaffold.MethodRegistry inject(net.bytebuddy.description.type.TypeDescription instrumentedType, net.bytebuddy.dynamic.scaffold.MethodRegistry methodRegistry) { /* compiled code */ }</b>
+<b class="fc">&nbsp;</b>
+<b class="nc">&nbsp;        public net.bytebuddy.implementation.bytecode.ByteCodeAppender appender(net.bytebuddy.implementation.Implementation.Target implementationTarget) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance</b>
+&nbsp;        protected static class Appender implements net.bytebuddy.implementation.bytecode.ByteCodeAppender {
+<b class="fc">&nbsp;            private final net.bytebuddy.description.type.TypeDescription instrumentedType;</b>
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;            protected Appender(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }</b>
+&nbsp;
+<b class="nc">&nbsp;            public net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext, net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;            public int hashCode() { /* compiled code */ }</b>
+<b class="nc">&nbsp;        }</b>
+<b class="nc">&nbsp;    }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;    @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+&nbsp;    protected static class EnumerationImplementation implements net.bytebuddy.implementation.Implementation {
+<b class="nc">&nbsp;        protected static final java.lang.String CLONE_METHOD_NAME = &quot;clone&quot;;</b>
+<b class="nc">&nbsp;        protected static final java.lang.String ENUM_VALUE_OF_METHOD_NAME = &quot;valueOf&quot;;</b>
+&nbsp;        protected static final java.lang.String ENUM_VALUES_METHOD_NAME = &quot;values&quot;;
+&nbsp;        private static final int ENUM_FIELD_MODIFIERS = 25;
+&nbsp;        private static final java.lang.String ENUM_VALUES = &quot;$VALUES&quot;;
+<b class="nc">&nbsp;        private final java.util.List&lt;java.lang.String&gt; values;</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        protected EnumerationImplementation(java.util.List&lt;java.lang.String&gt; values) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+<b class="nc">&nbsp;        public net.bytebuddy.dynamic.scaffold.InstrumentedType prepare(net.bytebuddy.dynamic.scaffold.InstrumentedType instrumentedType) { /* compiled code */ }</b>
+&nbsp;
+&nbsp;        public net.bytebuddy.implementation.bytecode.ByteCodeAppender appender(net.bytebuddy.implementation.Implementation.Target implementationTarget) { /* compiled code */ }
+&nbsp;
+<b class="nc">&nbsp;        public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }</b>
+<b class="nc">&nbsp;</b>
+&nbsp;        public int hashCode() { /* compiled code */ }
+<b class="fc">&nbsp;</b>
+<b class="fc">&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance</b>
+<b class="fc">&nbsp;        protected static class InitializationAppender implements net.bytebuddy.implementation.bytecode.ByteCodeAppender {</b>
+&nbsp;            private final java.util.List&lt;java.lang.String&gt; values;
+&nbsp;
+&nbsp;            protected InitializationAppender(java.util.List&lt;java.lang.String&gt; values) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext, net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;
+&nbsp;        @net.bytebuddy.build.HashCodeAndEqualsPlugin.Enhance
+<b class="nc">&nbsp;        protected static class ValuesMethodAppender implements net.bytebuddy.implementation.bytecode.ByteCodeAppender {</b>
+&nbsp;            private final net.bytebuddy.description.type.TypeDescription instrumentedType;
+&nbsp;
+&nbsp;            protected ValuesMethodAppender(net.bytebuddy.description.type.TypeDescription instrumentedType) { /* compiled code */ }
+&nbsp;
+&nbsp;            public net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size apply(net.bytebuddy.jar.asm.MethodVisitor methodVisitor, net.bytebuddy.implementation.Implementation.Context implementationContext, net.bytebuddy.description.method.MethodDescription instrumentedMethod) { /* compiled code */ }
+&nbsp;
+&nbsp;            public boolean equals(@net.bytebuddy.utility.nullability.MaybeNull java.lang.Object o) { /* compiled code */ }
+&nbsp;
+&nbsp;            public int hashCode() { /* compiled code */ }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>

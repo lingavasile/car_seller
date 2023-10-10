@@ -1,0 +1,148 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > SubclassBytecodeGenerator</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.mockito.internal.creation.bytebuddy</a>
+</div>
+
+<h1>Coverage Summary for Class: SubclassBytecodeGenerator (org.mockito.internal.creation.bytebuddy)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">SubclassBytecodeGenerator</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    46.2%
+  </span>
+  <span class="absValue">
+    (6/13)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    53.3%
+  </span>
+  <span class="absValue">
+    (89/167)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;  // IntelliJ API Decompiler stub source generated from a class file
+&nbsp;  // Implementation of methods is not available
+&nbsp;
+&nbsp;package org.mockito.internal.creation.bytebuddy;
+&nbsp;
+&nbsp;class SubclassBytecodeGenerator implements org.mockito.internal.creation.bytebuddy.BytecodeGenerator {
+&nbsp;    private static final java.lang.String CODEGEN_PACKAGE = &quot;org.mockito.codegen.&quot;;
+&nbsp;    private final org.mockito.internal.creation.bytebuddy.SubclassLoader loader;
+&nbsp;    private final org.mockito.internal.creation.bytebuddy.ModuleHandler handler;
+&nbsp;    private final net.bytebuddy.ByteBuddy byteBuddy;
+&nbsp;    private final net.bytebuddy.implementation.Implementation readReplace;
+&nbsp;    private final net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher;
+&nbsp;    private final net.bytebuddy.implementation.Implementation dispatcher;
+&nbsp;    private final net.bytebuddy.implementation.Implementation hashCode;
+&nbsp;    private final net.bytebuddy.implementation.Implementation equals;
+&nbsp;    private final net.bytebuddy.implementation.Implementation writeReplace;
+&nbsp;
+&nbsp;    public SubclassBytecodeGenerator() { /* compiled code */ }
+&nbsp;
+&nbsp;    public SubclassBytecodeGenerator(org.mockito.internal.creation.bytebuddy.SubclassLoader loader) { /* compiled code */ }
+&nbsp;
+&nbsp;    public SubclassBytecodeGenerator(net.bytebuddy.implementation.Implementation readReplace, net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    protected SubclassBytecodeGenerator(org.mockito.internal.creation.bytebuddy.SubclassLoader loader, net.bytebuddy.implementation.Implementation readReplace, net.bytebuddy.matcher.ElementMatcher&lt;? super net.bytebuddy.description.method.MethodDescription&gt; matcher) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static boolean needsSamePackageClassLoader(org.mockito.internal.creation.bytebuddy.MockFeatures&lt;?&gt; features) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static boolean hasNonPublicTypeReference(java.lang.Class&lt;?&gt; iface) { /* compiled code */ }
+&nbsp;
+&nbsp;    public &lt;T&gt; java.lang.Class&lt;? extends T&gt; mockClass(org.mockito.internal.creation.bytebuddy.MockFeatures&lt;T&gt; features) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static java.lang.CharSequence suffix(org.mockito.internal.creation.bytebuddy.MockFeatures&lt;?&gt; features) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static java.util.Collection&lt;? extends java.lang.reflect.Type&gt; sortedSerializable(java.util.Collection&lt;java.lang.Class&lt;?&gt;&gt; interfaces, java.lang.Class&lt;?&gt; mockedType) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void mockClassStatic(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    public void mockClassConstruction(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    private boolean isComingFromJDK(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;
+&nbsp;    private static void assertVisibility(java.lang.Class&lt;?&gt; type) { /* compiled code */ }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-10 12:11</div>
+</div>
+</body>
+</html>
